@@ -37,6 +37,73 @@ def record_feasible(record):
                 np.all(abs(np.array(record['first_order'])-FO_TARGET) < [.25, .4, .5, .6]) and
                 record.get('stop_crossing_air_gap_S6_to_S8_mm', .3) >= .3)
 
+def pure_first_order(radii, thickness, indices):
+    """Reduced-angle matrix, using actual resolved primary-wavelength INDX."""
+    matrix = np.eye(2); old = 1.; entry = 0.
+    for i in range(1, 13):
+        n = float(indices[i-1]); radius = radii[i-1]
+        power = 0. if not np.isfinite(radius) else -(n-old)/radius
+        matrix = np.array([[1., 0.], [power, 1.]]) @ matrix
+        if i == 7: entry = matrix[0, 1]/matrix[0, 0]
+        if i < 12: matrix = np.array([[1., thickness[i-1]/n], [0., 1.]]) @ matrix
+        old = n
+    return [-1/matrix[1, 0], -matrix[0, 0]/matrix[1, 0], entry, float(sum(thickness))]
+
+def pure_geometry(radii, thickness, coefficients, caps):
+    def sag(i, r):
+        radius = radii[i-1]
+        if not np.isfinite(radius): return np.zeros_like(r)
+        if max(r) >= abs(radius): return np.full_like(r, np.nan)
+        value = r*r/(radius*(1+np.sqrt(1-(r/radius)**2)))
+        if i == 10: value += coefficients[0]*r**4 + coefficients[1]*r**6
+        return value
+    gaps = []
+    for i in [1, 2, 3, 4, 5, 8, 9, 10, 11]:
+        radius = 15.8 if i == 10 else min(caps[i], caps[i+1])
+        r = np.linspace(0, radius, 301)
+        values = thickness[i-1]+sag(i+1, r)-sag(i, r)
+        gaps.append(float(min(values)) if np.all(np.isfinite(values)) else -100.)
+    r = np.linspace(0, min(caps[6], caps[8]), 301)
+    values = thickness[5]+thickness[6]+sag(8, r)-sag(6, r)
+    stop_gap = float(min(values)) if np.all(np.isfinite(values)) else -100.
+    return gaps, stop_gap
+
+def precondition_bounds():
+    low = np.r_[[-3.]*11, [-2.]*11]; low[17] = -2.5
+    return low, -low
+
+def solve_fo_precondition(radii, thickness, coefficients, indices, caps, check=lambda: None):
+    """Pure 22-variable correction; no material equivalence or native FFT."""
+    radii = np.asarray(radii, float); thickness = np.asarray(thickness, float)
+    rbase = radii[np.array(core.RIDS)-1].copy()
+    def state(z):
+        rr = radii.copy(); rr[np.array(core.RIDS)-1] = rbase*(1+np.asarray(z[:11])*.03)
+        tt = thickness+np.asarray(z[11:])*.35
+        fo = np.array(pure_first_order(rr, tt, indices))
+        gaps, stop = pure_geometry(rr, tt, coefficients, caps)
+        return fo, np.array(gaps), stop
+    def objective(z):
+        check(); fo, gaps, stop = state(z)
+        return np.r_[(fo-FO_TARGET)*[3., 3., 2., 2.],
+                     np.maximum(GAP_LIMITS-gaps, 0)*10., max(0, .3-stop)*10., np.asarray(z)*.001]
+    before_fo, before_gaps, before_stop = state(np.zeros(22))
+    low, high = precondition_bounds()
+    result = least_squares(objective, np.zeros(22), bounds=(low, high), max_nfev=50,
+                           ftol=1e-9, xtol=1e-9, gtol=1e-9)
+    after_fo, after_gaps, after_stop = state(result.x)
+    feasible = bool(np.all(abs(after_fo-FO_TARGET) < [.25, .4, .5, .6]) and
+                    np.all(after_gaps >= GAP_LIMITS) and after_stop >= .3)
+    x0 = np.r_[np.zeros(2), result.x]
+    metadata = {'enabled': True, 'method': 'Pure reduced-angle FO from resolved native INDX; no FFT',
+                'primary_wavelength_um': .546, 'primary_indices_surfaces_1_to_12': list(map(float, indices)),
+                'before_first_order': before_fo.tolist(), 'after_first_order': after_fo.tolist(),
+                'before_geometry_gaps': before_gaps.tolist(), 'after_geometry_gaps': after_gaps.tolist(),
+                'before_stop_crossing_air_gap_mm': before_stop, 'after_stop_crossing_air_gap_mm': after_stop,
+                'feasible': feasible, 'x0': x0.tolist(), 'nfev': int(result.nfev), 'status': str(result.message),
+                'asphere_parameter_changes': [0., 0.], 'parameter_bounds_low': low.tolist(),
+                'parameter_bounds_high': high.tolist()}
+    return x0.tolist(), metadata
+
 def cost_proxy(combo):
     """Unweighted six-element OD sum: CDGM internal ranking, never a quote."""
     path = BASE/'material_manifest.json'
@@ -222,6 +289,21 @@ def evaluate(x, seed, combo, size, round_end, save=None):
                                       'max_residual_weight': 12., 'selection_score': 'max_shortfall + 0.2 * deficit_rms'})
     return residual.tolist(), record
 
+def precondition(seed, combo, size, round_end):
+    global ROUND_END
+    ROUND_END = round_end; guard(); prepare(seed, combo, size)
+    # A reused worker may still contain its last finite-difference trial.
+    # Restore the unchanged source/base prescription before numerical correction.
+    apply(np.zeros(25))
+    radii = [RAW_SYSTEM.LDE.GetSurfaceAt(i).Radius for i in range(1, 13)]
+    thickness = [RAW_SYSTEM.LDE.GetSurfaceAt(i).Thickness for i in range(1, 12)]
+    surface = RAW_SYSTEM.LDE.GetSurfaceAt(10)
+    coefficients = [surface.GetCellAt(i).DoubleValue for i in [13, 14]]
+    x0, metadata = solve_fo_precondition(radii, thickness, coefficients, core.indices, core.caps, guard)
+    metadata.update(materials=NATIVE_MATERIALS, catalogs=combo['catalogs'],
+                    actual_indices_at_all_6_wavelengths=NATIVE_N6, worker_pid=os.getpid())
+    return x0, metadata
+
 def read_plan(path, phase):
     if not path.exists(): return {'per_element': [], 'seed_combinations': []}
     document = json.loads(path.read_text(encoding='utf-8'))
@@ -342,6 +424,7 @@ def main():
             round_end = min(time.time()+a.round_seconds, end-a.guard_seconds)
             size = 256 if best and round_number % 4 == 0 else a.sampling
             jacobians = 0; local_count = 0
+            precondition_metadata = {'enabled': False}
             def fun(x):
                 nonlocal best, serial, evaluations, local_count
                 residual, record = pool.submit(evaluate, x, seed, combo, size, round_end).result()
@@ -351,7 +434,8 @@ def main():
                 record.update(score=score, feasible=bool(feasible), round=round_number, eval=evaluations,
                               seconds=time.time()-start, seed=seed, source_seed_sha256=digest(seed), phase=a.phase,
                               catalog_plan_path=str(Path(a.catalog_plan).resolve()),
-                              catalog_plan_sha256=digest(a.catalog_plan) if Path(a.catalog_plan).exists() else None)
+                              catalog_plan_sha256=digest(a.catalog_plan) if Path(a.catalog_plan).exists() else None,
+                              material_fo_precondition=precondition_metadata)
                 atomic_json(out/'current.json', record)
                 key = combo_key(combo)
                 global_improved = feasible and (best is None or score < best['score'])
@@ -364,7 +448,8 @@ def main():
                                  checkpoint_path=str(snapshot.with_suffix('.json').resolve()), seed=seed,
                                  source_seed_sha256=digest(seed), phase=a.phase, round=round_number, eval=evaluations,
                                  seconds=time.time()-start, catalog_plan_path=str(Path(a.catalog_plan).resolve()),
-                                 catalog_plan_sha256=digest(a.catalog_plan) if Path(a.catalog_plan).exists() else None)
+                                 catalog_plan_sha256=digest(a.catalog_plan) if Path(a.catalog_plan).exists() else None,
+                                 material_fo_precondition=precondition_metadata)
                     global_improved = saved['feasible'] and (best is None or saved['score'] < best['score'])
                     combo_improved = saved['feasible'] and (key not in combo_bests or saved['score'] < combo_bests[key]['score'])
                     atomic_json(snapshot.with_suffix('.json'), saved)
@@ -402,6 +487,12 @@ def main():
                 # the immutable feasible best remains available if a trial fails.
                 x0 = np.array([random_generator.uniform(-.02, .02) for _ in range(24)])
             try:
+                if material_round:
+                    start_vector, precondition_metadata = pool.submit(precondition, seed, combo, size, round_end).result()
+                    x0 = np.array(start_vector)
+                    atomic_json(out/'rounds'/f'round_{round_number:04d}_precondition.json', precondition_metadata)
+                    print('FO_PRECONDITION', round_number, 'before', precondition_metadata['before_first_order'],
+                          'after', precondition_metadata['after_first_order'], 'feasible', precondition_metadata['feasible'], flush=True)
                 result = least_squares(fun, x0, jac=jac, bounds=(low, -low), x_scale=1.,
                     max_nfev=a.iterations, ftol=2e-6, xtol=1e-7, gtol=1e-7)
                 message = str(result.message)
@@ -410,7 +501,8 @@ def main():
                 if isinstance(exc, DeadlineReached): raise
                 message = 'Candidate failed: ' + str(exc)
             atomic_json(out/'rounds'/f'round_{round_number:04d}.json', {'round': round_number, 'materials': combo,
-                        'seed': seed, 'sampling': size, 'jacobians': jacobians, 'evals': local_count, 'status': message})
+                        'seed': seed, 'sampling': size, 'jacobians': jacobians, 'evals': local_count, 'status': message,
+                        'material_fo_precondition': precondition_metadata})
             print('ROUND_END', round_number, message, flush=True)
         status = 'max_rounds'
     except DeadlineReached as exc: status = str(exc)
