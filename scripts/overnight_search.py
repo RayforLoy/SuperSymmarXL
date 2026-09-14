@@ -250,7 +250,7 @@ def main():
     existing = list((out/'best').glob('candidate_*.zmx'))
     if existing: serial = max(int(q.stem.split('_')[-1]) for q in existing)
     if a.resume and (out/'best.json').exists():
-        best = json.loads((out/'best.json').read_text()); seed = best['source_path']; combo = best['material_combo']; serial = best['serial']
+        best = json.loads((out/'best.json').read_text()); seed = best['source_path']; combo = best['material_combo']; serial = max(serial, int(best['serial']))
     random_generator = random.Random(15020260915); tried = set(); evaluations = 0; start = time.time()
     combo_bests = {}
     for pointer in (out/'combo_bests').glob('*/best.json'):
@@ -299,6 +299,8 @@ def main():
                 if global_improved or combo_improved:
                     serial += 1; snapshot = out/'best'/f'candidate_{serial:05d}.zmx'
                     snapshot.parent.mkdir(parents=True, exist_ok=True)
+                    while snapshot.exists() or snapshot.with_suffix('.json').exists():
+                        serial += 1; snapshot = out/'best'/f'candidate_{serial:05d}.zmx'
                     _, saved = pool.submit(evaluate, x, seed, combo, size, round_end, str(snapshot)).result()
                     saved.update(record); saved.update(serial=serial, source_path=str(snapshot.resolve()), source_sha256=digest(snapshot),
                                                       checkpoint_path=str(snapshot.with_suffix('.json').resolve()))
