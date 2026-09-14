@@ -190,10 +190,10 @@ def evaluate(x, seed, combo, size, round_end, save=None):
     record['geometry_gaps'] = ACTUAL_GAPS
     vals = np.array(record['results_flat']); deficit = core.refs+.009-vals
     positive = .006*np.logaddexp(0, deficit/.006)
-    largest = float(max(deficit)); smooth = largest+.012*np.log(np.mean(np.exp((deficit-largest)/.012)))
+    largest = float(max(deficit)); smooth = largest+.004*np.log(np.sum(np.exp((deficit-largest)/.004)))
     fo = np.array(record['first_order']); lag = record['image_distance_mm']-fo[1]
     violation = np.maximum(GAP_LIMITS-np.array(record['geometry_gaps']), 0)
-    residual = np.r_[positive**2/.065, 8*max(0, smooth),
+    residual = np.r_[positive**2/.065, 12*max(0, smooth),
                      (fo-FO_TARGET)*[1.5, 1., .55, .35],
                      max(0, abs(record['chief_full_field_height_mm']-193)-.3)*.05,
                      violation*8, max(0, .3-STOP_AIR_GAP)*8, max(0, abs(lag)-.25)*.2, np.asarray(x)*.0001]
@@ -215,7 +215,11 @@ def evaluate(x, seed, combo, size, round_end, save=None):
                   worker_pid=os.getpid(), focus_minus_paraxial_bfl_mm=float(lag))
     record.update(stop_crossing_air_gap_S6_to_S8_mm=STOP_AIR_GAP,
                   all_surface_conics=[float(RAW_SYSTEM.LDE.GetSurfaceAt(i).Conic) for i in range(RAW_SYSTEM.LDE.NumberOfSurfaces)],
-                  cdgm_cost_proxy=cost_proxy(combo))
+                  cdgm_cost_proxy=cost_proxy(combo),
+                  objective_settings={'factory_margin': .009, 'positive_softplus_temperature': .006,
+                                      'optical_residual': 'softplus(deficit)^2 / 0.065',
+                                      'max_temperature': .004, 'max_normalization': 'unnormalized_logsumexp',
+                                      'max_residual_weight': 12., 'selection_score': 'max_shortfall + 0.2 * deficit_rms'})
     return residual.tolist(), record
 
 def read_plan(path, phase):

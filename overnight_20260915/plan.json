@@ -12,10 +12,12 @@
   "cdgm_deadline_utc": "2026-09-15T00:30:00+00:00",
   "general_search_workers": 8,
   "cdgm_search_workers": 6,
+  "cdgm_search_workers_after_successful_general_validation": 8,
+  "cdgm_resize_condition": "General finalizer exit code zero and its owned job fully closed; restart owned six-worker search with --resume only if more than 45 seconds remain",
   "general_validation_workers_budget_during_cdgm": 2,
   "total_native_instance_limit": 8,
   "engine_closing_margin_seconds": 25,
-  "constraints": ["A4/A6 only on S10; A2 and A8 or higher zero", "All surface conics zero", "105 degree full field, 52.5 degree half field", "Fixed drawing clear apertures", "Common image plane for f/5.6, f/8, f/22; f/5.6 on-axis 20 lp/mm focus", "No intersecting glass; air gaps including S6-to-S8 at least 0.3 mm", "Rear S11-to-S12 center gap at least 15.8 mm", "Actual native glass catalog and six wavelength indices, no fictitious nd/Vd replacement"],
+  "constraints": ["A4/A6 only on S10; A2 and A8 or higher zero", "All surface conics zero", "105 degree full field, 52.5 degree half field", "Fixed drawing clear apertures", "Common image plane for f/5.6, f/8, f/22; f/5.6 on-axis 20 lp/mm focus", "No intersecting glass; air gaps including S6-to-S8 at least 0.3 mm", "Rear air gap S10-to-S11 checked through conservative radial domain 15.8 mm with minimum gap at least 0.3 mm; 15.8 mm is a radius, not an axial spacing", "Actual native glass catalog and six wavelength indices, no fictitious nd/Vd replacement"],
   "operations": {
     "supervisor": "scripts/overnight_supervisor.py",
     "search": "scripts/overnight_search.py",

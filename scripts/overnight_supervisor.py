@@ -85,10 +85,10 @@ def spawn_owned(command,logfile):
         process.terminate();process.wait(timeout=20);stream.close();raise
     return process,job,stream
 
-def run_phase(phase,deadline,seed,workers):
+def run_phase(phase,deadline,seed,workers,pending_finalizers=None):
     folder=B/phase;folder.mkdir(exist_ok=True)
     STATE['phases'].setdefault(phase,{'deadline_utc':deadline.isoformat(),'workers':workers})
-    restart=0
+    restart=0;resize_events=[]
     while now()<deadline-dt.timedelta(seconds=30):
         current_best=best_record(folder)
         if current_best:seed=Path(current_best['source_path'])
@@ -96,13 +96,36 @@ def run_phase(phase,deadline,seed,workers):
                  '--deadline-utc',deadline.isoformat(),'--workers',str(workers),'--catalog-plan',str(B/'catalog_plan.json'),'--resume']
         process,job,stream=spawn_owned(command,folder/'search.log')
         STATE['phases'][phase]={'search_pid':process.pid,'deadline_utc':deadline.isoformat(),
-                                'workers':workers,'restart':restart,'seed':str(seed),'status':'searching'}
+                                'workers':workers,'restart':restart,'seed':str(seed),'status':'searching',
+                                'resize_events':resize_events,
+                                'native_worker_budget':{'search':workers,'reserved_for_general':2 if phase=='cdgm' and workers==6 else 0}}
         status(phase=phase)
         try:
             while process.poll() is None:
                 if now()>=deadline:
                     STATE['phases'][phase]['hard_deadline_shutdown']=True
                     job.terminate();process.wait(timeout=30);break
+                if phase=='cdgm' and pending_finalizers is not None:
+                    general_task=pending_finalizers.get('general')
+                    if general_task is not None and general_task[0].poll() is not None:
+                        general_exit=general_task[0].returncode
+                        finish_finalizer('general',general_task)
+                        pending_finalizers.pop('general',None)
+                        if general_exit==0 and workers==6 and now()<deadline-dt.timedelta(seconds=45):
+                            # Closing only this owned search job releases its pool.
+                            # The next round reloads best.json and retains --resume.
+                            event={'utc':now().isoformat(),'from_workers':workers,'to_workers':8,
+                                   'reason':'General validation succeeded and its owned job closed; release two reserved native slots.',
+                                   'general_exit_code':general_exit}
+                            resize_events.append(event)
+                            STATE['phases'][phase]['status']='restarting_to_expand_worker_budget'
+                            STATE['phases'][phase]['resize_events']=resize_events
+                            status()
+                            job.close();process.wait(timeout=30)
+                            workers=8
+                            break
+                        STATE['phases'][phase]['general_finalizer_exit_code']=general_exit
+                        STATE['phases'][phase]['resize_decision']='Keep six search workers: general validation failed or less than 45 seconds remain.'
                 status();time.sleep(5)
             STATE['phases'][phase]['exit_code']=process.returncode
         finally:job.close();stream.close()
@@ -139,7 +162,8 @@ def start_finalizer(phase,workers):
 def finish_finalizer(phase,task):
     if task is None:return
     process,job,stream=task
-    process.wait();job.close();stream.close()
+    try:process.wait()
+    finally:job.close();stream.close()
     STATE['finalizers'][phase].update(exit_code=process.returncode,
                                       status='prepared_pending_PDF_and_visual_QA' if process.returncode==0 else 'failed')
     status()
@@ -167,9 +191,9 @@ def main():
         while now()<GENERAL_END:time.sleep(min(1,(GENERAL_END-now()).total_seconds()))
         # Preserve two native slots for general validation while CDGM uses six.
         tasks['general']=start_finalizer('general',2)
-        run_phase('cdgm',CDGM_END,general or INITIAL,6)
+        run_phase('cdgm',CDGM_END,general or INITIAL,6,pending_finalizers=tasks)
         while now()<CDGM_END:time.sleep(min(1,(CDGM_END-now()).total_seconds()))
-        finish_finalizer('general',tasks.pop('general'))
+        finish_finalizer('general',tasks.pop('general',None))
         tasks['cdgm']=start_finalizer('cdgm',8)
         finish_finalizer('cdgm',tasks.pop('cdgm'))
         status(phase='optimization_complete_reports_pending',completed_utc=now().isoformat())
