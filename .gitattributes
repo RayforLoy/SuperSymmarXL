@@ -8,6 +8,10 @@
 *.py text eol=lf
 *.ps1 text eol=lf
 *.md text eol=lf
-*.json text eol=lf
+# Numerical evidence and catalog manifests carry byte-level SHA256 references.
+# Preserve their native bytes across checkout and push.
+*.json -text
+*.csv -text
+*.txt -text
 .gitignore text eol=lf
 .gitattributes text eol=lf
