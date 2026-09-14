@@ -13,6 +13,7 @@ import datetime as dt
 import hashlib
 import json
 import os
+import math
 import shutil
 import subprocess
 import sys
@@ -77,6 +78,28 @@ def prepare(phase, folder):
             if anchor not in text:
                 raise RuntimeError('Report template changed: cannot insert scheme/material section safely.')
             text = text.replace(anchor, anchor + '\n' + insertion, 1)
+            if phase == 'cdgm':
+                cost_anchor = "    story.extend([PageBreak(), par('衍射参考与验证边界', 'h')])"
+                cost_section = (
+                    "    story.extend([PageBreak(), par('全 CDGM 材料与目录成本取舍', 'h')])\n"
+                    "    cost_path = R / 'catalog_tradeoff_audit.json'\n"
+                    "    cost = read(cost_path) if cost_path.exists() else None\n"
+                    "    if not cost or cost.get('source_sha256') != v['source_sha256'] or not cost.get('selected_cost_proxy_verified'):\n"
+                    "        section('目录成本代理未核验', '目录、manifest、材料身份或冻结候选链未完整核对，不引用不明来源 OD 或价格。' + ('；'.join(cost.get('reasons', [])) if cost else ''))\n"
+                    "    else:\n"
+                    "        section('选定六片的同目录 OD', '以下 OD 第一项取自冻结 CDGM AGF 的同目录相对成本，六片未加权求和只用于该目录内部筛选，不是毛坯或成镜价格。历史混合材料只列对应关系，不以其 SCHOTT OD 比较节省比例。')\n"
+                    "        tab([['片 / 前面', '历史混合材料', '选定 CDGM', 'OD 相对成本'], *[[f\"L{row['element']} / S{row['surface']}\", row['historical_reference_glass'], row['native_material'], f\"{row['catalog_relative_cost']:.4f}\"] for row in cost['selected_elements']]], [80, 145, 165, 125])\n"
+                    "        section('所选目录代理', f\"六片 OD 未加权合计 {cost['selected_sum_six_element_relative_cost']:.4f}；目录标题 {cost['CDGM_catalog_header']}。原始 OD 行、manifest/目录 snapshot hash 和 catalog_plan hash 保存在 catalog_tradeoff_audit.json。无供应商正式人民币报价、尺寸/熔次/数量/工艺询价，不报告实测降本或跨目录节省百分比。\")\n"
+                    "        if cost.get('display_candidates'):\n"
+                    "            tab([['候选与六片组合', 'CDGM OD 和', '筛选最大不足 / 点', '筛选采样', '最终高采样复核'], *[[row['label'] + '\\n' + ' / '.join(row['materials']), f\"{row['sum_six_element_relative_cost']:.4f}\", f\"{100*row['screening_max_shortfall']:.3f}\", str(row.get('screening_sampling', '未记录')), '已完成：本方案' if row['is_selected_source'] else '未独立复核'] for row in cost['display_candidates']]], [205, 70, 95, 55, 90])\n"
+                    "        section('性能与成本候选边界', cost['tradeoff_interpretation'])\n"
+                    "        section('筛选可行不等于生产可行', '表中未独立复核的组合仅为优化筛选值，其“可行”指当时几何与一阶参数门槛。它不表示高采样已验证、MTF 全面达到手册、供应可买或制造放行。全球筛选分数最佳可能不是 OD 最低；选择目录代理较低的组合前必须冻结该候选并重新完成同条件高采样、像高/聚焦、几何、公差与样机验证。')\n"
+                    "        for reason in cost.get('reasons', []):\n"
+                    "            story.append(par('成本审核边界：' + reason, 'small'))\n"
+                )
+                if cost_anchor not in text:
+                    raise RuntimeError('Report template changed: cannot insert CDGM tradeoff section safely.')
+                text = text.replace(cost_anchor, cost_section + cost_anchor, 1)
         if destination == 'mapping.py':
             text = text.replace('Run only after optimization instances exit.', 'Independent standalone app within the supervisor concurrency budget.')
         compile(text, str(pipeline / destination), 'exec')
@@ -224,6 +247,140 @@ def update_comparison():
     (BASE / '两方案对比.md').write_text('\n'.join(lines), encoding='utf-8')
 
 
+def build_catalog_tradeoff(folder):
+    """Read stopped-search snapshots, never optimize or infer delivered prices."""
+    v = read(folder / 'validated.json')
+    material = read(folder / 'material_catalog_audit.json')
+    audit = {'source_sha256': v['source_sha256'], 'selected_cost_proxy_verified': False,
+             'selected_elements': [], 'display_candidates': [], 'reasons': [],
+             'cost_scope': 'Within one frozen CDGM catalog only; OD[0] six-element unweighted sum, not a quote.',
+             'absolute_price_RMB': None, 'cross_catalog_savings_percent': None,
+             'other_candidate_high_sampling_verified': False}
+    manifest_path, plan_path = BASE / 'material_manifest.json', BASE / 'catalog_plan.json'
+    if material.get('source_sha256') != v['source_sha256'] or not material.get('all_six_native_materials_CDGM'):
+        audit['reasons'].append('最终六片原生 CDGM 材料身份未完成。')
+        return audit
+    if not manifest_path.exists() or not plan_path.exists():
+        audit['reasons'].append('material_manifest.json 或 catalog_plan.json 缺失。')
+        return audit
+    manifest, plan = read(manifest_path), read(plan_path)
+    manifest_hash, plan_hash = sha(manifest_path), sha(plan_path)
+    audit['material_manifest_sha256'], audit['catalog_plan_sha256'] = manifest_hash, plan_hash
+    snapshots = [row for row in manifest.get('catalog_snapshots', []) if row['catalog'].upper() == 'CDGM']
+    plan_snapshots = [row for row in plan.get('catalog_snapshots', []) if row['catalog'].upper() == 'CDGM']
+    if len(snapshots) != 1 or len(plan_snapshots) != 1 or snapshots[0]['sha256'] != plan_snapshots[0]['sha256']:
+        audit['reasons'].append('manifest 与 plan 的 CDGM 目录 snapshot 身份不一致。')
+        return audit
+    snapshot = snapshots[0]
+    snapshot_path = (BASE / snapshot['snapshot']).resolve()
+    if not snapshot_path.is_relative_to(BASE.resolve()) or not snapshot_path.exists() or sha(snapshot_path) != snapshot['sha256']:
+        audit['reasons'].append('冻结 CDGM AGF snapshot 不存在或 hash 错配。')
+        return audit
+    audit['CDGM_catalog_sha256'], audit['CDGM_catalog_header'] = snapshot['sha256'], snapshot.get('header', '日期未记录')
+
+    def costs(materials):
+        entries = [manifest.get('materials', {}).get('CDGM:' + name) for name in materials]
+        if len(entries) != 6 or any(row is None for row in entries):
+            return None
+        values = []
+        for row in entries:
+            od = row.get('OD', [])
+            value = row.get('catalog_relative_cost')
+            if not od or not isinstance(value, (float, int)) or not math.isfinite(value) or value <= 0 or abs(float(od[0]) - value) > 1e-8:
+                return None
+            values.append(float(value))
+        return values
+
+    selected_names = [row['native_material'] for row in material['elements']]
+    selected_costs = costs(selected_names)
+    if selected_costs is None:
+        audit['reasons'].append('选定材料缺失正值 OD 第一项或 manifest 代理不一致。')
+        return audit
+    for row, value in zip(material['elements'], selected_costs):
+        entry = manifest['materials']['CDGM:' + row['native_material']]
+        audit['selected_elements'].append({'element': row['element'], 'surface': row['surface'],
+                    'historical_reference_glass': row['historical_reference_glass'], 'native_material': row['native_material'],
+                    'catalog_relative_cost': value, 'OD_raw': entry.get('OD_raw'),
+                    'nd_catalog': entry.get('nd_catalog'), 'vd_catalog': entry.get('vd_catalog'),
+                    'availability_verified': False, 'price_quote_available': False})
+    records = []
+    pareto_path = folder / 'candidate_pareto.json'
+    pareto = read(pareto_path) if pareto_path.exists() else None
+    if pareto is None:
+        audit['reasons'].append('candidate_pareto.json 缺失，不能确认搜索候选 Pareto 汇总。')
+    else:
+        audit['candidate_pareto_sha256'] = sha(pareto_path)
+        records.extend(pareto.get('all_feasible_combo_bests', []))
+    pointers = sorted((folder / 'combo_bests').glob('*/best.json'))
+    audit['combo_best_pointer_sha256'] = {str(path.relative_to(folder)): sha(path) for path in pointers}
+    if not pointers:
+        audit['reasons'].append('combo_bests 缺失或没有组合 best，不能报告其它便宜候选已筛选可行。')
+    full = []
+    for path in pointers + ([folder / 'best.json'] if (folder / 'best.json').exists() else []):
+        full.append(read(path))
+    full_by_sha = {row.get('source_sha256'): row for row in full}
+    records.extend(full)
+    eligible = {}
+    for partial in records:
+        record = full_by_sha.get(partial.get('source_sha256'), partial)
+        source = Path(record.get('source_path', ''))
+        if not source.is_absolute():
+            source = folder / source
+        if not source.resolve().is_relative_to(folder.resolve()) or not source.is_file() or sha(source) != record.get('source_sha256'):
+            audit['reasons'].append('有优化筛选候选 snapshot 身份未核对，已排除。')
+            continue
+        if record.get('feasible') is not True or record.get('catalog_plan_sha256') != plan_hash:
+            continue
+        combo = record.get('material_combo', {})
+        names = record.get('materials', combo.get('materials', []))
+        catalogs = record.get('catalogs', combo.get('catalogs', []))
+        values = costs(names)
+        proxy = record.get('cdgm_cost_proxy', {})
+        if values is None or len(catalogs) != 6 or any(name.upper() != 'CDGM' for name in catalogs) or proxy.get('manifest_sha256') != manifest_hash:
+            continue
+        total = sum(values)
+        recorded_total = proxy.get('sum_six_element_relative_cost')
+        if not proxy.get('eligible') or recorded_total is None or abs(recorded_total - total) > 1e-8:
+            continue
+        score, deficit = record.get('score'), record.get('max_shortfall')
+        if not isinstance(score, (int, float)) or not isinstance(deficit, (int, float)) or not math.isfinite(score) or not math.isfinite(deficit):
+            continue
+        key = record['source_sha256']
+        eligible[key] = {'source_sha256': key, 'materials': names, 'catalogs': catalogs,
+                         'sum_six_element_relative_cost': total, 'screening_score': score,
+                         'screening_max_shortfall': deficit, 'screening_sampling': record.get('sampling', '未记录'),
+                         'is_selected_source': key == v['source_sha256'], 'snapshot_path': str(source),
+                         'independent_high_sampling_verified': key == v['source_sha256']}
+    selected_record = eligible.get(v['source_sha256'])
+    if selected_record is None or selected_record['materials'] != selected_names:
+        audit['reasons'].append('最终冻结来源未与 combo best/plan/manifest 筛选记录闭合，选定 OD 及其它成本候选不作为已核验结果。')
+        audit['selected_elements'] = []
+        return audit
+    audit['selected_cost_proxy_verified'] = True
+    audit['selected_sum_six_element_relative_cost'] = sum(selected_costs)
+    items = list(eligible.values())
+    frontier = [row for row in items if not any(other['screening_score'] <= row['screening_score'] and other['sum_six_element_relative_cost'] <= row['sum_six_element_relative_cost'] and (other['screening_score'] < row['screening_score'] or other['sum_six_element_relative_cost'] < row['sum_six_element_relative_cost']) for other in items)]
+    cheapest = min(items, key=lambda row: (row['sum_six_element_relative_cost'], row['screening_score']))
+    optical = min(items, key=lambda row: row['screening_score'])
+    displayed = {}
+    for label, row in [('正式选定', selected_record), ('最低目录代理筛选可行', cheapest), ('最低光学筛选分数', optical)] + [('筛选 Pareto', row) for row in sorted(frontier, key=lambda row: row['sum_six_element_relative_cost'])[:6]]:
+        key = row['source_sha256']
+        if key in displayed:
+            displayed[key]['label'] += ' / ' + label
+        else:
+            displayed[key] = dict(row, label=label)
+    audit['display_candidates'] = list(displayed.values())
+    audit['authenticated_screening_candidate_count'] = len(items)
+    audit['all_authenticated_candidates'] = items
+    cheaper = [row for row in items if row['sum_six_element_relative_cost'] < sum(selected_costs) - 1e-8]
+    audit['tradeoff_interpretation'] = (
+        f"本次可核对 {len(items)} 个全 CDGM 优化筛选组合；其中 {len(cheaper)} 个目录 OD 合计低于正式选定组合。"
+        + (f"最低代理为 {cheapest['sum_six_element_relative_cost']:.4f}，其筛选最大 MTF 不足为 {100*cheapest['screening_max_shortfall']:.3f} 个百分点，非本方案的独立高采样结果。" if cheaper else '目前没有已核对的更低 OD 筛选组合，不能据此证明该选型在所有材料和加工方案中最便宜。')
+        + ' 光学筛选分数为最大短缺+0.2×短缺RMS；它不是毛坯成本或量产目标。Pareto 仅针对本次已搜索、同目录代理和筛选光学分数，范围有限。正式选定方案的高采样结果由主验收表提供，不能把其它组合的筛选值混入其中。')
+    audit['reasons'] = list(dict.fromkeys(audit['reasons']))
+    return audit
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--phase', choices=PHASES, required=True)
@@ -284,6 +441,8 @@ def main():
         material = read(folder / 'material_catalog_audit.json')
         if args.phase == 'cdgm' and not material.get('all_six_native_materials_CDGM'):
             raise RuntimeError('Author-only CDGM material audit has not confirmed six CDGM materials.')
+        if args.phase == 'cdgm':
+            write(folder / 'catalog_tradeoff_audit.json', build_catalog_tradeoff(folder))
         state['PDF_marker_responsibility'] = 'Caller must successfully run create/count2 marker exactly once before the first of the two scheme reports.'
         state['PDF_marker_caller_attested'] = bool(args.pdf_marker_confirmed)
         stages = [('report', [sys.executable, str(pipeline / 'report.py')])]
