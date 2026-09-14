@@ -1,0 +1,2849 @@
+{
+  "schema_version": 1,
+  "generated_date": "2026-09-15",
+  "surface_order": [
+    1,
+    3,
+    5,
+    8,
+    9,
+    11
+  ],
+  "original_materials": [
+    "KF9",
+    "N-LAK33B",
+    "N-LAK33B",
+    "N-SK5",
+    "F2",
+    "K10"
+  ],
+  "wavelengths_um": [
+    0.546,
+    0.644,
+    0.588,
+    0.48,
+    0.436,
+    0.405
+  ],
+  "weights": [
+    0.24600000000000002,
+    0.18600000000000003,
+    0.221,
+    0.124,
+    0.152,
+    0.071
+  ],
+  "phases": {
+    "mixed": {
+      "per_element": [
+        {
+          "element": 1,
+          "surface": 1,
+          "original": "KF9",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "SCHOTT",
+              "material": "KF9",
+              "manifest_key": "SCHOTT:KF9",
+              "rank": 1,
+              "dispersion_score": 0.0,
+              "delta_n_6": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "weighted_index_rms_difference": 0.0,
+              "index_shape_rms_after_weighted_mean_removal": 0.0,
+              "delta_nd": 0.0,
+              "delta_vd": 0.0,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0,
+                "P_hg": 0.0,
+                "P_dC": 0.0,
+                "P_gFprime": 0.0
+              },
+              "catalog_relative_cost": 1.95,
+              "status_code": 2,
+              "melt_frequency_code": 0,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "SCHOTT",
+              "material": "N-KF9",
+              "manifest_key": "SCHOTT:N-KF9",
+              "rank": 2,
+              "dispersion_score": 0.015958452784214993,
+              "delta_n_6": [
+                4.5051393683825935e-05,
+                4.9397784008586854e-05,
+                4.691512610488502e-05,
+                4.105206212967616e-05,
+                3.654840113886948e-05,
+                3.212413246211909e-05
+              ],
+              "weighted_index_rms_difference": 4.387327702133598e-05,
+              "index_shape_rms_after_weighted_mean_removal": 5.187646787281249e-06,
+              "delta_nd": 4.8000000000048004e-05,
+              "delta_vd": 0.04749319210172587,
+              "delta_partial_dispersion": {
+                "P_gF": -2.9895787687972408e-05,
+                "P_hg": -4.8637402104367844e-05,
+                "P_dC": -5.355715143462447e-05,
+                "P_gFprime": -4.021507706775118e-05
+              },
+              "catalog_relative_cost": 2.1,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-KF6",
+              "manifest_key": "CDGM:H-KF6",
+              "rank": 3,
+              "dispersion_score": 0.9944463961744006,
+              "delta_n_6": [
+                -0.006052818564904694,
+                -0.005931582968947913,
+                -0.005991650141998317,
+                -0.006176841940496169,
+                -0.006266112204470264,
+                -0.0063086888663523855
+              ],
+              "weighted_index_rms_difference": 0.006084043215511335,
+              "index_shape_rms_after_weighted_mean_removal": 0.00012703394120762145,
+              "delta_nd": -0.005991999999999997,
+              "delta_vd": 0.6562530482116813,
+              "delta_partial_dispersion": {
+                "P_gF": 0.003299354805200605,
+                "P_hg": 0.007183363275426291,
+                "P_dC": 0.00023277879180522154,
+                "P_gFprime": 0.003123766076427059
+              },
+              "catalog_relative_cost": 3.6,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K12",
+              "manifest_key": "CDGM:H-K12",
+              "rank": 4,
+              "dispersion_score": 2.0165210881951126,
+              "delta_n_6": [
+                0.010049643336232483,
+                0.010304651803249465,
+                0.010177697816318387,
+                0.00974661242486019,
+                0.009415269950686644,
+                0.0090633728539391
+              ],
+              "weighted_index_rms_difference": 0.009928446448198885,
+              "index_shape_rms_after_weighted_mean_removal": 0.0003753394905992773,
+              "delta_nd": 0.010177000000000103,
+              "delta_vd": 3.976987297450883,
+              "delta_partial_dispersion": {
+                "P_gF": -0.006824936554416738,
+                "P_hg": -0.010346851682991987,
+                "P_dC": 0.0013568779462919678,
+                "P_gFprime": -0.005957895892346243
+              },
+              "catalog_relative_cost": 4.7,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K51",
+              "manifest_key": "CDGM:H-K51",
+              "rank": 5,
+              "dispersion_score": 2.1909052051518048,
+              "delta_n_6": [
+                -0.0006351238172415119,
+                -4.37855625725625e-05,
+                -0.0003394999710069069,
+                -0.0013131562205725977,
+                -0.0020185503259724236,
+                -0.002735693176597165
+              ],
+              "weighted_index_rms_difference": 0.0012204836304546996,
+              "index_shape_rms_after_weighted_mean_removal": 0.0008207500594733796,
+              "delta_nd": -0.0003420000000000645,
+              "delta_vd": 7.146796664761034,
+              "delta_partial_dispersion": {
+                "P_gF": -0.010683918078989385,
+                "P_hg": -0.01570715757365182,
+                "P_dC": 0.002554499539426436,
+                "P_gFprime": -0.009222143941962524
+              },
+              "catalog_relative_cost": 1.6,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 2,
+          "surface": 3,
+          "original": "N-LAK33B",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "SCHOTT",
+              "material": "N-LAK33B",
+              "manifest_key": "SCHOTT:N-LAK33B",
+              "rank": 1,
+              "dispersion_score": 0.0,
+              "delta_n_6": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "weighted_index_rms_difference": 0.0,
+              "index_shape_rms_after_weighted_mean_removal": 0.0,
+              "delta_nd": 0.0,
+              "delta_vd": 0.0,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0,
+                "P_hg": 0.0,
+                "P_dC": 0.0,
+                "P_gFprime": 0.0
+              },
+              "catalog_relative_cost": 11.8,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53B",
+              "manifest_key": "CDGM:H-LAK53B",
+              "rank": 2,
+              "dispersion_score": 0.014918890984844124,
+              "delta_n_6": [
+                -1.8448698986262002e-06,
+                2.2821217731117116e-06,
+                -1.7479595149083593e-07,
+                -3.270858802473242e-06,
+                -2.5728267136759797e-06,
+                -1.1029329334277804e-06
+              ],
+              "weighted_index_rms_difference": 2.0571501154945215e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.8283045384544415e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.021935295017023293,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0002764141724096447,
+                "P_hg": 0.0002941903223104281,
+                "P_dC": -8.120668093530847e-05,
+                "P_gFprime": 0.0002333452861808527
+              },
+              "catalog_relative_cost": 5.5,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53A",
+              "manifest_key": "CDGM:H-LAK53A",
+              "rank": 3,
+              "dispersion_score": 0.028240271456867333,
+              "delta_n_6": [
+                -1.7931657800840384e-06,
+                3.142263428346226e-06,
+                -1.2358217027497176e-07,
+                -1.4194618673801784e-06,
+                2.987232597284617e-06,
+                9.805452540589954e-06
+              ],
+              "weighted_index_rms_difference": 3.3261929673855868e-06,
+              "index_shape_rms_after_weighted_mean_removal": 3.1424329059894078e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.02045133185820447,
+              "delta_partial_dispersion": {
+                "P_gF": 0.000540569658703749,
+                "P_hg": 0.0006559610128488158,
+                "P_dC": -0.00016508431459472117,
+                "P_gFprime": 0.00045622524069943715
+              },
+              "catalog_relative_cost": 11.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK3",
+              "manifest_key": "CDGM:H-LAK3",
+              "rank": 4,
+              "dispersion_score": 1.2492902359317934,
+              "delta_n_6": [
+                -0.008018420562292627,
+                -0.008117224781095445,
+                -0.008070621691069535,
+                -0.007884598631957784,
+                -0.007733488905032226,
+                -0.007575040439585123
+              ],
+              "weighted_index_rms_difference": 0.007958657452444107,
+              "index_shape_rms_after_weighted_mean_removal": 0.00016479688094801428,
+              "delta_nd": -0.0080699999999998,
+              "delta_vd": -1.350037889998518,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0030957682197838565,
+                "P_hg": 0.003929417727689177,
+                "P_dC": -0.00089940110858866,
+                "P_gFprime": 0.002625451293933878
+              },
+              "catalog_relative_cost": 9.4,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "SCHOTT",
+              "material": "N-LAK28",
+              "manifest_key": "SCHOTT:N-LAK28",
+              "rank": 5,
+              "dispersion_score": 1.4832559323084398,
+              "delta_n_6": [
+                -0.010661635358819144,
+                -0.010763102044352157,
+                -0.010714018047140117,
+                -0.010532304280380655,
+                -0.010388257071077156,
+                -0.010235460048319212
+              ],
+              "weighted_index_rms_difference": 0.010605440656411617,
+              "index_shape_rms_after_weighted_mean_removal": 0.0001598623573948822,
+              "delta_nd": -0.010709999999999997,
+              "delta_vd": -1.5292161984770516,
+              "delta_partial_dispersion": {
+                "P_gF": 0.002574678796937846,
+                "P_hg": 0.0035527711892130998,
+                "P_dC": -0.0006697796080526452,
+                "P_gFprime": 0.0022067884607961386
+              },
+              "catalog_relative_cost": 5.2,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 3,
+          "surface": 5,
+          "original": "N-LAK33B",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "SCHOTT",
+              "material": "N-LAK33B",
+              "manifest_key": "SCHOTT:N-LAK33B",
+              "rank": 1,
+              "dispersion_score": 0.0,
+              "delta_n_6": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "weighted_index_rms_difference": 0.0,
+              "index_shape_rms_after_weighted_mean_removal": 0.0,
+              "delta_nd": 0.0,
+              "delta_vd": 0.0,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0,
+                "P_hg": 0.0,
+                "P_dC": 0.0,
+                "P_gFprime": 0.0
+              },
+              "catalog_relative_cost": 11.8,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53B",
+              "manifest_key": "CDGM:H-LAK53B",
+              "rank": 2,
+              "dispersion_score": 0.014918890984844124,
+              "delta_n_6": [
+                -1.8448698986262002e-06,
+                2.2821217731117116e-06,
+                -1.7479595149083593e-07,
+                -3.270858802473242e-06,
+                -2.5728267136759797e-06,
+                -1.1029329334277804e-06
+              ],
+              "weighted_index_rms_difference": 2.0571501154945215e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.8283045384544415e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.021935295017023293,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0002764141724096447,
+                "P_hg": 0.0002941903223104281,
+                "P_dC": -8.120668093530847e-05,
+                "P_gFprime": 0.0002333452861808527
+              },
+              "catalog_relative_cost": 5.5,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53A",
+              "manifest_key": "CDGM:H-LAK53A",
+              "rank": 3,
+              "dispersion_score": 0.028240271456867333,
+              "delta_n_6": [
+                -1.7931657800840384e-06,
+                3.142263428346226e-06,
+                -1.2358217027497176e-07,
+                -1.4194618673801784e-06,
+                2.987232597284617e-06,
+                9.805452540589954e-06
+              ],
+              "weighted_index_rms_difference": 3.3261929673855868e-06,
+              "index_shape_rms_after_weighted_mean_removal": 3.1424329059894078e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.02045133185820447,
+              "delta_partial_dispersion": {
+                "P_gF": 0.000540569658703749,
+                "P_hg": 0.0006559610128488158,
+                "P_dC": -0.00016508431459472117,
+                "P_gFprime": 0.00045622524069943715
+              },
+              "catalog_relative_cost": 11.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK3",
+              "manifest_key": "CDGM:H-LAK3",
+              "rank": 4,
+              "dispersion_score": 1.2492902359317934,
+              "delta_n_6": [
+                -0.008018420562292627,
+                -0.008117224781095445,
+                -0.008070621691069535,
+                -0.007884598631957784,
+                -0.007733488905032226,
+                -0.007575040439585123
+              ],
+              "weighted_index_rms_difference": 0.007958657452444107,
+              "index_shape_rms_after_weighted_mean_removal": 0.00016479688094801428,
+              "delta_nd": -0.0080699999999998,
+              "delta_vd": -1.350037889998518,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0030957682197838565,
+                "P_hg": 0.003929417727689177,
+                "P_dC": -0.00089940110858866,
+                "P_gFprime": 0.002625451293933878
+              },
+              "catalog_relative_cost": 9.4,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "SCHOTT",
+              "material": "N-LAK28",
+              "manifest_key": "SCHOTT:N-LAK28",
+              "rank": 5,
+              "dispersion_score": 1.4832559323084398,
+              "delta_n_6": [
+                -0.010661635358819144,
+                -0.010763102044352157,
+                -0.010714018047140117,
+                -0.010532304280380655,
+                -0.010388257071077156,
+                -0.010235460048319212
+              ],
+              "weighted_index_rms_difference": 0.010605440656411617,
+              "index_shape_rms_after_weighted_mean_removal": 0.0001598623573948822,
+              "delta_nd": -0.010709999999999997,
+              "delta_vd": -1.5292161984770516,
+              "delta_partial_dispersion": {
+                "P_gF": 0.002574678796937846,
+                "P_hg": 0.0035527711892130998,
+                "P_dC": -0.0006697796080526452,
+                "P_gFprime": 0.0022067884607961386
+              },
+              "catalog_relative_cost": 5.2,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 4,
+          "surface": 8,
+          "original": "N-SK5",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "SCHOTT",
+              "material": "N-SK5",
+              "manifest_key": "SCHOTT:N-SK5",
+              "rank": 1,
+              "dispersion_score": 0.0,
+              "delta_n_6": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "weighted_index_rms_difference": 0.0,
+              "index_shape_rms_after_weighted_mean_removal": 0.0,
+              "delta_nd": 0.0,
+              "delta_vd": 0.0,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0,
+                "P_hg": 0.0,
+                "P_dC": 0.0,
+                "P_gFprime": 0.0
+              },
+              "catalog_relative_cost": 1.6,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-ZK3A",
+              "manifest_key": "CDGM:H-ZK3A",
+              "rank": 2,
+              "dispersion_score": 0.008320451209001035,
+              "delta_n_6": [
+                2.6549523646224316e-07,
+                -7.219320818929731e-07,
+                -1.2017287942533983e-07,
+                1.4278879203466488e-06,
+                3.4288054884257235e-06,
+                6.057861847041934e-06
+              ],
+              "weighted_index_rms_difference": 2.182394726152059e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.922532624163873e-06,
+              "delta_nd": 0.0,
+              "delta_vd": -0.013703204969310434,
+              "delta_partial_dispersion": {
+                "P_gF": 0.00010642866220145208,
+                "P_hg": 0.0001761867201092171,
+                "P_dC": 1.2603237202257755e-05,
+                "P_gFprime": 0.00010123089912000838
+              },
+              "catalog_relative_cost": 1.0,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-ZK3",
+              "manifest_key": "CDGM:H-ZK3",
+              "rank": 3,
+              "dispersion_score": 0.01210715615939668,
+              "delta_n_6": [
+                6.224940971577553e-07,
+                -8.840648670904727e-07,
+                4.029547806538858e-10,
+                9.689483435604274e-07,
+                -2.6614103787458987e-07,
+                -3.0492362743661516e-06
+              ],
+              "weighted_index_rms_difference": 1.0139175292618504e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.0030557728278308e-06,
+              "delta_nd": 0.0,
+              "delta_vd": -0.013232431738977368,
+              "delta_partial_dispersion": {
+                "P_gF": -0.00024999132152037085,
+                "P_hg": -0.00038969991712783925,
+                "P_dC": 4.606426627296045e-05,
+                "P_gFprime": -0.00021990392813803217
+              },
+              "catalog_relative_cost": 1.1,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "SCHOTT",
+              "material": "P-SK58A",
+              "manifest_key": "SCHOTT:P-SK58A",
+              "rank": 4,
+              "dispersion_score": 0.06863778104785119,
+              "delta_n_6": [
+                4.2184126611832795e-06,
+                -1.0398816464141092e-05,
+                -2.4501110962305006e-07,
+                4.932721048067634e-06,
+                1.2992249827092905e-06,
+                -1.8766302964934312e-06
+              ],
+              "weighted_index_rms_difference": 5.294126203966032e-06,
+              "index_shape_rms_after_weighted_mean_removal": 5.286994680557479e-06,
+              "delta_nd": 0.0,
+              "delta_vd": -0.11702088056253501,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0014383594766584906,
+                "P_hg": -0.0011841454497123483,
+                "P_dC": 0.0007672323385319868,
+                "P_gFprime": -0.0011317872207013413
+              },
+              "catalog_relative_cost": -1.0,
+              "status_code": 0,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "D-ZK3",
+              "manifest_key": "CDGM:D-ZK3",
+              "rank": 5,
+              "dispersion_score": 0.19087361179898543,
+              "delta_n_6": [
+                5.103415357421426e-06,
+                -1.5418785022758286e-05,
+                -3.502644374542285e-08,
+                -3.929785306056033e-06,
+                -2.882937228654292e-05,
+                -6.133177835332404e-05
+              ],
+              "weighted_index_rms_difference": 2.1117446682339918e-05,
+              "index_shape_rms_after_weighted_mean_removal": 1.8120481681013356e-05,
+              "delta_nd": 0.0,
+              "delta_vd": -0.11390226895743183,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0038130225942181184,
+                "P_hg": -0.004237670069711097,
+                "P_dC": 0.0014941278966792981,
+                "P_gFprime": -0.0031446476592429384
+              },
+              "catalog_relative_cost": 4.7,
+              "status_code": 0,
+              "melt_frequency_code": 2,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 5,
+          "surface": 9,
+          "original": "F2",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "SCHOTT",
+              "material": "F2",
+              "manifest_key": "SCHOTT:F2",
+              "rank": 1,
+              "dispersion_score": 0.0,
+              "delta_n_6": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "weighted_index_rms_difference": 0.0,
+              "index_shape_rms_after_weighted_mean_removal": 0.0,
+              "delta_nd": 0.0,
+              "delta_vd": 0.0,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0,
+                "P_hg": 0.0,
+                "P_dC": 0.0,
+                "P_gFprime": 0.0
+              },
+              "catalog_relative_cost": 1.2,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "F4GTI",
+              "manifest_key": "CDGM:F4GTI",
+              "rank": 2,
+              "dispersion_score": 0.055002208219634356,
+              "delta_n_6": [
+                2.251136548725441e-06,
+                2.0474802058023656e-05,
+                9.963423165615382e-06,
+                -7.822799476642217e-06,
+                -1.114104106636482e-05,
+                -1.115737990908805e-05
+              ],
+              "weighted_index_rms_difference": 1.1681322565111827e-05,
+              "index_shape_rms_after_weighted_mean_removal": 1.1260165770087982e-05,
+              "delta_nd": 1.0000000000065512e-05,
+              "delta_vd": 0.0643215431364581,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0007828436105736802,
+                "P_hg": 0.0008859602396534827,
+                "P_dC": -0.00024105674761587537,
+                "P_gFprime": 0.0006527435671362936
+              },
+              "catalog_relative_cost": 45.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "SCHOTT",
+              "material": "N-F2",
+              "manifest_key": "SCHOTT:N-F2",
+              "rank": 3,
+              "dispersion_score": 0.3365051074086749,
+              "delta_n_6": [
+                1.9236128556698873e-07,
+                2.5052771990941025e-05,
+                1.3127935496459742e-05,
+                -7.286327809996607e-07,
+                6.885815114321403e-05,
+                0.00022970307483771712
+              ],
+              "weighted_index_rms_difference": 6.798391197752073e-05,
+              "index_shape_rms_after_weighted_mean_removal": 5.8700714100605935e-05,
+              "delta_nd": 1.0000000000065512e-05,
+              "delta_vd": 0.06444352103908813,
+              "delta_partial_dispersion": {
+                "P_gF": 0.005307632200242773,
+                "P_hg": 0.0104673202387906,
+                "P_dC": -0.0002617482839228913,
+                "P_gFprime": 0.004831803834332127
+              },
+              "catalog_relative_cost": 1.4,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-F4",
+              "manifest_key": "CDGM:H-F4",
+              "rank": 4,
+              "dispersion_score": 0.40950703250235143,
+              "delta_n_6": [
+                6.4379524020719e-06,
+                1.2829780625445153e-05,
+                9.945180862391823e-06,
+                2.7956524515593273e-05,
+                0.0001249745690896642,
+                0.00032375764546754837
+              ],
+              "weighted_index_rms_difference": 9.987876940581867e-05,
+              "index_shape_rms_after_weighted_mean_removal": 8.550674008096956e-05,
+              "delta_nd": 1.0000000000065512e-05,
+              "delta_vd": -0.02060517910826576,
+              "delta_partial_dispersion": {
+                "P_gF": 0.005712641884995762,
+                "P_hg": 0.011515282034723628,
+                "P_dC": -0.000320334774264297,
+                "P_gFprime": 0.005194611304177088
+              },
+              "catalog_relative_cost": 1.6,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-F3",
+              "manifest_key": "CDGM:H-F3",
+              "rank": 5,
+              "dispersion_score": 0.7333072931241454,
+              "delta_n_6": [
+                -0.003508988210309205,
+                -0.0033899379028812238,
+                -0.003449540845277932,
+                -0.003616102537957522,
+                -0.003657422796441656,
+                -0.003608236090468564
+              ],
+              "weighted_index_rms_difference": 0.0035178531177837567,
+              "index_shape_rms_after_weighted_mean_removal": 9.396988902666626e-05,
+              "delta_nd": -0.003449999999999953,
+              "delta_vd": 0.2851962565095292,
+              "delta_partial_dispersion": {
+                "P_gF": 0.004839555082310931,
+                "P_hg": 0.009817815211027092,
+                "P_dC": -0.00021514978859971112,
+                "P_gFprime": 0.004415820894516087
+              },
+              "catalog_relative_cost": 2.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 6,
+          "surface": 11,
+          "original": "K10",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "SCHOTT",
+              "material": "K10",
+              "manifest_key": "SCHOTT:K10",
+              "rank": 1,
+              "dispersion_score": 0.0,
+              "delta_n_6": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "weighted_index_rms_difference": 0.0,
+              "index_shape_rms_after_weighted_mean_removal": 0.0,
+              "delta_nd": 0.0,
+              "delta_vd": 0.0,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0,
+                "P_hg": 0.0,
+                "P_dC": 0.0,
+                "P_gFprime": 0.0
+              },
+              "catalog_relative_cost": 2.6,
+              "status_code": 1,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K1",
+              "manifest_key": "CDGM:H-K1",
+              "rank": 2,
+              "dispersion_score": 1.5725945257282514,
+              "delta_n_6": [
+                -0.001898922776863321,
+                -0.0014975151227556438,
+                -0.0016991096618550472,
+                -0.002350742957840213,
+                -0.002810968545588599,
+                -0.0032687793522345743
+              ],
+              "weighted_index_rms_difference": 0.002141746027615401,
+              "index_shape_rms_after_weighted_mean_removal": 0.0005420465160095111,
+              "delta_nd": -0.0017000000000000348,
+              "delta_vd": 5.662813668372479,
+              "delta_partial_dispersion": {
+                "P_gF": -0.006858172273692231,
+                "P_hg": -0.009694394258038641,
+                "P_dC": 0.0017779324161515397,
+                "P_gFprime": -0.005891381290111353
+              },
+              "catalog_relative_cost": 12.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K6",
+              "manifest_key": "CDGM:H-K6",
+              "rank": 3,
+              "dispersion_score": 1.6989212494300863,
+              "delta_n_6": [
+                0.009651070102979276,
+                0.009856740080758097,
+                0.009755419306388236,
+                0.009410197236452866,
+                0.009164592363962276,
+                0.008914846786497677
+              ],
+              "weighted_index_rms_difference": 0.009560639939794769,
+              "index_shape_rms_after_weighted_mean_removal": 0.0002879994955981939,
+              "delta_nd": 0.009754999999999958,
+              "delta_vd": 4.069740036435327,
+              "delta_partial_dispersion": {
+                "P_gF": -0.004171456606355539,
+                "P_hg": -0.006159197305148578,
+                "P_dC": 0.0014746950089656874,
+                "P_gFprime": -0.0034947987445296813
+              },
+              "catalog_relative_cost": 5.1,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K8",
+              "manifest_key": "CDGM:H-K8",
+              "rank": 4,
+              "dispersion_score": 1.734877552432173,
+              "delta_n_6": [
+                0.014697004369122801,
+                0.014599545966858862,
+                0.014648655905509234,
+                0.014799340173667686,
+                0.014888393909826325,
+                0.014958673109994214
+              ],
+              "weighted_index_rms_difference": 0.014728993276070917,
+              "index_shape_rms_after_weighted_mean_removal": 0.00011408683782950792,
+              "delta_nd": 0.01464999999999983,
+              "delta_vd": 0.3856599080469252,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0008451137291516364,
+                "P_hg": -0.0021702982607289534,
+                "P_dC": -0.00017558281864316072,
+                "P_gFprime": -0.0008337120822927702
+              },
+              "catalog_relative_cost": 5.0,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "SCHOTT",
+              "material": "K7",
+              "manifest_key": "SCHOTT:K7",
+              "rank": 5,
+              "dispersion_score": 1.7383082039705862,
+              "delta_n_6": [
+                0.009649979292560174,
+                0.009850972652250656,
+                0.009750901475529483,
+                0.009414936208506752,
+                0.009165677407626749,
+                0.008908207867416973
+              ],
+              "weighted_index_rms_difference": 0.009558541934644544,
+              "index_shape_rms_after_weighted_mean_removal": 0.00028664837812066696,
+              "delta_nd": 0.009749999999999925,
+              "delta_vd": 3.9970347188542092,
+              "delta_partial_dispersion": {
+                "P_gF": -0.005228931356619948,
+                "P_hg": -0.007615222717877956,
+                "P_dC": 0.0012396463207735575,
+                "P_gFprime": -0.004521477701898424
+              },
+              "catalog_relative_cost": 2.1,
+              "status_code": 0,
+              "melt_frequency_code": null,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        }
+      ],
+      "seed_combinations": [
+        {
+          "id": "mixed_seed_1",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 0,
+          "reason": "unchanged reference"
+        },
+        {
+          "id": "mixed_seed_2",
+          "materials": [
+            "N-KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_3",
+          "materials": [
+            "H-KF6",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_4",
+          "materials": [
+            "H-K12",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_5",
+          "materials": [
+            "KF9",
+            "H-LAK53B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_6",
+          "materials": [
+            "KF9",
+            "H-LAK53A",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_7",
+          "materials": [
+            "KF9",
+            "H-LAK3",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_8",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "H-LAK53B",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_9",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "H-LAK53A",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_10",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "H-LAK3",
+            "N-SK5",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_11",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "H-ZK3A",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_12",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "H-ZK3",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_13",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "P-SK58A",
+            "F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_14",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F4GTI",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_15",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "N-F2",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_16",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "H-F4",
+            "K10"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM",
+            "SCHOTT"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_17",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "H-K1"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_18",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "H-K6"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_19",
+          "materials": [
+            "KF9",
+            "N-LAK33B",
+            "N-LAK33B",
+            "N-SK5",
+            "F2",
+            "H-K8"
+          ],
+          "catalogs": [
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "SCHOTT",
+            "CDGM"
+          ],
+          "change_count": 1,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "mixed_seed_20",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "all-CDGM bridge seed for second phase"
+        }
+      ],
+      "strategy": {
+        "initial_seed_limit": 20,
+        "beam_width": 4,
+        "promote_best_seed_count": 4,
+        "next_moves": "single-element neighbor changes after geometric relaxation; optional best pair move for cemented elements 4/5",
+        "full_cartesian_enumeration": false,
+        "native_requirements": "Load actual named catalog glass, preserve all six spectral wavelengths and weights; common image plane, full105deg, A4/A6 only, all higher0, no overlap; final native dispersion identity check required."
+      }
+    },
+    "all_cdgm": {
+      "per_element": [
+        {
+          "element": 1,
+          "surface": 1,
+          "original": "KF9",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "CDGM",
+              "material": "H-KF6",
+              "manifest_key": "CDGM:H-KF6",
+              "rank": 1,
+              "dispersion_score": 0.9944463961744006,
+              "delta_n_6": [
+                -0.006052818564904694,
+                -0.005931582968947913,
+                -0.005991650141998317,
+                -0.006176841940496169,
+                -0.006266112204470264,
+                -0.0063086888663523855
+              ],
+              "weighted_index_rms_difference": 0.006084043215511335,
+              "index_shape_rms_after_weighted_mean_removal": 0.00012703394120762145,
+              "delta_nd": -0.005991999999999997,
+              "delta_vd": 0.6562530482116813,
+              "delta_partial_dispersion": {
+                "P_gF": 0.003299354805200605,
+                "P_hg": 0.007183363275426291,
+                "P_dC": 0.00023277879180522154,
+                "P_gFprime": 0.003123766076427059
+              },
+              "catalog_relative_cost": 3.6,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K12",
+              "manifest_key": "CDGM:H-K12",
+              "rank": 2,
+              "dispersion_score": 2.0165210881951126,
+              "delta_n_6": [
+                0.010049643336232483,
+                0.010304651803249465,
+                0.010177697816318387,
+                0.00974661242486019,
+                0.009415269950686644,
+                0.0090633728539391
+              ],
+              "weighted_index_rms_difference": 0.009928446448198885,
+              "index_shape_rms_after_weighted_mean_removal": 0.0003753394905992773,
+              "delta_nd": 0.010177000000000103,
+              "delta_vd": 3.976987297450883,
+              "delta_partial_dispersion": {
+                "P_gF": -0.006824936554416738,
+                "P_hg": -0.010346851682991987,
+                "P_dC": 0.0013568779462919678,
+                "P_gFprime": -0.005957895892346243
+              },
+              "catalog_relative_cost": 4.7,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K51",
+              "manifest_key": "CDGM:H-K51",
+              "rank": 3,
+              "dispersion_score": 2.1909052051518048,
+              "delta_n_6": [
+                -0.0006351238172415119,
+                -4.37855625725625e-05,
+                -0.0003394999710069069,
+                -0.0013131562205725977,
+                -0.0020185503259724236,
+                -0.002735693176597165
+              ],
+              "weighted_index_rms_difference": 0.0012204836304546996,
+              "index_shape_rms_after_weighted_mean_removal": 0.0008207500594733796,
+              "delta_nd": -0.0003420000000000645,
+              "delta_vd": 7.146796664761034,
+              "delta_partial_dispersion": {
+                "P_gF": -0.010683918078989385,
+                "P_hg": -0.01570715757365182,
+                "P_dC": 0.002554499539426436,
+                "P_gFprime": -0.009222143941962524
+              },
+              "catalog_relative_cost": 1.6,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-QF6A",
+              "manifest_key": "CDGM:H-QF6A",
+              "rank": 4,
+              "dispersion_score": 2.315749401163284,
+              "delta_n_6": [
+                0.008474910573222694,
+                0.008142843885879714,
+                0.008306287114235866,
+                0.008885072008307127,
+                0.009348510050453118,
+                0.009858394115492608
+              ],
+              "weighted_index_rms_difference": 0.008673110189358823,
+              "index_shape_rms_after_weighted_mean_removal": 0.0005158693910966429,
+              "delta_nd": 0.008307999999999982,
+              "delta_vd": -2.6531621663131304,
+              "delta_partial_dispersion": {
+                "P_gF": 0.010417490000852903,
+                "P_hg": 0.016182682841175633,
+                "P_dC": -0.002146022650517554,
+                "P_gFprime": 0.009065592245267595
+              },
+              "catalog_relative_cost": 4.3,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K50",
+              "manifest_key": "CDGM:H-K50",
+              "rank": 5,
+              "dispersion_score": 2.466205187829396,
+              "delta_n_6": [
+                -0.0012474330083691587,
+                -0.00059333872665146,
+                -0.0009192198201204427,
+                -0.0020022814671678546,
+                -0.0027821979339857084,
+                -0.0035633740526239688
+              ],
+              "weighted_index_rms_difference": 0.0017917187349544307,
+              "index_shape_rms_after_weighted_mean_removal": 0.0009080804205897831,
+              "delta_nd": -0.0009220000000000894,
+              "delta_vd": 7.987758039722792,
+              "delta_partial_dispersion": {
+                "P_gF": -0.011771811828859668,
+                "P_hg": -0.01604113249764194,
+                "P_dC": 0.0032089824253606625,
+                "P_gFprime": -0.010049585302175368
+              },
+              "catalog_relative_cost": 2.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 2,
+          "surface": 3,
+          "original": "N-LAK33B",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53B",
+              "manifest_key": "CDGM:H-LAK53B",
+              "rank": 1,
+              "dispersion_score": 0.014918890984844124,
+              "delta_n_6": [
+                -1.8448698986262002e-06,
+                2.2821217731117116e-06,
+                -1.7479595149083593e-07,
+                -3.270858802473242e-06,
+                -2.5728267136759797e-06,
+                -1.1029329334277804e-06
+              ],
+              "weighted_index_rms_difference": 2.0571501154945215e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.8283045384544415e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.021935295017023293,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0002764141724096447,
+                "P_hg": 0.0002941903223104281,
+                "P_dC": -8.120668093530847e-05,
+                "P_gFprime": 0.0002333452861808527
+              },
+              "catalog_relative_cost": 5.5,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53A",
+              "manifest_key": "CDGM:H-LAK53A",
+              "rank": 2,
+              "dispersion_score": 0.028240271456867333,
+              "delta_n_6": [
+                -1.7931657800840384e-06,
+                3.142263428346226e-06,
+                -1.2358217027497176e-07,
+                -1.4194618673801784e-06,
+                2.987232597284617e-06,
+                9.805452540589954e-06
+              ],
+              "weighted_index_rms_difference": 3.3261929673855868e-06,
+              "index_shape_rms_after_weighted_mean_removal": 3.1424329059894078e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.02045133185820447,
+              "delta_partial_dispersion": {
+                "P_gF": 0.000540569658703749,
+                "P_hg": 0.0006559610128488158,
+                "P_dC": -0.00016508431459472117,
+                "P_gFprime": 0.00045622524069943715
+              },
+              "catalog_relative_cost": 11.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK3",
+              "manifest_key": "CDGM:H-LAK3",
+              "rank": 3,
+              "dispersion_score": 1.2492902359317934,
+              "delta_n_6": [
+                -0.008018420562292627,
+                -0.008117224781095445,
+                -0.008070621691069535,
+                -0.007884598631957784,
+                -0.007733488905032226,
+                -0.007575040439585123
+              ],
+              "weighted_index_rms_difference": 0.007958657452444107,
+              "index_shape_rms_after_weighted_mean_removal": 0.00016479688094801428,
+              "delta_nd": -0.0080699999999998,
+              "delta_vd": -1.350037889998518,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0030957682197838565,
+                "P_hg": 0.003929417727689177,
+                "P_dC": -0.00089940110858866,
+                "P_gFprime": 0.002625451293933878
+              },
+              "catalog_relative_cost": 9.4,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK61",
+              "manifest_key": "CDGM:H-LAK61",
+              "rank": 4,
+              "dispersion_score": 1.8754081219619392,
+              "delta_n_6": [
+                -0.014089345564255229,
+                -0.013908982184812846,
+                -0.014000350957101837,
+                -0.014282433446091591,
+                -0.014465324488058595,
+                -0.014636136494967866
+              ],
+              "weighted_index_rms_difference": 0.014157834299490274,
+              "index_shape_rms_after_weighted_mean_removal": 0.00022514402241522336,
+              "delta_nd": -0.01400099999999993,
+              "delta_vd": 0.3760735967919615,
+              "delta_partial_dispersion": {
+                "P_gF": -0.00023341617956162963,
+                "P_hg": -0.0002802628477320823,
+                "P_dC": 0.00019761616161323436,
+                "P_gFprime": -0.00016747184776100266
+              },
+              "catalog_relative_cost": 8.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "D-LAF53",
+              "manifest_key": "CDGM:D-LAF53",
+              "rank": 5,
+              "dispersion_score": 2.23304382272329,
+              "delta_n_6": [
+                -0.011551768808758078,
+                -0.01184265913557736,
+                -0.011701480119199026,
+                -0.011191329836534925,
+                -0.01080614180472339,
+                -0.010414052706475108
+              ],
+              "weighted_index_rms_difference": 0.011408492960934507,
+              "index_shape_rms_after_weighted_mean_removal": 0.0004361451150623319,
+              "delta_nd": -0.011699999999999822,
+              "delta_vd": -2.974173489893097,
+              "delta_partial_dispersion": {
+                "P_gF": 0.005497607412629391,
+                "P_hg": 0.007075080117892374,
+                "P_dC": -0.0016690010745132322,
+                "P_gFprime": 0.004645643967235102
+              },
+              "catalog_relative_cost": 12.6,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 3,
+          "surface": 5,
+          "original": "N-LAK33B",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53B",
+              "manifest_key": "CDGM:H-LAK53B",
+              "rank": 1,
+              "dispersion_score": 0.014918890984844124,
+              "delta_n_6": [
+                -1.8448698986262002e-06,
+                2.2821217731117116e-06,
+                -1.7479595149083593e-07,
+                -3.270858802473242e-06,
+                -2.5728267136759797e-06,
+                -1.1029329334277804e-06
+              ],
+              "weighted_index_rms_difference": 2.0571501154945215e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.8283045384544415e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.021935295017023293,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0002764141724096447,
+                "P_hg": 0.0002941903223104281,
+                "P_dC": -8.120668093530847e-05,
+                "P_gFprime": 0.0002333452861808527
+              },
+              "catalog_relative_cost": 5.5,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK53A",
+              "manifest_key": "CDGM:H-LAK53A",
+              "rank": 2,
+              "dispersion_score": 0.028240271456867333,
+              "delta_n_6": [
+                -1.7931657800840384e-06,
+                3.142263428346226e-06,
+                -1.2358217027497176e-07,
+                -1.4194618673801784e-06,
+                2.987232597284617e-06,
+                9.805452540589954e-06
+              ],
+              "weighted_index_rms_difference": 3.3261929673855868e-06,
+              "index_shape_rms_after_weighted_mean_removal": 3.1424329059894078e-06,
+              "delta_nd": 0.0,
+              "delta_vd": 0.02045133185820447,
+              "delta_partial_dispersion": {
+                "P_gF": 0.000540569658703749,
+                "P_hg": 0.0006559610128488158,
+                "P_dC": -0.00016508431459472117,
+                "P_gFprime": 0.00045622524069943715
+              },
+              "catalog_relative_cost": 11.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK3",
+              "manifest_key": "CDGM:H-LAK3",
+              "rank": 3,
+              "dispersion_score": 1.2492902359317934,
+              "delta_n_6": [
+                -0.008018420562292627,
+                -0.008117224781095445,
+                -0.008070621691069535,
+                -0.007884598631957784,
+                -0.007733488905032226,
+                -0.007575040439585123
+              ],
+              "weighted_index_rms_difference": 0.007958657452444107,
+              "index_shape_rms_after_weighted_mean_removal": 0.00016479688094801428,
+              "delta_nd": -0.0080699999999998,
+              "delta_vd": -1.350037889998518,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0030957682197838565,
+                "P_hg": 0.003929417727689177,
+                "P_dC": -0.00089940110858866,
+                "P_gFprime": 0.002625451293933878
+              },
+              "catalog_relative_cost": 9.4,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-LAK61",
+              "manifest_key": "CDGM:H-LAK61",
+              "rank": 4,
+              "dispersion_score": 1.8754081219619392,
+              "delta_n_6": [
+                -0.014089345564255229,
+                -0.013908982184812846,
+                -0.014000350957101837,
+                -0.014282433446091591,
+                -0.014465324488058595,
+                -0.014636136494967866
+              ],
+              "weighted_index_rms_difference": 0.014157834299490274,
+              "index_shape_rms_after_weighted_mean_removal": 0.00022514402241522336,
+              "delta_nd": -0.01400099999999993,
+              "delta_vd": 0.3760735967919615,
+              "delta_partial_dispersion": {
+                "P_gF": -0.00023341617956162963,
+                "P_hg": -0.0002802628477320823,
+                "P_dC": 0.00019761616161323436,
+                "P_gFprime": -0.00016747184776100266
+              },
+              "catalog_relative_cost": 8.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "D-LAF53",
+              "manifest_key": "CDGM:D-LAF53",
+              "rank": 5,
+              "dispersion_score": 2.23304382272329,
+              "delta_n_6": [
+                -0.011551768808758078,
+                -0.01184265913557736,
+                -0.011701480119199026,
+                -0.011191329836534925,
+                -0.01080614180472339,
+                -0.010414052706475108
+              ],
+              "weighted_index_rms_difference": 0.011408492960934507,
+              "index_shape_rms_after_weighted_mean_removal": 0.0004361451150623319,
+              "delta_nd": -0.011699999999999822,
+              "delta_vd": -2.974173489893097,
+              "delta_partial_dispersion": {
+                "P_gF": 0.005497607412629391,
+                "P_hg": 0.007075080117892374,
+                "P_dC": -0.0016690010745132322,
+                "P_gFprime": 0.004645643967235102
+              },
+              "catalog_relative_cost": 12.6,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 4,
+          "surface": 8,
+          "original": "N-SK5",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "CDGM",
+              "material": "H-ZK3A",
+              "manifest_key": "CDGM:H-ZK3A",
+              "rank": 1,
+              "dispersion_score": 0.008320451209001035,
+              "delta_n_6": [
+                2.6549523646224316e-07,
+                -7.219320818929731e-07,
+                -1.2017287942533983e-07,
+                1.4278879203466488e-06,
+                3.4288054884257235e-06,
+                6.057861847041934e-06
+              ],
+              "weighted_index_rms_difference": 2.182394726152059e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.922532624163873e-06,
+              "delta_nd": 0.0,
+              "delta_vd": -0.013703204969310434,
+              "delta_partial_dispersion": {
+                "P_gF": 0.00010642866220145208,
+                "P_hg": 0.0001761867201092171,
+                "P_dC": 1.2603237202257755e-05,
+                "P_gFprime": 0.00010123089912000838
+              },
+              "catalog_relative_cost": 1.0,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-ZK3",
+              "manifest_key": "CDGM:H-ZK3",
+              "rank": 2,
+              "dispersion_score": 0.01210715615939668,
+              "delta_n_6": [
+                6.224940971577553e-07,
+                -8.840648670904727e-07,
+                4.029547806538858e-10,
+                9.689483435604274e-07,
+                -2.6614103787458987e-07,
+                -3.0492362743661516e-06
+              ],
+              "weighted_index_rms_difference": 1.0139175292618504e-06,
+              "index_shape_rms_after_weighted_mean_removal": 1.0030557728278308e-06,
+              "delta_nd": 0.0,
+              "delta_vd": -0.013232431738977368,
+              "delta_partial_dispersion": {
+                "P_gF": -0.00024999132152037085,
+                "P_hg": -0.00038969991712783925,
+                "P_dC": 4.606426627296045e-05,
+                "P_gFprime": -0.00021990392813803217
+              },
+              "catalog_relative_cost": 1.1,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "D-ZK3",
+              "manifest_key": "CDGM:D-ZK3",
+              "rank": 3,
+              "dispersion_score": 0.19087361179898543,
+              "delta_n_6": [
+                5.103415357421426e-06,
+                -1.5418785022758286e-05,
+                -3.502644374542285e-08,
+                -3.929785306056033e-06,
+                -2.882937228654292e-05,
+                -6.133177835332404e-05
+              ],
+              "weighted_index_rms_difference": 2.1117446682339918e-05,
+              "index_shape_rms_after_weighted_mean_removal": 1.8120481681013356e-05,
+              "delta_nd": 0.0,
+              "delta_vd": -0.11390226895743183,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0038130225942181184,
+                "P_hg": -0.004237670069711097,
+                "P_dC": 0.0014941278966792981,
+                "P_gFprime": -0.0031446476592429384
+              },
+              "catalog_relative_cost": 4.7,
+              "status_code": 0,
+              "melt_frequency_code": 2,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "D-ZK3-25",
+              "manifest_key": "CDGM:D-ZK3-25",
+              "rank": 4,
+              "dispersion_score": 0.24564562535644704,
+              "delta_n_6": [
+                -0.0008035933766930015,
+                -0.0008049014155326883,
+                -0.0007999730747587641,
+                -0.0008262260384219733,
+                -0.0008573895663204212,
+                -0.0008906482872508281
+              ],
+              "weighted_index_rms_difference": 0.0008206695418027697,
+              "index_shape_rms_after_weighted_mean_removal": 2.772887888021774e-05,
+              "delta_nd": -0.0007999999999999119,
+              "delta_vd": 0.017558088586355325,
+              "delta_partial_dispersion": {
+                "P_gF": -0.002703022835393365,
+                "P_hg": -0.0027583780637980837,
+                "P_dC": 0.0012601774652879483,
+                "P_gFprime": -0.002178380897661536
+              },
+              "catalog_relative_cost": 4.7,
+              "status_code": 0,
+              "melt_frequency_code": 2,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "D-ZK3L-25",
+              "manifest_key": "CDGM:D-ZK3L-25",
+              "rank": 5,
+              "dispersion_score": 0.39947343903942145,
+              "delta_n_6": [
+                0.0018014472630210054,
+                0.0017283759774069374,
+                0.0017694714289584468,
+                0.0018570806389337502,
+                0.0019015860040774157,
+                0.0019392762665069174
+              ],
+              "weighted_index_rms_difference": 0.0018138941316348245,
+              "index_shape_rms_after_weighted_mean_removal": 6.594975504555752e-05,
+              "delta_nd": 0.0017700000000000493,
+              "delta_vd": -0.648286701403805,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0021546128946206,
+                "P_hg": -0.002158634166979978,
+                "P_dC": 0.0010286527880445373,
+                "P_gFprime": -0.001729976563588309
+              },
+              "catalog_relative_cost": 4.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 5,
+          "surface": 9,
+          "original": "F2",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "CDGM",
+              "material": "F4GTI",
+              "manifest_key": "CDGM:F4GTI",
+              "rank": 1,
+              "dispersion_score": 0.055002208219634356,
+              "delta_n_6": [
+                2.251136548725441e-06,
+                2.0474802058023656e-05,
+                9.963423165615382e-06,
+                -7.822799476642217e-06,
+                -1.114104106636482e-05,
+                -1.115737990908805e-05
+              ],
+              "weighted_index_rms_difference": 1.1681322565111827e-05,
+              "index_shape_rms_after_weighted_mean_removal": 1.1260165770087982e-05,
+              "delta_nd": 1.0000000000065512e-05,
+              "delta_vd": 0.0643215431364581,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0007828436105736802,
+                "P_hg": 0.0008859602396534827,
+                "P_dC": -0.00024105674761587537,
+                "P_gFprime": 0.0006527435671362936
+              },
+              "catalog_relative_cost": 45.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-F4",
+              "manifest_key": "CDGM:H-F4",
+              "rank": 2,
+              "dispersion_score": 0.40950703250235143,
+              "delta_n_6": [
+                6.4379524020719e-06,
+                1.2829780625445153e-05,
+                9.945180862391823e-06,
+                2.7956524515593273e-05,
+                0.0001249745690896642,
+                0.00032375764546754837
+              ],
+              "weighted_index_rms_difference": 9.987876940581867e-05,
+              "index_shape_rms_after_weighted_mean_removal": 8.550674008096956e-05,
+              "delta_nd": 1.0000000000065512e-05,
+              "delta_vd": -0.02060517910826576,
+              "delta_partial_dispersion": {
+                "P_gF": 0.005712641884995762,
+                "P_hg": 0.011515282034723628,
+                "P_dC": -0.000320334774264297,
+                "P_gFprime": 0.005194611304177088
+              },
+              "catalog_relative_cost": 1.6,
+              "status_code": 1,
+              "melt_frequency_code": 1,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-F3",
+              "manifest_key": "CDGM:H-F3",
+              "rank": 3,
+              "dispersion_score": 0.7333072931241454,
+              "delta_n_6": [
+                -0.003508988210309205,
+                -0.0033899379028812238,
+                -0.003449540845277932,
+                -0.003616102537957522,
+                -0.003657422796441656,
+                -0.003608236090468564
+              ],
+              "weighted_index_rms_difference": 0.0035178531177837567,
+              "index_shape_rms_after_weighted_mean_removal": 9.396988902666626e-05,
+              "delta_nd": -0.003449999999999953,
+              "delta_vd": 0.2851962565095292,
+              "delta_partial_dispersion": {
+                "P_gF": 0.004839555082310931,
+                "P_hg": 0.009817815211027092,
+                "P_dC": -0.00021514978859971112,
+                "P_gFprime": 0.004415820894516087
+              },
+              "catalog_relative_cost": 2.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-F5",
+              "manifest_key": "CDGM:H-F5",
+              "rank": 4,
+              "dispersion_score": 1.2783781057175012,
+              "delta_n_6": [
+                0.004382155198846549,
+                0.004236799238413802,
+                0.0043092065595427,
+                0.004578966627537762,
+                0.004854876290541377,
+                0.005230818289705175
+              ],
+              "weighted_index_rms_difference": 0.004504639663693686,
+              "index_shape_rms_after_weighted_mean_removal": 0.0002866401126927903,
+              "delta_nd": 0.004310000000000036,
+              "delta_vd": -0.443047218138652,
+              "delta_partial_dispersion": {
+                "P_gF": 0.006365847849063799,
+                "P_hg": 0.012262962927971244,
+                "P_dC": -0.0005837422486781318,
+                "P_gFprime": 0.005723332324408137
+              },
+              "catalog_relative_cost": 4.3,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-F2",
+              "manifest_key": "CDGM:H-F2",
+              "rank": 5,
+              "dispersion_score": 1.4086131396863417,
+              "delta_n_6": [
+                -0.0072300164770702224,
+                -0.006989839990361846,
+                -0.007109010229142676,
+                -0.007481591611372185,
+                -0.007673686686240133,
+                -0.0077751381082782345
+              ],
+              "weighted_index_rms_difference": 0.00730063002072665,
+              "index_shape_rms_after_weighted_mean_removal": 0.00026169835279885734,
+              "delta_nd": -0.00710999999999995,
+              "delta_vd": 0.6379499709604985,
+              "delta_partial_dispersion": {
+                "P_gF": 0.0038788358003990497,
+                "P_hg": 0.008715655150664636,
+                "P_dC": 0.0001161321871732679,
+                "P_gFprime": 0.0036238325587950593
+              },
+              "catalog_relative_cost": 2.7,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        },
+        {
+          "element": 6,
+          "surface": 11,
+          "original": "K10",
+          "original_catalog": "SCHOTT",
+          "candidates": [
+            {
+              "catalog": "CDGM",
+              "material": "H-K1",
+              "manifest_key": "CDGM:H-K1",
+              "rank": 1,
+              "dispersion_score": 1.5725945257282514,
+              "delta_n_6": [
+                -0.001898922776863321,
+                -0.0014975151227556438,
+                -0.0016991096618550472,
+                -0.002350742957840213,
+                -0.002810968545588599,
+                -0.0032687793522345743
+              ],
+              "weighted_index_rms_difference": 0.002141746027615401,
+              "index_shape_rms_after_weighted_mean_removal": 0.0005420465160095111,
+              "delta_nd": -0.0017000000000000348,
+              "delta_vd": 5.662813668372479,
+              "delta_partial_dispersion": {
+                "P_gF": -0.006858172273692231,
+                "P_hg": -0.009694394258038641,
+                "P_dC": 0.0017779324161515397,
+                "P_gFprime": -0.005891381290111353
+              },
+              "catalog_relative_cost": 12.6,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K6",
+              "manifest_key": "CDGM:H-K6",
+              "rank": 2,
+              "dispersion_score": 1.6989212494300863,
+              "delta_n_6": [
+                0.009651070102979276,
+                0.009856740080758097,
+                0.009755419306388236,
+                0.009410197236452866,
+                0.009164592363962276,
+                0.008914846786497677
+              ],
+              "weighted_index_rms_difference": 0.009560639939794769,
+              "index_shape_rms_after_weighted_mean_removal": 0.0002879994955981939,
+              "delta_nd": 0.009754999999999958,
+              "delta_vd": 4.069740036435327,
+              "delta_partial_dispersion": {
+                "P_gF": -0.004171456606355539,
+                "P_hg": -0.006159197305148578,
+                "P_dC": 0.0014746950089656874,
+                "P_gFprime": -0.0034947987445296813
+              },
+              "catalog_relative_cost": 5.1,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K8",
+              "manifest_key": "CDGM:H-K8",
+              "rank": 3,
+              "dispersion_score": 1.734877552432173,
+              "delta_n_6": [
+                0.014697004369122801,
+                0.014599545966858862,
+                0.014648655905509234,
+                0.014799340173667686,
+                0.014888393909826325,
+                0.014958673109994214
+              ],
+              "weighted_index_rms_difference": 0.014728993276070917,
+              "index_shape_rms_after_weighted_mean_removal": 0.00011408683782950792,
+              "delta_nd": 0.01464999999999983,
+              "delta_vd": 0.3856599080469252,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0008451137291516364,
+                "P_hg": -0.0021702982607289534,
+                "P_dC": -0.00017558281864316072,
+                "P_gFprime": -0.0008337120822927702
+              },
+              "catalog_relative_cost": 5.0,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "K4A",
+              "manifest_key": "CDGM:K4A",
+              "rank": 4,
+              "dispersion_score": 1.7640730650431191,
+              "delta_n_6": [
+                0.006515358703775842,
+                0.006775420708764912,
+                0.0066502354818021026,
+                0.006191368725063651,
+                0.00584860990765157,
+                0.005500740827530937
+              ],
+              "weighted_index_rms_difference": 0.006391876953679177,
+              "index_shape_rms_after_weighted_mean_removal": 0.0003898099426554835,
+              "delta_nd": 0.006649999999999823,
+              "delta_vd": 4.643731907865686,
+              "delta_partial_dispersion": {
+                "P_gF": -0.00863163710910586,
+                "P_hg": -0.01097273709078822,
+                "P_dC": 0.0029810552707258964,
+                "P_gFprime": -0.007224339786188472
+              },
+              "catalog_relative_cost": 6.9,
+              "status_code": 0,
+              "melt_frequency_code": 4,
+              "stock_verified": false,
+              "price_quote_available": false
+            },
+            {
+              "catalog": "CDGM",
+              "material": "H-K10",
+              "manifest_key": "CDGM:H-K10",
+              "rank": 5,
+              "dispersion_score": 1.9101851807211319,
+              "delta_n_6": [
+                0.016786691226871264,
+                0.01683175495432554,
+                0.016809238097513113,
+                0.01673131961267904,
+                0.016665234139715768,
+                0.016587556130098102
+              ],
+              "weighted_index_rms_difference": 0.01676074630853268,
+              "index_shape_rms_after_weighted_mean_removal": 7.24343387314324e-05,
+              "delta_nd": 0.01680999999999999,
+              "delta_vd": 2.5401657085251657,
+              "delta_partial_dispersion": {
+                "P_gF": -0.0022310468101249814,
+                "P_hg": -0.0038295905551941622,
+                "P_dC": 0.00031989767448981077,
+                "P_gFprime": -0.00198684349131234
+              },
+              "catalog_relative_cost": 3.6,
+              "status_code": 0,
+              "melt_frequency_code": 3,
+              "stock_verified": false,
+              "price_quote_available": false
+            }
+          ]
+        }
+      ],
+      "seed_combinations": [
+        {
+          "id": "all_cdgm_seed_1",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "closest full-dispersion all-CDGM seed; geometry must be reoptimized"
+        },
+        {
+          "id": "all_cdgm_seed_2",
+          "materials": [
+            "H-K51",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "H-F4",
+            "H-K10"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "within-CDGM dated OD cost-screening seed; not a quote or verified savings; relaxed geometry must recover performance"
+        },
+        {
+          "id": "all_cdgm_seed_3",
+          "materials": [
+            "H-K12",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_4",
+          "materials": [
+            "H-K51",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_5",
+          "materials": [
+            "H-QF6A",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_6",
+          "materials": [
+            "H-KF6",
+            "H-LAK53A",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_7",
+          "materials": [
+            "H-KF6",
+            "H-LAK3",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_8",
+          "materials": [
+            "H-KF6",
+            "H-LAK61",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_9",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53A",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_10",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK3",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_11",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK61",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_12",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_13",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "D-ZK3",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_14",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "D-ZK3-25",
+            "F4GTI",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_15",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "H-F4",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_16",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "H-F3",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_17",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "H-F5",
+            "H-K1"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_18",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K6"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_19",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "H-K8"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        },
+        {
+          "id": "all_cdgm_seed_20",
+          "materials": [
+            "H-KF6",
+            "H-LAK53B",
+            "H-LAK53B",
+            "H-ZK3A",
+            "F4GTI",
+            "K4A"
+          ],
+          "catalogs": [
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM",
+            "CDGM"
+          ],
+          "change_count": 6,
+          "reason": "one-element local move from phase seed; two LAK elements are independent"
+        }
+      ],
+      "strategy": {
+        "initial_seed_limit": 20,
+        "beam_width": 4,
+        "promote_best_seed_count": 4,
+        "next_moves": "single-element neighbor changes after geometric relaxation; optional best pair move for cemented elements 4/5",
+        "full_cartesian_enumeration": false,
+        "native_requirements": "Load actual named catalog glass, preserve all six spectral wavelengths and weights; common image plane, full105deg, A4/A6 only, all higher0, no overlap; final native dispersion identity check required."
+      }
+    }
+  },
+  "catalog_snapshots": [
+    {
+      "catalog": "SCHOTT",
+      "source": "C:\\Users\\liuru\\Documents\\Zemax\\Glasscat\\SCHOTT.AGF",
+      "snapshot": "reference\\SCHOTT_20260915_snapshot.AGF",
+      "sha256": "d3f916be810b5cb76566b9cf75e16813fc062d12a86a4604d281bb0777823256",
+      "header": "CC SCHOTT. preferred. inquiry and obsolete data since 2006. status as of 27 October 2022 + Grp glass dec 2011         "
+    },
+    {
+      "catalog": "CDGM",
+      "source": "C:\\Users\\liuru\\Documents\\Zemax\\Glasscat\\CDGM.AGF",
+      "snapshot": "reference\\CDGM_20260915_snapshot.AGF",
+      "sha256": "5e5974e329d7c61180fcb4780605f189c498a553088fbe2c015137572bebeba4",
+      "header": "CC Updated Jun 2022"
+    }
+  ],
+  "manifest_file": "material_manifest.json",
+  "primary_sources": [
+    {
+      "title": "CDGM manufacturer product/catalog portal",
+      "url": "https://www.cdgmgd.com/",
+      "scope": "Manufacturer confirms optical glass product classes and downloadable Zemax data; not a per-type stock or delivered-price quote."
+    },
+    {
+      "title": "SCHOTT optical glass downloads",
+      "url": "https://www.schott.com/en-us/products/optical-glass-p1000267/downloads",
+      "scope": "Manufacturer publishes standard and inquiry glass lists; local 2022 AGF status is not verified 2026 stock."
+    },
+    {
+      "title": "Ansys AGF format specification",
+      "url": "https://ansyshelp.ansys.com/public/Views/Secured/Zemax/v251/en/OpticStudio_User_Guide/OpticStudio_Help/topics/The_AGF_BGF_File_Formats.html",
+      "scope": "OD relative cost, NM status, and melt frequency interpretation; no common cross-vendor cost normalization is established."
+    }
+  ],
+  "cost_policy": {
+    "absolute_price": null,
+    "savings_percent": null,
+    "cross_vendor_relative_cost_comparison_permitted": false,
+    "ranking": "Optical full-dispersion distance first. Within-CDGM OD may be used as a dated screening proxy, never a procurement quote. Supplier availability and blank diameter remain unverified."
+  },
+  "warnings": [
+    "Catalog inclusion establishes a valid named dispersion model, not current blank stock or a promise to supply.",
+    "Local catalogs date from 2022; current manufacturer portals were checked but individual quotes/stock were not.",
+    "Full-dispersion closeness does not guarantee preserved MTF after substitution; geometry and focus must be optimized natively.",
+    "Do not equate all-CDGM sourcing with a proven lower delivered cost.",
+    "CDGM and SCHOTT OD scales may use different reference glasses; cross-vendor OD ratios are not savings."
+  ]
+}
