@@ -32,6 +32,11 @@ def digest(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def combo_key(combo):
     return hashlib.sha256(json.dumps(list(zip(combo['catalogs'], combo['materials']))).encode()).hexdigest()[:16]
 
+def record_feasible(record):
+    return bool(not record['invalid_geometry'] and
+                np.all(abs(np.array(record['first_order'])-FO_TARGET) < [.25, .4, .5, .6]) and
+                record.get('stop_crossing_air_gap_S6_to_S8_mm', .3) >= .3)
+
 def cost_proxy(combo):
     """Unweighted six-element OD sum: CDGM internal ranking, never a quote."""
     path = BASE/'material_manifest.json'
@@ -240,7 +245,7 @@ def main():
     p.add_argument('--target', default=str(core.ROOT/'revision3'/'target_optimization.json'))
     p.add_argument('--round-seconds', type=float, default=720); p.add_argument('--max-rounds', type=int, default=10000)
     p.add_argument('--max-jacobians', type=int, default=12); p.add_argument('--iterations', type=int, default=35)
-    p.add_argument('--guard-seconds', type=float, default=25); p.add_argument('--sampling', type=int, choices=[128, 256], default=128)
+    p.add_argument('--guard-seconds', type=float, default=25); p.add_argument('--sampling', type=int, choices=[128, 256], default=256)
     p.add_argument('--resume', action='store_true'); a = p.parse_args()
     if not 1 <= a.workers <= 8: p.error('workers must be 1 through 8')
     deadline = dt.datetime.fromisoformat(a.deadline_utc.replace('Z', '+00:00'))
@@ -258,10 +263,58 @@ def main():
     atomic_json(out/'status.json', {'pid': os.getpid(), 'phase': a.phase, 'state': 'starting', 'workers': a.workers,
                                   'deadline_utc': deadline.isoformat(), 'seed': seed})
     pool = None; status = 'deadline'
+    def next_snapshot():
+        nonlocal serial
+        serial += 1; snapshot = out/'best'/f'candidate_{serial:05d}.zmx'
+        snapshot.parent.mkdir(parents=True, exist_ok=True)
+        while snapshot.exists() or snapshot.with_suffix('.json').exists():
+            serial += 1; snapshot = out/'best'/f'candidate_{serial:05d}.zmx'
+        return snapshot
     try:
         if time.time() >= end-a.guard_seconds: raise DeadlineReached('Already inside closing margin')
         pool = ProcessPoolExecutor(max_workers=a.workers, mp_context=mp.get_context('spawn'),
             initializer=initialize, initargs=(seed, a.target, a.phase, end, a.guard_seconds))
+        # Resume comparison is rebuilt solely from common FFT256 records.
+        # A formerly winning FFT128 score must never block its fresh FFT256 result.
+        previous = list(combo_bests.values()) + ([best] if best else [])
+        normalized = {}; seen_sources = set()
+        for old in previous:
+            source = old['source_path']; source_hash = digest(source)
+            if source_hash in seen_sources: continue
+            seen_sources.add(source_hash)
+            if int(old.get('sampling', 0)) != 256:
+                snapshot = next_snapshot()
+                _, fresh = pool.submit(evaluate, np.zeros(24), source, old['material_combo'], 256,
+                                       end-a.guard_seconds, str(snapshot)).result()
+                evaluations += 1
+                # Only metadata is added: preserve every native high-sampling value.
+                fresh.update(score=fresh['max_shortfall']+.2*fresh['deficit_rms'], feasible=record_feasible(fresh),
+                             serial=serial, source_path=str(snapshot.resolve()), source_sha256=digest(snapshot),
+                             checkpoint_path=str(snapshot.with_suffix('.json').resolve()), seed=source,
+                             source_seed_sha256=source_hash, phase=a.phase,
+                             catalog_plan_path=str(Path(a.catalog_plan).resolve()),
+                             catalog_plan_sha256=digest(a.catalog_plan) if Path(a.catalog_plan).exists() else None,
+                             normalization={'sampling': 256, 'previous_sampling': old.get('sampling'),
+                                            'previous_source_path': source, 'previous_source_sha256': source_hash,
+                                            'previous_serial': old.get('serial')})
+                atomic_json(snapshot.with_suffix('.json'), fresh)
+                print('NORMALIZE256', serial, 'max', fresh['max_shortfall'], 'feasible', fresh['feasible'], flush=True)
+            else:
+                fresh = dict(old, score=old['max_shortfall']+.2*old['deficit_rms'], feasible=record_feasible(old))
+            key = combo_key(fresh['material_combo'])
+            if not fresh['feasible']:
+                atomic_json(out/'combo_bests'/key/'best.json', fresh)
+            if fresh['feasible'] and (key not in normalized or fresh['score'] < normalized[key]['score']):
+                normalized[key] = fresh
+        combo_bests = normalized
+        for key, fresh in combo_bests.items():
+            atomic_json(out/'combo_bests'/key/'best.json', fresh)
+            history = out/'combo_bests'/key/f"candidate_{fresh['serial']:05d}.json"
+            if not history.exists(): atomic_json(history, fresh)
+        if previous:
+            best = min(combo_bests.values(), key=lambda q: q['score']) if combo_bests else None
+            if best: atomic_json(out/'best.json', best)
+            write_pareto(out, combo_bests)
         for round_number in range(a.max_rounds):
             if time.time() >= end-a.guard_seconds: raise DeadlineReached('Phase closing margin reached')
             plan = read_plan(Path(a.catalog_plan), a.phase)
@@ -286,7 +339,7 @@ def main():
                 nonlocal best, serial, evaluations, local_count
                 residual, record = pool.submit(evaluate, x, seed, combo, size, round_end).result()
                 evaluations += 1; local_count += 1
-                fo = np.array(record['first_order']); feasible = not record['invalid_geometry'] and np.all(abs(fo-FO_TARGET) < [.25, .4, .5, .6])
+                fo = np.array(record['first_order']); feasible = record_feasible(record)
                 score = record['max_shortfall']+.2*record['deficit_rms']
                 record.update(score=score, feasible=bool(feasible), round=round_number, eval=evaluations,
                               seconds=time.time()-start, seed=seed, source_seed_sha256=digest(seed), phase=a.phase,
@@ -297,13 +350,16 @@ def main():
                 global_improved = feasible and (best is None or score < best['score'])
                 combo_improved = feasible and (key not in combo_bests or score < combo_bests[key]['score'])
                 if global_improved or combo_improved:
-                    serial += 1; snapshot = out/'best'/f'candidate_{serial:05d}.zmx'
-                    snapshot.parent.mkdir(parents=True, exist_ok=True)
-                    while snapshot.exists() or snapshot.with_suffix('.json').exists():
-                        serial += 1; snapshot = out/'best'/f'candidate_{serial:05d}.zmx'
+                    snapshot = next_snapshot()
                     _, saved = pool.submit(evaluate, x, seed, combo, size, round_end, str(snapshot)).result()
-                    saved.update(record); saved.update(serial=serial, source_path=str(snapshot.resolve()), source_sha256=digest(snapshot),
-                                                      checkpoint_path=str(snapshot.with_suffix('.json').resolve()))
+                    saved.update(score=saved['max_shortfall']+.2*saved['deficit_rms'], feasible=record_feasible(saved),
+                                 serial=serial, source_path=str(snapshot.resolve()), source_sha256=digest(snapshot),
+                                 checkpoint_path=str(snapshot.with_suffix('.json').resolve()), seed=seed,
+                                 source_seed_sha256=digest(seed), phase=a.phase, round=round_number, eval=evaluations,
+                                 seconds=time.time()-start, catalog_plan_path=str(Path(a.catalog_plan).resolve()),
+                                 catalog_plan_sha256=digest(a.catalog_plan) if Path(a.catalog_plan).exists() else None)
+                    global_improved = saved['feasible'] and (best is None or saved['score'] < best['score'])
+                    combo_improved = saved['feasible'] and (key not in combo_bests or saved['score'] < combo_bests[key]['score'])
                     atomic_json(snapshot.with_suffix('.json'), saved)
                     if combo_improved:
                         combo_bests[key] = saved
@@ -324,8 +380,7 @@ def main():
                 nonlocal jacobians
                 if jacobians >= a.max_jacobians: raise RoundExpired('Jacobian budget reached')
                 jacobians += 1
-                macro_step = [.015, .025, .04][round_number % 3] if size == 256 else [.025, .035, .05][round_number % 3]
-                steps = np.r_[[.0015 if round_number % 3 != 2 else .003]*2, [macro_step]*22]
+                steps = np.r_[[.0015]*2, [.01]*22]
                 # Only one batch is outstanding; every queued job checks deadline before native calls.
                 jobs = []
                 for i, h in enumerate(steps):
