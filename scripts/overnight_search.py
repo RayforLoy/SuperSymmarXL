@@ -319,6 +319,9 @@ def main():
             best = min(combo_bests.values(), key=lambda q: q['score']) if combo_bests else None
             if best: atomic_json(out/'best.json', best)
             write_pareto(out, combo_bests)
+        # A resumed pool should explore remaining material seeds rather than
+        # repeat every combination that already has a native feasible snapshot.
+        tried.update(tuple(value['materials']) for value in combo_bests.values())
         for round_number in range(a.max_rounds):
             if time.time() >= end-a.guard_seconds: raise DeadlineReached('Phase closing margin reached')
             plan = read_plan(Path(a.catalog_plan), a.phase)
