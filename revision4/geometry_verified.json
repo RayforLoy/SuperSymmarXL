@@ -1,0 +1,202 @@
+{
+  "air_gaps": [
+    {
+      "after_surface": 2,
+      "before_surface": 3,
+      "checked_radius_mm": 25.8,
+      "min_gap_mm": 10.387869260119317,
+      "at_radius_mm": 25.8,
+      "conservative_extension": false
+    },
+    {
+      "after_surface": 4,
+      "before_surface": 5,
+      "checked_radius_mm": 15.0,
+      "min_gap_mm": 11.973179407583196,
+      "at_radius_mm": 0.0,
+      "conservative_extension": false
+    },
+    {
+      "after_surface": 6,
+      "before_surface": 8,
+      "checked_radius_mm": 14.4,
+      "min_gap_mm": 5.121937603245378,
+      "at_radius_mm": 14.4,
+      "conservative_extension": false
+    },
+    {
+      "after_surface": 10,
+      "before_surface": 11,
+      "checked_radius_mm": 15.8,
+      "min_gap_mm": 0.6709146353945883,
+      "at_radius_mm": 15.8,
+      "conservative_extension": true
+    }
+  ],
+  "glass_thickness_checks": [
+    {
+      "front_surface": 1,
+      "rear_surface": 2,
+      "checked_radius_mm": 29.0,
+      "min_thickness_mm": 3.54953531224822
+    },
+    {
+      "front_surface": 3,
+      "rear_surface": 4,
+      "checked_radius_mm": 19.5,
+      "min_thickness_mm": 13.740852736482863
+    },
+    {
+      "front_surface": 5,
+      "rear_surface": 6,
+      "checked_radius_mm": 14.5,
+      "min_thickness_mm": 2.35747969629569
+    },
+    {
+      "front_surface": 8,
+      "rear_surface": 9,
+      "checked_radius_mm": 14.4,
+      "min_thickness_mm": 7.614587992321738
+    },
+    {
+      "front_surface": 9,
+      "rear_surface": 10,
+      "checked_radius_mm": 14.4,
+      "min_thickness_mm": 4.53270369798771
+    },
+    {
+      "front_surface": 11,
+      "rear_surface": 12,
+      "checked_radius_mm": 14.0,
+      "min_thickness_mm": 5.06773350039717
+    }
+  ],
+  "min_air_gap_mm": 0.6709146353945883,
+  "no_surface_intersection_in_checked_regions": true,
+  "rear_aperture_readout_allowance_mm": 0.3,
+  "source_sha256": "bc8d56c9b2e2141f725d37f657917e2a31f0a2a6f4aebf79d86a689f6c4095be",
+  "surface_signature": [
+    {
+      "surface": 1,
+      "radius_mm": 186.766578729554,
+      "thickness_mm": 3.54953531224822,
+      "glass": "KF9",
+      "clear_radius_mm": 41.0,
+      "mechanical_radius_mm": 41.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 2,
+      "radius_mm": 33.335799107243,
+      "thickness_mm": 12.3235563668472,
+      "glass": "",
+      "clear_radius_mm": 29.0,
+      "mechanical_radius_mm": 29.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 3,
+      "radius_mm": 37.4889402732244,
+      "thickness_mm": 15.9777943402792,
+      "glass": "N-LAK33B",
+      "clear_radius_mm": 25.8,
+      "mechanical_radius_mm": 25.8,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 4,
+      "radius_mm": 60.411506135978506,
+      "thickness_mm": 11.9731794075832,
+      "glass": "",
+      "clear_radius_mm": 19.5,
+      "mechanical_radius_mm": 19.5,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 5,
+      "radius_mm": 36.5685886879732,
+      "thickness_mm": 2.87509309958999,
+      "glass": "N-LAK33B",
+      "clear_radius_mm": 15.0,
+      "mechanical_radius_mm": 15.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 6,
+      "radius_mm": 43.6294334416939,
+      "thickness_mm": 4.85123453578638,
+      "glass": "",
+      "clear_radius_mm": 14.5,
+      "mechanical_radius_mm": 14.5,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 7,
+      "radius_mm": Infinity,
+      "thickness_mm": 1.6855602485093,
+      "glass": "",
+      "clear_radius_mm": 14.225135757597235,
+      "mechanical_radius_mm": 14.225135757597235,
+      "stop": true,
+      "conic": 0.0
+    },
+    {
+      "surface": 8,
+      "radius_mm": 101.17299947919798,
+      "thickness_mm": 13.4330332873814,
+      "glass": "N-SK5",
+      "clear_radius_mm": 14.4,
+      "mechanical_radius_mm": 14.4,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 9,
+      "radius_mm": -24.046435072199404,
+      "thickness_mm": 4.53270369798771,
+      "glass": "F2",
+      "clear_radius_mm": 14.4,
+      "mechanical_radius_mm": 14.4,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 10,
+      "radius_mm": -41.6189991484769,
+      "thickness_mm": 0.981887165719159,
+      "glass": "",
+      "clear_radius_mm": 15.5,
+      "mechanical_radius_mm": 15.5,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 11,
+      "radius_mm": -40.8560992685271,
+      "thickness_mm": 5.06773350039717,
+      "glass": "K10",
+      "clear_radius_mm": 14.0,
+      "mechanical_radius_mm": 14.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 12,
+      "radius_mm": 202.361958481281,
+      "thickness_mm": 135.408789815897,
+      "glass": "",
+      "clear_radius_mm": 18.8,
+      "mechanical_radius_mm": 18.8,
+      "stop": false,
+      "conic": 0.0
+    }
+  ],
+  "surface_signature_sha256": "dce9e3e7734ad8ea12f5bf0f12ac24b0c05c854cc38495ae1c1588b6f39f2d59",
+  "scope": "Optical surface geometry; not a mechanical tolerance guarantee."
+}

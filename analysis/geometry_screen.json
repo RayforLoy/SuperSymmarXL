@@ -1,0 +1,32 @@
+[
+  {
+    "front_surface": 1,
+    "assessment_radius_mm": 31.260194884415746,
+    "min_axial_thickness_in_common_aperture_mm": 3.4
+  },
+  {
+    "front_surface": 3,
+    "assessment_radius_mm": 24.85505773612212,
+    "min_axial_thickness_in_common_aperture_mm": 11.90653641245104
+  },
+  {
+    "front_surface": 5,
+    "assessment_radius_mm": 14.984289264584106,
+    "min_axial_thickness_in_common_aperture_mm": 2.6782599017986115
+  },
+  {
+    "front_surface": 8,
+    "assessment_radius_mm": 18.77263770019635,
+    "min_axial_thickness_in_common_aperture_mm": 2.026111235945777
+  },
+  {
+    "front_surface": 9,
+    "assessment_radius_mm": 19.272282225764453,
+    "min_axial_thickness_in_common_aperture_mm": 4.700000000000003
+  },
+  {
+    "front_surface": 11,
+    "assessment_radius_mm": 22.68548798172326,
+    "min_axial_thickness_in_common_aperture_mm": 5.299999999999997
+  }
+]

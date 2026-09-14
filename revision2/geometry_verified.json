@@ -1,0 +1,20 @@
+[
+  {
+    "after_surface": 2,
+    "checked_radius_mm": 25.8,
+    "min_gap_mm": 11.169481644927876,
+    "at_radius_mm": 25.8
+  },
+  {
+    "after_surface": 4,
+    "checked_radius_mm": 15.0,
+    "min_gap_mm": 11.636,
+    "at_radius_mm": 0.0
+  },
+  {
+    "after_surface": 10,
+    "checked_radius_mm": 15.8,
+    "min_gap_mm": 0.6049749946628684,
+    "at_radius_mm": 15.8
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "criteria": "Proposed engineering screen, not Schneider specification: RMSE <= 0.05 and max absolute error <= 0.12; manual extraction uncertainty 0.02-0.04; infinity only",
+  "per_aperture": {
+    "5.6": {
+      "rmse": 0.11900223664773923,
+      "max_abs": 0.3086023098798472
+    },
+    "8": {
+      "rmse": 0.0413582070280326,
+      "max_abs": 0.10131730720685042
+    },
+    "22": {
+      "rmse": 0.029285972628278516,
+      "max_abs": 0.059452766830425996
+    }
+  },
+  "overall": {
+    "rmse": 0.07086185625741058,
+    "max_abs": 0.3086023098798472
+  },
+  "pass": false
+}

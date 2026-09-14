@@ -1,0 +1,448 @@
+USOO587O234A 
+United States Patent (19) 
+11 
+Patent Number: 
+Ebbesmeier née Schitthof 
+(45) 
+Date of Patent: 
+5,870,234 
+Feb. 9, 1999 
+54) COMPACT WIDE-ANGLE LENS 
+FOREIGN PATENT DOCUMENTS 
+a 
+0 262 407 
+4/1988 European Pat. Off.. 
+75 
+Inventor: Hiltrud Ebbesmeier née Schitthof, 
+1572 576 3/1970 Germany. 
+Schweppenhausen, Germany 
+2849175 5/1979 Germany ............................... 359/770 
+148391 
+5/1981 Germany. 
+73 
+Assignee: Jos. Schneider Optische Werke 
+405 746 
+7/1966 Switzerland. 
+Kreuznach GmbH & Co. KG, Bad 
+Kreuznach, Germany 
+1 137788 12/1968 United Kingdom. 
+Primary Examiner David C. Nelms 
+Assistant Examiner Evelyn A. Lester 
+Attorney, Agent, or Firm-Herbert Dubno 
+21 
+Appl. No.: 923,567 
+22 
+Filed: 
+Sep. 4, 1997 
+O 
+O 
+57 
+ABSTRACT 
+30 
+Foreign Application Priority Data 
+This invention relates to a compact wide-angle lens which 
+Sep. 6, 1996 DEI 
+Germany ........................ ''''' 
+consists of five members. FEE G and the last 
+51 
+Int. Cl. ............................. G02B 13/04; G02B 9/60; 
+member are each divergent lenses of low deviation, which 
+GO2B 3/02 
+consist of low refractivity crown glass. The Second member 
+52 
+U.S. Cl. .......................... 359/752; 359/753; 359/761; 
+and the third member are convergent lenses made of high 
+359/763; 359/770; 359/713; 359/714 
+refractivity crown glass. The fourth member, which is the 
+58 
+Field of Search ..................................... 359,752, 753, 
+final member of the lens according to the invention, consists 
+359/761, 763, 770, 713, 714 
+of a convergent lens and a divergent lens which are 
+cemented to each other. Type of glass are used for this 
+56) 
+References Cited 
+cemented member which have a very low difference in 
+refractive index but a very high difference in dispersion. The 
+U.S. PATENT DOCUMENTS 
+convergent lens has a low dispersion and the divergent lens 
+3,542,454 11/1970 Hugues et al. .......................... 359761 
+has a high dispersion. One of the two glass/air Surfaces of the 
+3,567,310 
+3/1971 Bertele ............. 
+... 359/752 
+cemented member is aspherical. A lens Such as this accord 
+3,601,473 
+8/1971 Mandler et al. . 
+... 359/752 
+ing to the invention has a maximum aperture ratio of at least 
+4,130,350 12/1978 Koizumi ....... 
+... 359/770 
+1:5.6 and an image angle of 105. The chromatic correction 
+4,211,472 
+7/1980 Nakamura ... 
+... 359/753 
+is well defined and is very substantially independent of the 
+4,747,675 
+5/1988 Nagler .......... 
+... 359/753 
+distance of the object. Amongst other effects, this results in 
+4,764,001 
+8/1988 Yokota ......... 
+... 359/770 
+Scarcely any losses of image quality occurring, even at Short 
+E. C. E.,H.M. E. range. The distortion of the object is very low. 
+5,621,575 
+4/1997 Toyama ................................... 359/753 
+5,663,836 
+9/1997 Ogata ...................................... 359/714 
+3 Claims, 1 Drawing Sheet 
+L1 
+2 
+L3 
+L4a L4b LS 
+  
+  
+Feb. 9, 1999 
+5,870,234 
+U.S. Patent 
+GT 
+Gºl 
+effi 
+  
+5,870,234 
+1 
+COMPACT WIDE-ANGLE LENS 
+BACKGROUND OF THE INVENTION 
+1. Field of the Invention 
+This invention relates to a compact wide-angle lens 
+having a meniscus lens on the object Side and a meniscus 
+lens on the image Side, which consists of five members and 
+has a diaphragm between the third and fourth members. 
+2. Description of Related Art 
+Compact wide-angle lenses of this type are increasingly 
+being used in the field of large-negative photography. Com 
+pared with conventional wide-angle lenses, they have 
+Shorter overall lengths, Smaller lens diameters and a reduced 
+weight. These advantages permit better utilisation of the 
+adjustment options of a large-negative camera. The Sensi 
+tivity to Scale of compact wide-angle lenses is also less than 
+that of conventional wide-angle lenses. 
+Compact wide-angle lenses are already known which 
+comprise a dispersive meniscus lens both on the object Side 
+and on the image Side. 
+DD WP 148 391 describes a wide-angle lens such as this, 
+in which the central convergent lens part is constructed from 
+four individual upright lens members. A meniscus lens with 
+a cemented face is disposed in front of the diaphragm Space 
+in the direction of light. A disadvantage of this lens is that 
+its unsymmetrical construction does not permit very large 
+image angles. 
+Another compact wide-angle lens, which consists of Six 
+members with eight lenses, is claimed in EP 0 262 407. In 
+this lens, the first lens member is constructed as a convex 
+negative meniscus lens on the object side and the Sixth lens 
+member is of biconcave construction. This is claimed to 
+result in a reduced overall length, and installation in cameras 
+is improved due to the Smaller lens diameter. 
+An approximately Symmetrical wide-angle lens which is 
+a double anastigmatic lens and which is described in DE OS 
+1572 576 has a long overall length due to its eight lenses and 
+is thus not a compact wide-angle lens in the actual Sense of 
+this term. Lenses of this type do in fact exhibit good 
+Sharpness and image field flatness, but do not permit high 
+aperture numbers to be employed. 
+All these known compact wide-angle lenses are burdened 
+with disadvantages. Thus troublesome chromatic 
+aberrations, particularly colour defects, occur as magnifica 
+tions become higher. Moreover, these compact wide-angle 
+lenses do not enable Such large image angles to be employed 
+as those which are possible with conventional wide-angle 
+lenses. 
+The aim of the present invention is therefore to create a 
+compact wide-angle lens for which the Said weaknesses of 
+this type of lens do not arise. 
+SUMMARY OF THE INVENTION 
+The object of the present invention is to construct a 
+compact wide-angle lens in which no disadvantageous fal 
+sifications occur in chromatic correction and in image 
+quality, even at Short range, and which is equivalent to the 
+known, conventional wide-angle lenses as regards image 
+angle, aperture ratio and distortion. 
+This object is achieved according to the invention by a 
+five-membered lens, the first member and the last member of 
+which are each divergent lenses of low deviation, which 
+consist of low refractivity crown glass, wherein the face of 
+the last member which faces the plane of the image is 
+15 
+25 
+35 
+40 
+45 
+50 
+55 
+60 
+65 
+2 
+concave. The second member and the third member are 
+convergent lenses made of high refractivity crown glass. The 
+fourth member, which is the final member of the lens 
+according to the invention, consists of a convergent lens and 
+a divergent lens which are cemented to each other. 
+The types of glass which are used for this cemented 
+member have a very low difference in refractive index but a 
+very high difference in dispersion, wherein the convergent 
+lens has a low dispersion and the divergent lens has a high 
+dispersion. One of the two glass/air Surfaces of the cemented 
+member is aspherical. A diaphragm is disposed between the 
+third member and the fourth member. 
+A lens Such as this according to the invention has a 
+maximum aperture ratio of at least 1:5.6 and an image angle 
+of 105. The chromatic correction is well defined and is very 
+Substantially independent of the distance of the object. 
+Amongst other effects, this ensures that Scarcely any losses 
+of image quality occur, even at Short range. The distortion of 
+the object is very low. The invention is explained in more 
+detail below with reference to examples of embodiments. 
+BRIEF DESCRIPTION OF THE DRAWING 
+The accompanying drawing (one FIGURE) is a schematic 
+Sectional view of the compact wide-angle lens according to 
+the invention. 
+DETAILED DESCRIPTION OF PREFERRED 
+EMBODIMENTS 
+The wide-angle lens according to the invention consists of 
+five members, the first member L1 of which and the last 
+member L5 of which are each divergent lenses of low 
+deviation and consist of low refractivity crown glass. The 
+radii of curvature of the two lenses L1 and L5 are denoted 
+by r and r- and by ro and r, respectively. The face of the 
+last member L5 which faces the plane of the image is 
+concave. The second member L2 and the third member L3 
+are convergent lenses made of high refractivity crown glass, 
+and have radii of curvature r and r, and rs and re. 
+respectively. The fourth member L4 consists of a convergent 
+lens L4a with radii of curvature r- and rs and of a divergent 
+lens L4b with radii of curvature rs and ro, which are 
+cemented to each other. The types of glass which are used 
+for this cemented member L4 have a very low difference in 
+refractive indeX but a very high difference in dispersion, 
+wherein the convergent lens L4a has a low dispersion and 
+the divergent lens L4b has a high dispersion. One of the two 
+glass/air Surfaces of the cemented member is aspherical. A 
+diaphragm 6 is disposed between the third member L3 and 
+the fourth member L4. 
+The thicknesses of the lenses are denoted by d, d, ds, d7, 
+ds and do, and the air gaps between the lenses are denoted 
+by d2, d4, d6 and do. 
+A compact wide-angle lens Such as this exhibits very good 
+chromatic correction and image quality, which are not 
+impaired even at Short range. This compact wide-angle lens 
+is equivalent to the known, conventional wide-angle lenses 
+as regards image angle, aperture ratio and distortion. 
+According to a first embodiment, a compact wide-angle 
+lens according to the invention, with a maximum aperture 
+angle of at least 1: 5.6 and an image angle of 105, is 
+determined by the technical data listed in the following 
+Table: 
+5,870,234 
+Thicknesses and 
+Refractive indices Abbe number 
+Radii 
+air gaps 
+Ile 
+Ile 
+r = 201.077 
+d = 3.400 
+n = 1.52583 
+v = 51.25 
+r = 33.369 
+d = 13.000 
+rs = 37.300 
+d = 16.030 
+n = 1.75844 
+v = 52.09 
+r = 60.315 
+d = 11.636 
+rs = 36.588 
+d = 3.200 
+n = 1.75844 
+v = 52.09 
+r = 43.742 
+d = 6.060 
+r = 98.970 
+d = 13.100 
+n = 1.59142 
+v = 61.03 
+rs = -23.818 
+d = 4.700 
+n = 1.624.08 
+vs = 36.12 
+r = -42.216? 
+d = 0.990 
+r = -40.465 
+do = 5.300 
+n = 1.50349 
+v = 56.13 
+r = 203.617 
+* aspherical face 
+According to a Second embodiment, a compact wide 
+angle lens according to the invention, with a maximum 
+aperture angle of at least 1: 5.6 and an image angle of 105, 
+is determined by the technical data listed in the following 
+Table: 
+Thicknesses and 
+Refractive indices Abbe number 
+Radii 
+air gaps 
+Ile 
+Ile 
+r = 169.672 
+d = 3.000 
+n = 1.52583 
+v = 51.25 
+r = 23.884 
+d = 8.465 
+r = 27.751 
+d = 12.860 
+n = 1.75844 
+v = 52.09 
+r = 44.624 
+d = 7.190 
+rs = 28.382 
+d = 2.400 
+n = 1.75844 
+v = 52.09 
+r = 35.229 
+d = 4.535 
+r = 73.026 
+d = 10.470 
+n = 1.59142 
+v = 61.03 
+rs = -17.622 
+d = 3.500 
+n = 1.624.08 
+vs = 36.12 
+r = -31.197* 
+d = 1.360 
+r = -30.837 
+d = 3.300 
+n = 1.50349 
+v = 56.13 
+r = 152.036 
+* aspherical face 
+What is claimed is: 
+1. A compact wide-angle lens, consisting of five members, 
+wherein the first member (L1) and the last member (L5) are 
+each divergent lenses of low deviation made of low refrac 
+tivity crown glass, and the Second member (L2) and the third 
+member (L3) are convergent lenses made of high refractivity 
+crown glass, and consisting of a diaphragm (6) between the 
+third member (L3) and the fourth member (L4), 
+characterised in that the fourth member (L4) consists of a 
+convergent lens (L4a) and a divergent lens (L4b) which 
+are cemented to each other, that the fourth member (L4) 
+is manufactured from types of glass which have a very 
+low difference in refractive index but a very high 
+15 
+25 
+35 
+40 
+45 
+50 
+55 
+60 
+4 
+difference in dispersion, So that the convergent lens 
+(L4a) has a low dispersion and the divergent lens (L4b) 
+has a high dispersion, that one of the two glass/air 
+surfaces of the fourth member (L4) is aspherical and 
+that the face of the last member (L5) which faces the 
+plane of the image is concave. 
+2. A compact wide-angle lens according to claim 1, 
+characterised by the following data: 
+maximum aperture ratio at least 1:5.6 
+image angle 105 
+Thicknesses and 
+Refractive indices Abbe number 
+Radii 
+air gaps 
+Ile 
+Ile 
+r = 201.077 
+d = 3.400 
+n = 1.52583 
+v = 51.25 
+r = 33.369 
+d = 13.000 
+rs = 37.300 
+d = 16.030 
+n = 1.75844 
+v = 52.09 
+r = 60.315 
+d = 11.636 
+rs = 36.588 
+d = 3.200 
+n = 1.75844 
+v = 52.09 
+r = 43.742 
+d = 6.060 
+r = 98.970 
+d = 13.100 
+n = 1.59142 
+v = 61.03 
+rs = -23.818 
+d = 4.700 
+n = 1.624.08 
+vs = 36.12 
+ro = -42.216* 
+d = 0.990 
+r = -40.4.65 
+do = 5.300 
+n = 1.50349 
+v = 56.13 
+r = 203.617 
+*aspherical face. 
+3. A compact wide-angle lens according to claim 1, 
+characterised by the following data: 
+maximum aperture ratio at least 1:5.6 
+image angle 105 
+Thicknesses and 
+Refractive indices Abbe number 
+Radii 
+air gaps 
+Ile 
+Ile 
+r = 169.672 
+d = 3.000 
+n = 1.52583 
+v = 51.25 
+r = 23.884 
+d = 8.465 
+r = 27.751 
+d = 12.860 
+n = 1.75844 
+v = 52.09 
+r = 44.624 
+d = 7.190 
+rs = 28.382 
+d = 2.400 
+n = 1.75844 
+v = 52.09 
+r = 35.229 
+d = 4.535 
+r = 73.026 
+d = 10.470 
+n = 1.59142 
+v = 61.03 
+rs = -17.622 
+d = 3.500 
+n = 1.624.08 
+vs = 36.12 
+r = -31.197* 
+d = 1.360 
+r = -30.837 
+do = 3.300 
+n = 1.50349 
+v = 56.13 
+r = 152.036 
+*aspherical face. 

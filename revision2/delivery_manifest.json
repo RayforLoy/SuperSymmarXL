@@ -1,0 +1,47 @@
+[
+  {
+    "path": "models\\SuperSymmarXL_150_f5p6_reverse.zmx",
+    "sha256": "2431e372babae7886fb93fdeb194ba5ee9f7a788c4a0636e1864b9d6b0da23ba",
+    "bytes": 16752
+  },
+  {
+    "path": "models\\SuperSymmarXL_150_f8_reverse.zmx",
+    "sha256": "9a56b2dba1999244c702477789ad6c1dec6dab0f2c639314c829baca592f05ba",
+    "bytes": 16752
+  },
+  {
+    "path": "models\\SuperSymmarXL_150_f22_reverse.zmx",
+    "sha256": "15debb55d73f4a6039cf662149f962e000cb0bebf1b86e8407364c9645e8aad9",
+    "bytes": 16744
+  },
+  {
+    "path": "reports\\光学性能报告.pdf",
+    "sha256": "bf4e8a153a50964d30dfde1732484a7be10c59ff82fc355ffb46da339ce20ca7",
+    "bytes": 708902
+  },
+  {
+    "path": "reports\\光学性能报告.md",
+    "sha256": "36a5c998a4d21a7c6a2c83edead44fa2738103085d8851354b084cef8248fe25",
+    "bytes": 3299
+  },
+  {
+    "path": "reports\\生产可能性报告.pdf",
+    "sha256": "e74b7fb56649bc0a29c76bcf20f482ee9dd31801483e1324ed6e38ee6a9e83c0",
+    "bytes": 316375
+  },
+  {
+    "path": "reports\\生产可能性报告.md",
+    "sha256": "296d0fdae8c587f28d3cdfd8aed7855c9a7ca073de5c97808f7597614e391c4f",
+    "bytes": 2373
+  },
+  {
+    "path": "analysis\\mtf_comparison.png",
+    "sha256": "25b15f338de769a0fe82f4e92f20527f42ec6f28895cbceb36eccb69eb662faf",
+    "bytes": 345323
+  },
+  {
+    "path": "analysis\\lens_section.png",
+    "sha256": "94ab86f23e8c3ceb63a36c0e837d51e20fe88af26c1ffafbb4f8e2cfc8cfc565",
+    "bytes": 190628
+  }
+]

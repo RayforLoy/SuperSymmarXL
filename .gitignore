@@ -1,0 +1,17 @@
+# Native analysis caches and isolated worker copies are reproducible.
+*.ZDA
+*.zda
+*.ZBF
+*.zbf
+*.BGF
+*.bgf
+__pycache__/
+*.pyc
+tmp/
+**/workers/
+**/curve_workers/
+**/huygens*/[0-9]*/
+**/native_workers/
+**/_pipeline/__pycache__/
+*.pid
+*.lock

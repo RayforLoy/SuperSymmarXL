@@ -1,0 +1,487 @@
+{
+  "input": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision4\\validated.json",
+  "comparison_R2": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision2\\validated.json",
+  "source_sha256": "ee7140264325a0ddbfd24e4155efdbfb8e21d0b05b40383f26e25b1c21489392",
+  "surface_signature": [
+    {
+      "surface": 1,
+      "radius_mm": 186.75634015861502,
+      "thickness_mm": 3.54955782739696,
+      "glass": "KF9",
+      "clear_radius_mm": 41.0,
+      "mechanical_radius_mm": 41.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 2,
+      "radius_mm": 33.3152079393403,
+      "thickness_mm": 12.3240436034845,
+      "glass": "",
+      "clear_radius_mm": 29.0,
+      "mechanical_radius_mm": 29.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 3,
+      "radius_mm": 37.4897227610194,
+      "thickness_mm": 15.9775536133099,
+      "glass": "N-LAK33B",
+      "clear_radius_mm": 25.8,
+      "mechanical_radius_mm": 25.8,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 4,
+      "radius_mm": 60.417974389261595,
+      "thickness_mm": 11.9726159590405,
+      "glass": "",
+      "clear_radius_mm": 19.5,
+      "mechanical_radius_mm": 19.5,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 5,
+      "radius_mm": 36.5511408808629,
+      "thickness_mm": 2.87437344043213,
+      "glass": "N-LAK33B",
+      "clear_radius_mm": 15.0,
+      "mechanical_radius_mm": 15.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 6,
+      "radius_mm": 43.6454067402838,
+      "thickness_mm": 4.85023881667881,
+      "glass": "",
+      "clear_radius_mm": 14.5,
+      "mechanical_radius_mm": 14.5,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 7,
+      "radius_mm": Infinity,
+      "thickness_mm": 1.68398514355953,
+      "glass": "",
+      "clear_radius_mm": 14.230327702875863,
+      "mechanical_radius_mm": 14.230327702875863,
+      "stop": true,
+      "conic": 0.0
+    },
+    {
+      "surface": 8,
+      "radius_mm": 101.15055255979298,
+      "thickness_mm": 13.4322115353693,
+      "glass": "N-SK5",
+      "clear_radius_mm": 14.4,
+      "mechanical_radius_mm": 14.4,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 9,
+      "radius_mm": -24.0439594907693,
+      "thickness_mm": 4.53245389748636,
+      "glass": "F2",
+      "clear_radius_mm": 14.4,
+      "mechanical_radius_mm": 14.4,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 10,
+      "radius_mm": -41.6373748280787,
+      "thickness_mm": 0.978465803781788,
+      "glass": "",
+      "clear_radius_mm": 15.5,
+      "mechanical_radius_mm": 15.5,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 11,
+      "radius_mm": -40.8454134979528,
+      "thickness_mm": 5.06790116914285,
+      "glass": "K10",
+      "clear_radius_mm": 14.0,
+      "mechanical_radius_mm": 14.0,
+      "stop": false,
+      "conic": 0.0
+    },
+    {
+      "surface": 12,
+      "radius_mm": 202.371379837165,
+      "thickness_mm": 135.35474590197,
+      "glass": "",
+      "clear_radius_mm": 18.8,
+      "mechanical_radius_mm": 18.8,
+      "stop": false,
+      "conic": 0.0
+    }
+  ],
+  "surface_signature_sha256": "425accf90525ceb54a8389ebc9575f7bfd103367d405bcdd5e8db23e10265a64",
+  "method": "Analytic sag and first derivative, 20001 uniformly spaced radial samples by default; extrema include axis and clear edge.",
+  "radial_sample_count": 20001,
+  "asphere": {
+    "surface": 10,
+    "prescribed_vertex_radius_mm": -41.6373748280787,
+    "conic": 0.0,
+    "clear_radius_mm": 15.5,
+    "coefficient_powers": [
+      4,
+      6
+    ],
+    "coefficients": [
+      3.33877116867209e-06,
+      2.56909913462649e-09
+    ],
+    "coefficient_units": [
+      "mm^-3",
+      "mm^-5"
+    ],
+    "reference": "Prescribed vertex-radius sphere, not best-fit sphere; departure is designed shape, not form-error tolerance.",
+    "departure_min_um": 0.0,
+    "departure_max_um": 228.34040769824693,
+    "departure_pv_um": 228.34040769824693,
+    "maximum_absolute_departure_um": {
+      "value": 228.34040769824693,
+      "radius_mm": 15.5
+    },
+    "maximum_absolute_surface_slope_mm_per_mm": {
+      "value": 0.3375653335824267,
+      "radius_mm": 15.5
+    },
+    "maximum_absolute_slope_departure_mm_per_mm": {
+      "value": 0.06352350226655346,
+      "radius_mm": 15.5
+    },
+    "maximum_absolute_surface_angle_deg": {
+      "value": 18.65289923832041,
+      "radius_mm": 15.5
+    },
+    "maximum_absolute_angle_departure_deg": {
+      "value": 3.2022708220355263,
+      "radius_mm": 15.5
+    },
+    "edge": {
+      "radius_mm": 15.5,
+      "asphere_sag_mm": -2.7642290440569526,
+      "reference_sphere_sag_mm": -2.9925694517551995,
+      "departure_um": 228.34040769824693,
+      "asphere_slope_mm_per_mm": -0.3375653335824267,
+      "sphere_slope_mm_per_mm": -0.40108883584898014,
+      "slope_departure_mm_per_mm": 0.06352350226655346,
+      "surface_angle_deg": -18.65289923832041,
+      "sphere_angle_deg": -21.855170060355935,
+      "angle_departure_deg": 3.2022708220355263
+    }
+  },
+  "glass_elements": [
+    {
+      "element": 1,
+      "glass": "KF9",
+      "front_surface": 1,
+      "back_surface": 2,
+      "common_effective_radius_mm": 29.0,
+      "common_effective_diameter_mm": 58.0,
+      "center_thickness_mm": 3.54955782739696,
+      "minimum_thickness_mm": 3.54955782739696,
+      "minimum_at_radius_mm": 0.0,
+      "edge_thickness_mm": 18.201165152648144,
+      "center_thickness_change_from_R2_mm": 0.14955782739696,
+      "domain": "Common front/back optical clear aperture only; excludes undefined bevel and mechanical edge."
+    },
+    {
+      "element": 2,
+      "glass": "N-LAK33B",
+      "front_surface": 3,
+      "back_surface": 4,
+      "common_effective_radius_mm": 19.5,
+      "common_effective_diameter_mm": 39.0,
+      "center_thickness_mm": 15.9775536133099,
+      "minimum_thickness_mm": 13.7403799300122,
+      "minimum_at_radius_mm": 19.5,
+      "edge_thickness_mm": 13.7403799300122,
+      "center_thickness_change_from_R2_mm": -0.05244638669010193,
+      "domain": "Common front/back optical clear aperture only; excludes undefined bevel and mechanical edge."
+    },
+    {
+      "element": 3,
+      "glass": "N-LAK33B",
+      "front_surface": 5,
+      "back_surface": 6,
+      "common_effective_radius_mm": 14.5,
+      "common_effective_diameter_mm": 29.0,
+      "center_thickness_mm": 2.87437344043213,
+      "minimum_thickness_mm": 2.354238967005353,
+      "minimum_at_radius_mm": 14.5,
+      "edge_thickness_mm": 2.354238967005353,
+      "center_thickness_change_from_R2_mm": -0.32562655956787,
+      "domain": "Common front/back optical clear aperture only; excludes undefined bevel and mechanical edge."
+    },
+    {
+      "element": 4,
+      "glass": "N-SK5",
+      "front_surface": 8,
+      "back_surface": 9,
+      "common_effective_radius_mm": 14.4,
+      "common_effective_diameter_mm": 28.8,
+      "center_thickness_mm": 13.4322115353693,
+      "minimum_thickness_mm": 7.612919678292579,
+      "minimum_at_radius_mm": 14.4,
+      "edge_thickness_mm": 7.612919678292579,
+      "center_thickness_change_from_R2_mm": 0.33221153536930004,
+      "domain": "Common front/back optical clear aperture only; excludes undefined bevel and mechanical edge."
+    },
+    {
+      "element": 5,
+      "glass": "F2",
+      "front_surface": 9,
+      "back_surface": 10,
+      "common_effective_radius_mm": 14.4,
+      "common_effective_diameter_mm": 28.8,
+      "center_thickness_mm": 4.53245389748636,
+      "minimum_thickness_mm": 4.53245389748636,
+      "minimum_at_radius_mm": 0.0,
+      "edge_thickness_mm": 6.918615003530135,
+      "center_thickness_change_from_R2_mm": -0.16754610251364,
+      "domain": "Common front/back optical clear aperture only; excludes undefined bevel and mechanical edge."
+    },
+    {
+      "element": 6,
+      "glass": "K10",
+      "front_surface": 11,
+      "back_surface": 12,
+      "common_effective_radius_mm": 14.0,
+      "common_effective_diameter_mm": 28.0,
+      "center_thickness_mm": 5.06790116914285,
+      "minimum_thickness_mm": 5.06790116914285,
+      "minimum_at_radius_mm": 0.0,
+      "edge_thickness_mm": 8.026969101598201,
+      "center_thickness_change_from_R2_mm": -0.23209883085714988,
+      "domain": "Common front/back optical clear aperture only; excludes undefined bevel and mechanical edge."
+    }
+  ],
+  "air_gaps_common_aperture": [
+    {
+      "name": "L1 to L2",
+      "front_surface": 2,
+      "back_surface": 3,
+      "center_gap_mm": 12.3240436034845,
+      "checked_radius_mm": 25.8,
+      "minimum_gap_mm": 10.37612025377209,
+      "minimum_at_radius_mm": 25.8,
+      "domain": "Common effective optical aperture"
+    },
+    {
+      "name": "L2 to L3",
+      "front_surface": 4,
+      "back_surface": 5,
+      "center_gap_mm": 11.9726159590405,
+      "checked_radius_mm": 15.0,
+      "minimum_gap_mm": 11.9726159590405,
+      "minimum_at_radius_mm": 0.0,
+      "domain": "Common effective optical aperture"
+    },
+    {
+      "name": "L3 to cemented group (stop between)",
+      "front_surface": 6,
+      "back_surface": 8,
+      "center_gap_mm": 6.53422396023834,
+      "checked_radius_mm": 14.4,
+      "minimum_gap_mm": 5.120545569781408,
+      "minimum_at_radius_mm": 14.4,
+      "domain": "Common effective optical aperture"
+    },
+    {
+      "name": "cemented group to last element",
+      "front_surface": 10,
+      "back_surface": 11,
+      "center_gap_mm": 0.978465803781788,
+      "checked_radius_mm": 14.0,
+      "minimum_gap_mm": 0.7808572439717545,
+      "minimum_at_radius_mm": 14.0,
+      "domain": "Common effective optical aperture"
+    }
+  ],
+  "rear_gap_conservative_extension": {
+    "front_surface": 10,
+    "back_surface": 11,
+    "checked_radius_mm": 15.8,
+    "minimum_gap_mm": 0.6650005697477401,
+    "minimum_at_radius_mm": 15.8,
+    "positive_nominal_gap": true,
+    "domain": "Conservative continuation of S10 and S11 optical shapes to radius 15.8 mm by default, including reading margin beyond specified clear apertures. Mechanical bevel is not defined. This is a geometric test, not a tolerance-guaranteed assembly gap."
+  },
+  "surface_changes_from_R2": [
+    {
+      "surface": 1,
+      "glass": "KF9",
+      "stop": false,
+      "R2_center_distance_mm": 3.4,
+      "R4_center_distance_mm": 3.54955782739696,
+      "center_distance_change_mm": 0.14955782739696,
+      "radius_change_mm": -14.32076535028898,
+      "R2_clear_radius_mm": 41.0,
+      "R4_clear_radius_mm": 41.0,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 2,
+      "glass": "",
+      "stop": false,
+      "R2_center_distance_mm": 13.0,
+      "R4_center_distance_mm": 12.3240436034845,
+      "center_distance_change_mm": -0.6759563965155007,
+      "radius_change_mm": -0.06054927194560378,
+      "R2_clear_radius_mm": 29.0,
+      "R4_clear_radius_mm": 29.0,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 3,
+      "glass": "N-LAK33B",
+      "stop": false,
+      "R2_center_distance_mm": 16.03,
+      "R4_center_distance_mm": 15.9775536133099,
+      "center_distance_change_mm": -0.05244638669010193,
+      "radius_change_mm": 0.215706613984203,
+      "R2_clear_radius_mm": 25.8,
+      "R4_clear_radius_mm": 25.8,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 4,
+      "glass": "",
+      "stop": false,
+      "R2_center_distance_mm": 11.636,
+      "R4_center_distance_mm": 11.9726159590405,
+      "center_distance_change_mm": 0.33661595904050046,
+      "radius_change_mm": 0.10820784742540468,
+      "R2_clear_radius_mm": 19.5,
+      "R4_clear_radius_mm": 19.5,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 5,
+      "glass": "N-LAK33B",
+      "stop": false,
+      "R2_center_distance_mm": 3.2,
+      "R4_center_distance_mm": 2.87437344043213,
+      "center_distance_change_mm": -0.32562655956787,
+      "radius_change_mm": -0.0468432591595942,
+      "R2_clear_radius_mm": 15.0,
+      "R4_clear_radius_mm": 15.0,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 6,
+      "glass": "",
+      "stop": false,
+      "R2_center_distance_mm": 4.8399010320964,
+      "R4_center_distance_mm": 4.85023881667881,
+      "center_distance_change_mm": 0.010337784582409526,
+      "radius_change_mm": -0.06326820724959958,
+      "R2_clear_radius_mm": 14.5,
+      "R4_clear_radius_mm": 14.5,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 7,
+      "glass": "",
+      "stop": true,
+      "R2_center_distance_mm": 1.2200989679036,
+      "R4_center_distance_mm": 1.68398514355953,
+      "center_distance_change_mm": 0.46388617565593004,
+      "radius_change_mm": null,
+      "R2_clear_radius_mm": 14.277706863749422,
+      "R4_clear_radius_mm": 14.230327702875863,
+      "clear_radius_change_mm": -0.0473791608735592,
+      "note": "Automatic stop size depends on aperture state; not a fixed lens-edge production dimension."
+    },
+    {
+      "surface": 8,
+      "glass": "N-SK5",
+      "stop": false,
+      "R2_center_distance_mm": 13.1,
+      "R4_center_distance_mm": 13.4322115353693,
+      "center_distance_change_mm": 0.33221153536930004,
+      "radius_change_mm": 2.1353770740085025,
+      "R2_clear_radius_mm": 14.4,
+      "R4_clear_radius_mm": 14.4,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 9,
+      "glass": "F2",
+      "stop": false,
+      "R2_center_distance_mm": 4.7,
+      "R4_center_distance_mm": 4.53245389748636,
+      "center_distance_change_mm": -0.16754610251364,
+      "radius_change_mm": -0.23017311747230096,
+      "R2_clear_radius_mm": 14.4,
+      "R4_clear_radius_mm": 14.4,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 10,
+      "glass": "",
+      "stop": false,
+      "R2_center_distance_mm": 0.99,
+      "R4_center_distance_mm": 0.978465803781788,
+      "center_distance_change_mm": -0.011534196218211945,
+      "radius_change_mm": 0.5671585998953006,
+      "R2_clear_radius_mm": 15.5,
+      "R4_clear_radius_mm": 15.5,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 11,
+      "glass": "K10",
+      "stop": false,
+      "R2_center_distance_mm": 5.3,
+      "R4_center_distance_mm": 5.06790116914285,
+      "center_distance_change_mm": -0.23209883085714988,
+      "radius_change_mm": -0.3672997446583963,
+      "R2_clear_radius_mm": 14.0,
+      "R4_clear_radius_mm": 14.0,
+      "clear_radius_change_mm": 0.0,
+      "note": ""
+    },
+    {
+      "surface": 12,
+      "glass": "",
+      "stop": false,
+      "R2_center_distance_mm": 135.401541880338,
+      "R4_center_distance_mm": 135.35474590197,
+      "center_distance_change_mm": -0.04679597836798166,
+      "radius_change_mm": -1.2142227101319918,
+      "R2_clear_radius_mm": 18.8,
+      "R4_clear_radius_mm": 18.8,
+      "clear_radius_change_mm": 0.0,
+      "note": "Image distance, not glass center thickness."
+    }
+  ],
+  "warnings": [
+    "Nominal geometry only. No process precision, manufacturing cost, tolerance, yield or supplier qualification is inferred.",
+    "Element thickness excludes bevels and other mechanical features not defined in validated.json.",
+    "All twelve conics must be explicitly stored as zero. R4 is restricted to A4 and A6; nonzero A8 and higher are rejected. Low polynomial order does not prove historical or present manufacturing capability.",
+    "Asphere departure is measured against the prescribed vertex-radius sphere. It is not residual error against a best-fit sphere or an allowed form error.",
+    "Finite radial sampling locates extrema approximately; analytic first derivatives are exact for the stored conic-polynomial representation."
+  ],
+  "asphere_profile_sha256": "af025add1d99ff506eea713ae0e50be3f041de806106360b8494b64c0a49d37a"
+}

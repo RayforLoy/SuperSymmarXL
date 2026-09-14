@@ -1,0 +1,10 @@
+from pathlib import Path
+p=Path('SuperSymmarXL/scripts/fit_mtf.py')
+s=p.read_text()
+s=s.replace('135.1,154.4','131.24,154.4').replace('[0,.2,.4,.6,.7,.8,1.0]','[0,.2,.4,.6,.68,.8,1.0]')
+s=s.replace('[.94,.94,.865,.865,.79,.79]','[.94,.94,.865,.865,.69,.69]')
+s=s.replace('[.39,.53,.21,.28,.09,.20]','[.40,.54,.21,.29,.09,.21]')
+s=s.replace('[.43,.40,.24,.25,.10,.18]','[.48,.45,.27,.29,.12,.22]')
+s=s.replace('bounds=(',"x0=np.array(json.loads((ROOT/'analysis'/'fit_round1.json').read_text())['x'])\nbounds=(")
+s=s.replace('diff_step=1e-4,max_nfev=100','diff_step=.01,x_scale=\'jac\',max_nfev=120').replace('ftol=2e-5,xtol=2e-5','ftol=1e-6,xtol=1e-7')
+p.with_name('fit_round2.py').write_text(s)

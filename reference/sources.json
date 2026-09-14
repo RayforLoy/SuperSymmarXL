@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "file": "super-symmar_xl_45_80.pdf",
+      "sha256": "d7d3c90aa66722be4e52a3a34c5319c2516772e6a17c5d9311955e476fca9135",
+      "source": "user-provided local PDF"
+    },
+    {
+      "file": "super-symmar_xl_56_110.pdf",
+      "sha256": "112e8e5c720b9c437677af60129dcbebddfeee7f6c8efefc98ea0f79b20cb617",
+      "source": "user-provided local PDF"
+    },
+    {
+      "file": "super-symmar_xl_56_150.pdf",
+      "sha256": "5999cccc66996c0fa630d1375d13ac1c28957cb56b286daa4d60cd043f8d443b",
+      "source": "user-provided local PDF"
+    },
+    {
+      "file": "super-symmar_xl_56_210.pdf",
+      "sha256": "9c460f55b3494dc3392c26405ca454fc902f7c034f76b4612b1e355cf7bf5112",
+      "source": "user-provided local PDF"
+    },
+    {
+      "file": "US5870234 Super Symmar XL patent.pdf",
+      "sha256": "656450f5062ad8bb9455bbac06ac0dbda03d41ee63fdbe76c54b1223fd6f53b5",
+      "source": "user-provided local PDF"
+    }
+  ],
+  "web_sources": [
+    {
+      "url": "https://patents.google.com/patent/US5870234A/en",
+      "role": "Patent identity verification; actual prescription transcribed from local patent PDF"
+    },
+    {
+      "url": "https://www.schott.com/en-us/products/optical-glass-p1000267/downloads",
+      "role": "Manufacturer catalog portal; stock and quotation not verified"
+    }
+  ],
+  "glass_catalog": "C:\\Users\\liuru\\Documents\\Zemax\\Glasscat\\SCHOTT.AGF",
+  "glass_catalog_sha256": "d3f916be810b5cb76566b9cf75e16813fc062d12a86a4604d281bb0777823256"
+}

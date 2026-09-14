@@ -1,0 +1,51 @@
+{
+  "source": "super-symmar_xl_56_150.pdf page 1 upper-right section; 6x rendered crop reference_section.png",
+  "method": "Manual axial vertex positions; least-squares common scale against patent embodiment 1 plus pupil-derived stop. Drawing is not certified dimensional production data.",
+  "scale_pixels_per_mm": 6.350610399605306,
+  "origin_pixel": 266.00650889224664,
+  "axial_residual_rms_mm": 0.052482352129950935,
+  "vertices_mm": [
+    0.0,
+    3.4,
+    16.4,
+    32.43,
+    44.066,
+    47.266000000000005,
+    52.10590103210001,
+    53.32600000000001,
+    66.426,
+    71.126,
+    72.116,
+    77.416
+  ],
+  "vertices_pixel": [
+    266.5,
+    287.0,
+    370.0,
+    472.0,
+    546.0,
+    566.0,
+    597.0,
+    605.0,
+    688.0,
+    718.0,
+    724.0,
+    757.0
+  ],
+  "clear_semidiameters_mm": {
+    "1": 41,
+    "2": 29,
+    "3": 25.8,
+    "4": 19.5,
+    "5": 15,
+    "6": 14.5,
+    "8": 14.4,
+    "9": 14.4,
+    "10": 15.5,
+    "11": 14,
+    "12": 18.8
+  },
+  "assumed_clear_radius_readout_uncertainty_mm": 0.3,
+  "max_semi_field_angle_deg": 52.5,
+  "mtf_reference_max_image_height_mm": 193
+}

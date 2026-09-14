@@ -1,0 +1,317 @@
+{
+  "model": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx",
+  "model_filename": "higher7_asphereonly1_best.zmx",
+  "source_model_sha256": "395a8ed2003b89d5091bb928ff700d9ae137ec18d3b9ad39586f4a62ab7c0d8c",
+  "official_fft_documentation": "https://ansyshelp.ansys.com/public/Views/Secured/Zemax/v252/en/OpticStudio_User_Guide/OpticStudio_Help/topics/FFT_MTF.html",
+  "official_huygens_documentation": "https://ansyshelp.ansys.com/public/Views/Secured/Zemax/v252/en/OpticStudio_User_Guide/OpticStudio_Help/topics/Huygens_MTF.html",
+  "method": "Native FFT and Huygens analyses; identical physical apertures, image plane, six wavelengths and f-number; no ZMX saved.",
+  "settings_contract": "IAS_HuygensMtf exposes PupilSampleSize, ImageSampleSize, ImageDelta (um), Field and Wavelength.",
+  "warnings": [
+    "FFT may be inaccurate for extreme exit-pupil stretching in cosine space, per Ansys. Huygens still needs pupil and image-window convergence.",
+    "ImageDelta=0 is native automatic spacing. Initial image grid=256 does not by itself prove PSF/window convergence; record raw native output and sample-frequency spacing."
+  ],
+  "methods": [
+    "Native FFT MTF",
+    "Native Huygens MTF; direct diffraction integral"
+  ],
+  "settings": {
+    "pupil_sampling": [
+      256
+    ],
+    "image_sampling": 512,
+    "image_delta": 1.0,
+    "image_delta_unit": "um",
+    "six_wavelengths": true,
+    "polarization": false
+  },
+  "results": [
+    {
+      "f_number": "5.6",
+      "reference_height_fraction": 0.0,
+      "angle_deg": 0.0,
+      "samples": {
+        "256": {
+          "FFT": {
+            "frequency_lp_mm": [
+              5,
+              10,
+              20
+            ],
+            "values_5T_5S_10T_10S_20T_20S": [
+              0.8954543746181207,
+              0.8954543746181207,
+              0.7917578726404056,
+              0.7917578726404056,
+              0.5951612693772251,
+              0.5951612693772251
+            ],
+            "frequency_grid_count": 300,
+            "frequency_grid_min_step": 0.0668896321070207,
+            "raw_text_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\huygens_pupil256_fixed_window_f5p6_h0p0_p256_FFT.txt",
+            "raw_header": "复色光衍射MTF\r\n\r\n文件 : D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx\r\n题目: Super-Symmar XL 150 mm - R2 reverse candidate - full 105 deg\r\n日期 : 2026/9/15\r\n\r\n\r\n数据 0.4050 到 0.6440 μm.\r\n面: 像面\r\n空间频率:周期/mm.\r\n模值大小是相对于1.0.\r\n\r\n视场：0.00 (度)\r\n空间频率\t  子午\t    弧矢\r\n         0.000000\t    1.000000\t    1.000000\r\n         0.050000\t    0.999490\t    0.999490\r\n         0.100000\t    0.998980\t    0.998980\r\n         0.150000\t    0.998468\t    0.998468\r\n         0.200000\t    0.997953\t    0.997953\r\n         0.250000\t    0.997435\t    0.997435\r\n         0.300000\t    0.996912\t    0.996912\r\n         0.350000\t    0.996384\t    0.996384\r\n         0.400000\t    0.995850\t    0.995850\r\n         0.450000\t    0.995309\t    0.995309\r\n         0.500000\t    0.994760\t    0.994760\r\n         0.550000\t    0.994203\t    0.994203\r\n         0.600000\t    0.993636\t    0.993636\r\n         0.650000\t    0.993058\t    0.993058\r\n         0.700000\t    0.992469\t    0.992469\r\n         0.750000\t    0.991868\t    0.991868\r\n         0.800000\t    0.991254\t    0.991254\r\n         0.850000\t    0.990626\t    0.990626\r\n         0.900000\t    0.989983\t    0.989983\r\n         0.950000\t    0.989325\t    0.989325\r\n         1.000000\t    0.988650\t    0.988650\r\n         1.050000\t    0.987957\t    0.987957\r\n         1.100000\t    0.987247\t    0.987247\r\n         1.150000\t    0.986517\t    0.986517\r\n         1.200000\t    0.985767\t    0.985767\r\n         1.250000\t    0.984997\t    0.984997\r\n         1.300000\t    0.984205\t    0.984205\r\n         1.350000\t    0.983392\t    0.983392\r\n         1.400000\t    0.982557\t    0.982557\r\n         1",
+            "warnings": []
+          },
+          "Huygens": {
+            "frequency_lp_mm": [
+              5,
+              10,
+              20
+            ],
+            "values_5T_5S_10T_10S_20T_20S": [
+              0.9087128709478256,
+              0.9087128709478259,
+              0.8034496032265837,
+              0.8034496032265829,
+              0.605776856873766,
+              0.6057768568737668
+            ],
+            "frequency_grid_count": 300,
+            "frequency_grid_min_step": 0.0668896321070207,
+            "raw_text_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\huygens_pupil256_fixed_window_f5p6_h0p0_p256_Huygens.txt",
+            "raw_header": "复色光惠更斯MTF文件 : D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx\r\n题目: Super-Symmar XL 150 mm - R2 reverse candidate - full 105 deg\r\n日期 : 2026/9/15\r\n\r\n\r\n数据 0.4050 到 0.6440 μm.\r\n空间频率:周期/mm.\r\n模值大小是相对于1.0.\r\n\r\n视场：0.00 (度)\r\n空间频率\t  子午\t    弧矢\r\n         0.000000\t    1.000000\t    1.000000\r\n         0.020000\t    0.999929\t    0.999929\r\n         0.040000\t    0.999857\t    0.999857\r\n         0.060000\t    0.999785\t    0.999785\r\n         0.080000\t    0.999713\t    0.999713\r\n         0.100000\t    0.999641\t    0.999641\r\n         0.120000\t    0.999568\t    0.999568\r\n         0.140000\t    0.999494\t    0.999494\r\n         0.160000\t    0.999419\t    0.999419\r\n         0.180000\t    0.999344\t    0.999344\r\n         0.200000\t    0.999267\t    0.999267\r\n         0.220000\t    0.999190\t    0.999190\r\n         0.240000\t    0.999111\t    0.999111\r\n         0.260000\t    0.999030\t    0.999030\r\n         0.280000\t    0.998949\t    0.998949\r\n         0.300000\t    0.998865\t    0.998865\r\n         0.320000\t    0.998780\t    0.998780\r\n         0.340000\t    0.998693\t    0.998693\r\n         0.360000\t    0.998604\t    0.998604\r\n         0.380000\t    0.998514\t    0.998514\r\n         0.400000\t    0.998420\t    0.998420\r\n         0.420000\t    0.998325\t    0.998325\r\n         0.440000\t    0.998227\t    0.998227\r\n         0.460000\t    0.998127\t    0.998127\r\n         0.480000\t    0.998024\t    0.998024\r\n         0.500000\t    0.997918\t    0.997918\r\n         0.520000\t    0.997810\t    0.997810\r\n         0.540000\t    0.997698\t    0.997698\r\n         0.560000\t    0.997584\t    0.997584\r\n         0.580000\t  ",
+            "warnings": []
+          },
+          "Huygens_minus_FFT": [
+            0.013258496329704883,
+            0.013258496329705216,
+            0.011691730586178006,
+            0.01169173058617723,
+            0.010615587496540901,
+            0.010615587496541679
+          ],
+          "maximum_absolute_difference": 0.013258496329705216
+        }
+      }
+    },
+    {
+      "f_number": "5.6",
+      "reference_height_fraction": 0.6,
+      "angle_deg": 38.021998391356945,
+      "samples": {
+        "256": {
+          "FFT": {
+            "frequency_lp_mm": [
+              5,
+              10,
+              20
+            ],
+            "values_5T_5S_10T_10S_20T_20S": [
+              0.4814401911871657,
+              0.46852053806177635,
+              0.2696969819684901,
+              0.3764459880222856,
+              0.04915833619761547,
+              0.2555569133673056
+            ],
+            "frequency_grid_count": 300,
+            "frequency_grid_min_step": 0.0668896321070207,
+            "raw_text_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\huygens_pupil256_fixed_window_f5p6_h0p6_p256_FFT.txt",
+            "raw_header": "复色光衍射MTF\r\n\r\n文件 : D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx\r\n题目: Super-Symmar XL 150 mm - R2 reverse candidate - full 105 deg\r\n日期 : 2026/9/15\r\n\r\n\r\n数据 0.4050 到 0.6440 μm.\r\n面: 像面\r\n空间频率:周期/mm.\r\n模值大小是相对于1.0.\r\n\r\n视场：38.02 (度)\r\n空间频率\t  子午\t    弧矢\r\n         0.000000\t    1.000000\t    1.000000\r\n         0.050000\t    0.994718\t    0.982785\r\n         0.100000\t    0.989499\t    0.965606\r\n         0.150000\t    0.984336\t    0.948496\r\n         0.200000\t    0.979141\t    0.931490\r\n         0.250000\t    0.973847\t    0.914623\r\n         0.300000\t    0.968389\t    0.897930\r\n         0.350000\t    0.962692\t    0.881445\r\n         0.400000\t    0.956679\t    0.865204\r\n         0.450000\t    0.950273\t    0.849241\r\n         0.500000\t    0.943390\t    0.833591\r\n         0.550000\t    0.935955\t    0.818288\r\n         0.600000\t    0.927913\t    0.803368\r\n         0.650000\t    0.919255\t    0.788865\r\n         0.700000\t    0.909998\t    0.774814\r\n         0.750000\t    0.900180\t    0.761249\r\n         0.800000\t    0.889860\t    0.748206\r\n         0.850000\t    0.879115\t    0.735719\r\n         0.900000\t    0.868033\t    0.723823\r\n         0.950000\t    0.856701\t    0.712546\r\n         1.000000\t    0.845212\t    0.701904\r\n         1.050000\t    0.833655\t    0.691902\r\n         1.100000\t    0.822118\t    0.682532\r\n         1.150000\t    0.810682\t    0.673776\r\n         1.200000\t    0.799421\t    0.665616\r\n         1.250000\t    0.788400\t    0.658028\r\n         1.300000\t    0.777673\t    0.650985\r\n         1.350000\t    0.767292\t    0.644458\r\n         1.400000\t    0.757307\t    0.638414\r\n         ",
+            "warnings": []
+          },
+          "Huygens": {
+            "frequency_lp_mm": [
+              5,
+              10,
+              20
+            ],
+            "values_5T_5S_10T_10S_20T_20S": [
+              0.6262760115132275,
+              0.6020813764845563,
+              0.3781570393659701,
+              0.47467213986876416,
+              0.07559993012815665,
+              0.32365315138082734
+            ],
+            "frequency_grid_count": 300,
+            "frequency_grid_min_step": 0.0668896321070207,
+            "raw_text_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\huygens_pupil256_fixed_window_f5p6_h0p6_p256_Huygens.txt",
+            "raw_header": "复色光惠更斯MTF文件 : D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx\r\n题目: Super-Symmar XL 150 mm - R2 reverse candidate - full 105 deg\r\n日期 : 2026/9/15\r\n\r\n\r\n数据 0.4050 到 0.6440 μm.\r\n空间频率:周期/mm.\r\n模值大小是相对于1.0.\r\n\r\n视场：38.02 (度)\r\n空间频率\t  子午\t    弧矢\r\n         0.000000\t    1.000000\t    1.000000\r\n         0.020000\t    0.999459\t    0.999028\r\n         0.040000\t    0.998917\t    0.998056\r\n         0.060000\t    0.998374\t    0.997081\r\n         0.080000\t    0.997829\t    0.996103\r\n         0.100000\t    0.997281\t    0.995120\r\n         0.120000\t    0.996729\t    0.994132\r\n         0.140000\t    0.996173\t    0.993137\r\n         0.160000\t    0.995612\t    0.992135\r\n         0.180000\t    0.995046\t    0.991123\r\n         0.200000\t    0.994473\t    0.990102\r\n         0.220000\t    0.993892\t    0.989070\r\n         0.240000\t    0.993304\t    0.988025\r\n         0.260000\t    0.992708\t    0.986968\r\n         0.280000\t    0.992102\t    0.985895\r\n         0.300000\t    0.991486\t    0.984808\r\n         0.320000\t    0.990860\t    0.983704\r\n         0.340000\t    0.990222\t    0.982582\r\n         0.360000\t    0.989572\t    0.981441\r\n         0.380000\t    0.988909\t    0.980281\r\n         0.400000\t    0.988232\t    0.979099\r\n         0.420000\t    0.987542\t    0.977896\r\n         0.440000\t    0.986836\t    0.976669\r\n         0.460000\t    0.986115\t    0.975418\r\n         0.480000\t    0.985377\t    0.974142\r\n         0.500000\t    0.984622\t    0.972839\r\n         0.520000\t    0.983850\t    0.971508\r\n         0.540000\t    0.983058\t    0.970149\r\n         0.560000\t    0.982248\t    0.968759\r\n         0.580000\t ",
+            "warnings": []
+          },
+          "Huygens_minus_FFT": [
+            0.14483582032606185,
+            0.13356083842277994,
+            0.10846005739747999,
+            0.09822615184647854,
+            0.026441593930541178,
+            0.06809623801352171
+          ],
+          "maximum_absolute_difference": 0.14483582032606185
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "aperture": "5.6",
+      "height": 0.0,
+      "frequency_lp_mm": 5,
+      "FFT_T": 0.8954543746181207,
+      "FFT_S": 0.8954543746181207,
+      "Huygens_T": 0.9087128709478256,
+      "Huygens_S": 0.9087128709478259,
+      "pupil_sampling": 256,
+      "image_sampling": 512,
+      "image_delta": 1.0,
+      "image_delta_unit": "um",
+      "warnings": [],
+      "image_window_convergence_proven": false
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.0,
+      "frequency_lp_mm": 10,
+      "FFT_T": 0.7917578726404056,
+      "FFT_S": 0.7917578726404056,
+      "Huygens_T": 0.8034496032265837,
+      "Huygens_S": 0.8034496032265829,
+      "pupil_sampling": 256,
+      "image_sampling": 512,
+      "image_delta": 1.0,
+      "image_delta_unit": "um",
+      "warnings": [],
+      "image_window_convergence_proven": false
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.0,
+      "frequency_lp_mm": 20,
+      "FFT_T": 0.5951612693772251,
+      "FFT_S": 0.5951612693772251,
+      "Huygens_T": 0.605776856873766,
+      "Huygens_S": 0.6057768568737668,
+      "pupil_sampling": 256,
+      "image_sampling": 512,
+      "image_delta": 1.0,
+      "image_delta_unit": "um",
+      "warnings": [],
+      "image_window_convergence_proven": false
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.6,
+      "frequency_lp_mm": 5,
+      "FFT_T": 0.4814401911871657,
+      "FFT_S": 0.46852053806177635,
+      "Huygens_T": 0.6262760115132275,
+      "Huygens_S": 0.6020813764845563,
+      "pupil_sampling": 256,
+      "image_sampling": 512,
+      "image_delta": 1.0,
+      "image_delta_unit": "um",
+      "warnings": [],
+      "image_window_convergence_proven": false
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.6,
+      "frequency_lp_mm": 10,
+      "FFT_T": 0.2696969819684901,
+      "FFT_S": 0.3764459880222856,
+      "Huygens_T": 0.3781570393659701,
+      "Huygens_S": 0.47467213986876416,
+      "pupil_sampling": 256,
+      "image_sampling": 512,
+      "image_delta": 1.0,
+      "image_delta_unit": "um",
+      "warnings": [],
+      "image_window_convergence_proven": false
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.6,
+      "frequency_lp_mm": 20,
+      "FFT_T": 0.04915833619761547,
+      "FFT_S": 0.2555569133673056,
+      "Huygens_T": 0.07559993012815665,
+      "Huygens_S": 0.32365315138082734,
+      "pupil_sampling": 256,
+      "image_sampling": 512,
+      "image_delta": 1.0,
+      "image_delta_unit": "um",
+      "warnings": [],
+      "image_window_convergence_proven": false
+    }
+  ],
+  "failures": [],
+  "common_image_distance_mm": 135.222518763499,
+  "wavelengths": [
+    {
+      "um": 0.546,
+      "weight": 24.6
+    },
+    {
+      "um": 0.644,
+      "weight": 18.6
+    },
+    {
+      "um": 0.588,
+      "weight": 22.1
+    },
+    {
+      "um": 0.48,
+      "weight": 12.4
+    },
+    {
+      "um": 0.436,
+      "weight": 15.2
+    },
+    {
+      "um": 0.405,
+      "weight": 7.1
+    }
+  ],
+  "caps": [
+    {
+      "surface": 1,
+      "clear_radius_mm": 41.0
+    },
+    {
+      "surface": 2,
+      "clear_radius_mm": 29.0
+    },
+    {
+      "surface": 3,
+      "clear_radius_mm": 25.8
+    },
+    {
+      "surface": 4,
+      "clear_radius_mm": 19.5
+    },
+    {
+      "surface": 5,
+      "clear_radius_mm": 15.0
+    },
+    {
+      "surface": 6,
+      "clear_radius_mm": 14.5
+    },
+    {
+      "surface": 8,
+      "clear_radius_mm": 14.4
+    },
+    {
+      "surface": 9,
+      "clear_radius_mm": 14.4
+    },
+    {
+      "surface": 10,
+      "clear_radius_mm": 15.5
+    },
+    {
+      "surface": 11,
+      "clear_radius_mm": 14.0
+    },
+    {
+      "surface": 12,
+      "clear_radius_mm": 18.8
+    }
+  ],
+  "image_sample_size": 512,
+  "requested_image_delta_um": 1.0,
+  "seconds": 892.8014631271362,
+  "source_model_unchanged": true,
+  "full_field_deg": 105.0,
+  "status": "Native results obtained; image-window convergence remains a separate requirement."
+}

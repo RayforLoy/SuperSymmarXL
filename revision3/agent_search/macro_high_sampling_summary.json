@@ -1,0 +1,17 @@
+{
+  "name": "macro_parallel1 formal high-sampling",
+  "data_origin": "Derived statistics captured from revision3/validated.json before its formal source_candidate was changed to the seven-term candidate; this is a summary, not a reconstructed raw MTF table.",
+  "native_zmx": "D:/_Camera/LensRebuild/SuperSymmarXL/revision3/macro_parallel1_best.zmx",
+  "sampling": {"5.6": 1024, "8": 512, "22": 512},
+  "per_aperture": {
+    "5.6": {"maximum_shortfall": 0.12883017938701302, "deficit_rms": 0.05822092303009389, "at_or_above_reference_count": 18, "total_reference_samples": 48},
+    "8": {"maximum_shortfall": 0.08938099598497773, "deficit_rms": 0.024732434610813786, "at_or_above_reference_count": 43, "total_reference_samples": 60},
+    "22": {"maximum_shortfall": 0.11592125427623257, "deficit_rms": 0.037069454927783504, "at_or_above_reference_count": 27, "total_reference_samples": 78}
+  },
+  "common_image_distance_mm": 135.027757784148,
+  "maximum_shortfall": 0.12883017938701302,
+  "deficit_rms": 0.04059962601049319,
+  "at_or_above_reference_count": 88,
+  "total_reference_samples": 186,
+  "every_sample_at_or_above_reference": false
+}

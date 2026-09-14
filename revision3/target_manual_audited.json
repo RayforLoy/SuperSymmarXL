@@ -1,0 +1,48 @@
+{
+  "note": "R3 independent re-read of supplied Schneider super-symmar_xl_56_150.pdf page 2, first/infinity row. Values are approximate raster digitization, NOT original numeric data. Columns are [5T,5S,10T,10S,20T,20S]; radial solid=S, tangential dashed=T. Prior R2 values retained at analysis/target_manual.json.",
+  "heights": [0, 0.2, 0.4, 0.6, 0.68, 0.8, 1.0],
+  "digitization_uncertainty_absolute": 0.025,
+  "digitization_notes": [
+    "Audit image reference/mtf_infinity_detail.png: panel x bounds 30..424, 510..904, 990..1384; MTF y bounds 42..436. Black curve thickness, dashed gaps and grid dots prevent exact reads. Values rounded to 0.005/0.01.",
+    "Published infinity curves terminate around relative height 0.68 for f/5.6 and 0.78 for f/8; maximum system field remains 105 degrees. Do not extend factory curves by extrapolation.",
+    "Several old f/22 middle/high-field tangential values were too low, materially easing the old lower-bound criterion. Corrected values make the objective more demanding.",
+    "Angle fields computed as atan(193*h/148.1) assume rectilinear ideal image mapping. Final comparison should audit actual chief-ray image heights and distortion, particularly at h=1.",
+    "Focusing note on factory PDF requires maximum on-axis 20 lp/mm MTF at f/5.6, with the same image plane for other apertures. R2 jointly optimized image distance and did not explicitly enforce that condition."
+  ],
+  "data": {
+    "5.6": [
+      [0.90, 0.90, 0.80, 0.80, 0.64, 0.64],
+      [0.69, 0.80, 0.48, 0.615, 0.30, 0.43],
+      [0.49, 0.68, 0.22, 0.425, 0.045, 0.28],
+      [0.425, 0.575, 0.21, 0.32, 0.085, 0.24],
+      [0.39, 0.525, 0.20, 0.285, 0.09, 0.20]
+    ],
+    "8": [
+      [0.94, 0.94, 0.87, 0.87, 0.69, 0.69],
+      [0.78, 0.915, 0.61, 0.795, 0.40, 0.555],
+      [0.67, 0.765, 0.40, 0.60, 0.15, 0.40],
+      [0.54, 0.56, 0.32, 0.395, 0.145, 0.275],
+      [0.46, 0.49, 0.26, 0.33, 0.13, 0.215]
+    ],
+    "22": [
+      [0.91, 0.91, 0.83, 0.83, 0.67, 0.67],
+      [0.905, 0.91, 0.79, 0.825, 0.59, 0.665],
+      [0.875, 0.905, 0.73, 0.815, 0.50, 0.635],
+      [0.81, 0.89, 0.62, 0.80, 0.30, 0.60],
+      [0.77, 0.885, 0.55, 0.78, 0.20, 0.56],
+      [0.715, 0.86, 0.46, 0.68, 0.09, 0.40],
+      [0.44, 0.74, 0.20, 0.485, 0.03, 0.225]
+    ]
+  },
+  "plot_only_additional_points": {
+    "8": {"heights": [0.78], "data": [[0.36, 0.40, 0.235, 0.255, 0.075, 0.155]]}
+  },
+  "critical_changes": [
+    {"f_number": "5.6", "height": 0.4, "frequency": 10, "direction": "T", "old": 0.28, "audited": 0.22},
+    {"f_number": "8", "height": 0.6, "frequency": 10, "direction": "S", "old": 0.35, "audited": 0.395},
+    {"f_number": "22", "height": 0.6, "frequency": 10, "direction": "T", "old": 0.545, "audited": 0.62},
+    {"f_number": "22", "height": 0.68, "frequency": 10, "direction": "T", "old": 0.455, "audited": 0.55},
+    {"f_number": "22", "height": 0.8, "frequency": 5, "direction": "T", "old": 0.615, "audited": 0.715},
+    {"f_number": "22", "height": 0.8, "frequency": 10, "direction": "T", "old": 0.34, "audited": 0.46}
+  ]
+}

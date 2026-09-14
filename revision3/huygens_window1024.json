@@ -1,0 +1,29 @@
+{
+  "model": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx",
+  "source_model_sha256": "395a8ed2003b89d5091bb928ff700d9ae137ec18d3b9ad39586f4a62ab7c0d8c",
+  "settings": {
+    "f_number": 5.6,
+    "reference_height_fraction": 0.0,
+    "pupil_sampling": 128,
+    "image_sampling": 1024,
+    "image_delta_um": 0.0,
+    "six_wavelengths": true,
+    "polarization": false
+  },
+  "status": "Aborted during native Huygens MTF calculation because automatic image spacing at image sampling 1024 had high computational cost; no Huygens result was obtained.",
+  "huygens_result_obtained": false,
+  "psf_result_obtained": false,
+  "results": [],
+  "preserved_raw_fft_text_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\huygens_window1024_f5p6_h0p0_p128_FFT.txt",
+  "termination": {
+    "authorized_by_parent_agent": true,
+    "python_pid": 52832,
+    "opticstudio_pid": 43512,
+    "verified_opticstudio_parent_pid": 52832,
+    "verified_opticstudio_command_line": "OpticStudio.exe -server -pid=52832",
+    "reason": "Parent agent reported fixed 1 um image-grid 512/1024 convergence with maximum MTF difference about 0.00020 and PSF border flux fraction about 1.79e-6, and requested releasing this less useful automatic-window run."
+  },
+  "source_model_saved": false,
+  "image_window_convergence_proven_by_this_run": false,
+  "warning": "This aborted run provides no Huygens MTF or automatic-window convergence evidence. Use independent completed fixed-window checks instead."
+}

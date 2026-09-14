@@ -1,0 +1,78 @@
+{
+  "air_gaps": [
+    {
+      "after_surface": 2,
+      "before_surface": 3,
+      "checked_radius_mm": 25.8,
+      "min_gap_mm": 10.822349583687334,
+      "at_radius_mm": 25.8,
+      "conservative_extension": false
+    },
+    {
+      "after_surface": 4,
+      "before_surface": 5,
+      "checked_radius_mm": 15.0,
+      "min_gap_mm": 11.687470607242304,
+      "at_radius_mm": 0.0,
+      "conservative_extension": false
+    },
+    {
+      "after_surface": 6,
+      "before_surface": 8,
+      "checked_radius_mm": 14.4,
+      "min_gap_mm": 5.1039403008377935,
+      "at_radius_mm": 14.4,
+      "conservative_extension": false
+    },
+    {
+      "after_surface": 10,
+      "before_surface": 11,
+      "checked_radius_mm": 15.8,
+      "min_gap_mm": 0.5655440215975296,
+      "at_radius_mm": 15.8,
+      "conservative_extension": true
+    }
+  ],
+  "glass_thickness_checks": [
+    {
+      "front_surface": 1,
+      "rear_surface": 2,
+      "checked_radius_mm": 29.0,
+      "min_thickness_mm": 3.50387081492413
+    },
+    {
+      "front_surface": 3,
+      "rear_surface": 4,
+      "checked_radius_mm": 19.5,
+      "min_thickness_mm": 13.71067554273593
+    },
+    {
+      "front_surface": 5,
+      "rear_surface": 6,
+      "checked_radius_mm": 14.5,
+      "min_thickness_mm": 2.410749801107098
+    },
+    {
+      "front_surface": 8,
+      "rear_surface": 9,
+      "checked_radius_mm": 14.4,
+      "min_thickness_mm": 7.481926485844268
+    },
+    {
+      "front_surface": 9,
+      "rear_surface": 10,
+      "checked_radius_mm": 14.4,
+      "min_thickness_mm": 4.60564192169687
+    },
+    {
+      "front_surface": 11,
+      "rear_surface": 12,
+      "checked_radius_mm": 14.0,
+      "min_thickness_mm": 5.14317961861242
+    }
+  ],
+  "min_air_gap_mm": 0.5655440215975296,
+  "no_surface_intersection_in_checked_regions": true,
+  "rear_aperture_readout_allowance_mm": 0.3,
+  "scope": "Optical surface geometry; not a mechanical tolerance guarantee."
+}

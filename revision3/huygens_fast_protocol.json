@@ -1,0 +1,102 @@
+{
+  "model": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx",
+  "pupil_sampling": 64,
+  "image_sampling": 128,
+  "image_delta_um": 2.0,
+  "target_file": "target_optimization.json",
+  "cases": [
+    {
+      "aperture": "5.6",
+      "height": 0.0,
+      "image_distance_offset_mm": 0,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.9594395145201723,
+        0.959439514520173,
+        0.868451761437947,
+        0.868451761437949,
+        0.6621284205109769,
+        0.6621284205109795
+      ],
+      "raw_text": "huygens_fast_protocol\\f5p6_h0p0_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.1,
+      "image_distance_offset_mm": 0,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.8930960803375166,
+        0.9259327718294759,
+        0.7096888911482201,
+        0.7813011245793937,
+        0.4645152096513616,
+        0.5427318017811511
+      ],
+      "raw_text": "huygens_fast_protocol\\f5p6_h0p1_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.2,
+      "image_distance_offset_mm": 0,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.8319501986388477,
+        0.8848727696345997,
+        0.5849413390583665,
+        0.7136926358837226,
+        0.3116684991647806,
+        0.5021645376798636
+      ],
+      "raw_text": "huygens_fast_protocol\\f5p6_h0p2_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "8",
+      "height": 0.4,
+      "image_distance_offset_mm": 0,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.7616181402144979,
+        0.9106393775510789,
+        0.39851500093634973,
+        0.7532292983816242,
+        0.13893009394874753,
+        0.5087717189197828
+      ],
+      "raw_text": "huygens_fast_protocol\\f8_h0p4_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "22",
+      "height": 0.0,
+      "image_distance_offset_mm": 0,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.9302583092294363,
+        0.9302583092294365,
+        0.8251620135833009,
+        0.8251620135833011,
+        0.6153313647502914,
+        0.6153313647502915
+      ],
+      "raw_text": "huygens_fast_protocol\\f22_h0p0_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "22",
+      "height": 0.6,
+      "image_distance_offset_mm": 0,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.8334079161047226,
+        0.9175536673088079,
+        0.6088295126683981,
+        0.7888624033314208,
+        0.2692421935751438,
+        0.5445632449157124
+      ],
+      "raw_text": "huygens_fast_protocol\\f22_h0p6_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    }
+  ],
+  "failures": [],
+  "completed": true,
+  "seconds": 26.048917055130005
+}

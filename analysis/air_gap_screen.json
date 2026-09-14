@@ -1,0 +1,17 @@
+[
+  {
+    "after_surface": 2,
+    "assessment_radius_mm": 29.44100765263869,
+    "min_axial_air_gap_mm": 9.708486450445637
+  },
+  {
+    "after_surface": 4,
+    "assessment_radius_mm": 16.35722461334106,
+    "min_axial_air_gap_mm": 11.636
+  },
+  {
+    "after_surface": 10,
+    "assessment_radius_mm": 22.68548798172326,
+    "min_axial_air_gap_mm": -0.1853235319738058
+  }
+]

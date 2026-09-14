@@ -1,0 +1,86 @@
+{
+  "model": "focus_gap_physical_seed.zmx",
+  "image_distance_mm": 135.568038890217,
+  "ray_aiming_method": "Real",
+  "asphere_headers": {
+    "12": {
+      "header": "2\u9636\u9879",
+      "value": 0.0
+    },
+    "13": {
+      "header": "4\u9636\u9879",
+      "value": 2.67796225307639e-06
+    },
+    "14": {
+      "header": "6\u9636\u9879",
+      "value": 2.80386099486627e-08
+    },
+    "15": {
+      "header": "8\u9636\u9879",
+      "value": -3.11176179941127e-10
+    },
+    "16": {
+      "header": "10\u9636\u9879",
+      "value": 1.64661647036083e-12
+    },
+    "17": {
+      "header": "12\u9636\u9879",
+      "value": -3.17846532835e-15
+    },
+    "18": {
+      "header": "14\u9636\u9879",
+      "value": 0.0
+    },
+    "19": {
+      "header": "16\u9636\u9879",
+      "value": 0.0
+    }
+  },
+  "wavelengths": [
+    {
+      "wave": 1,
+      "wavelength_um": 0.546,
+      "weight": 24.6,
+      "efl_mm": 148.10933733544027,
+      "bfl_mm": 135.8321916275953
+    },
+    {
+      "wave": 2,
+      "wavelength_um": 0.644,
+      "weight": 18.6,
+      "efl_mm": 148.56655262576413,
+      "bfl_mm": 136.28740838462124
+    },
+    {
+      "wave": 3,
+      "wavelength_um": 0.588,
+      "weight": 22.1,
+      "efl_mm": 148.30513434019252,
+      "bfl_mm": 136.02660961477923
+    },
+    {
+      "wave": 4,
+      "wavelength_um": 0.48,
+      "weight": 12.4,
+      "efl_mm": 147.84418823720327,
+      "bfl_mm": 135.57269865281006
+    },
+    {
+      "wave": 5,
+      "wavelength_um": 0.436,
+      "weight": 15.2,
+      "efl_mm": 147.78045353073173,
+      "bfl_mm": 135.51806090310598
+    },
+    {
+      "wave": 6,
+      "wavelength_um": 0.405,
+      "weight": 7.1,
+      "efl_mm": 147.8938321266449,
+      "bfl_mm": 135.64355894543138
+    }
+  ],
+  "weighted_bfl_mean_mm": 135.86651040014038,
+  "weighted_bfl_std_mm": 0.26757084947731724,
+  "primary_focus_difference_mm": -0.2641527373783106
+}

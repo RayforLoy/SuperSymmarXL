@@ -1,0 +1,10 @@
+{
+  "source_sha256": "bc8d56c9b2e2141f725d37f657917e2a31f0a2a6f4aebf79d86a689f6c4095be",
+  "pdf_sha256": "4141db4c2890fe113b278ab7754011087f0d800449516592433e058c60e2bc34",
+  "pdf_pages": 10,
+  "all_rendered_pages_visually_inspected": true,
+  "legends_outside_axes": true,
+  "no_clipping_overlap_or_missing_glyphs_observed": true,
+  "mtf_goal_all_above_manual": false,
+  "timestamp_utc": "2026-09-14T17:10:18.944171+00:00"
+}

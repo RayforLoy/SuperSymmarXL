@@ -1,0 +1,217 @@
+{
+  "note": "Native FFT evidence at the stated sampling; each uses the published f/5.6 axis-20 best focus retained for all apertures and angle atan(193*h/148.1), with explicit max52.5 degrees. Sampling differs between candidates; numbers are not interchangeable formal acceptance. All>= means only these independently digitized 186 samples, not mathematical certification of the continuous curves.",
+  "candidates": [
+    {
+      "name": "macro_parallel1 formal high-sampling",
+      "data_origin": "Derived statistics captured from revision3/validated.json before its formal source_candidate was changed to the seven-term candidate; this is a summary, not a reconstructed raw MTF table.",
+      "native_zmx": "D:/_Camera/LensRebuild/SuperSymmarXL/revision3/macro_parallel1_best.zmx",
+      "sampling": {
+        "5.6": 1024,
+        "8": 512,
+        "22": 512
+      },
+      "per_aperture": {
+        "5.6": {
+          "maximum_shortfall": 0.12883017938701302,
+          "deficit_rms": 0.05822092303009389,
+          "at_or_above_reference_count": 18,
+          "total_reference_samples": 48
+        },
+        "8": {
+          "maximum_shortfall": 0.08938099598497773,
+          "deficit_rms": 0.024732434610813786,
+          "at_or_above_reference_count": 43,
+          "total_reference_samples": 60
+        },
+        "22": {
+          "maximum_shortfall": 0.11592125427623257,
+          "deficit_rms": 0.037069454927783504,
+          "at_or_above_reference_count": 27,
+          "total_reference_samples": 78
+        }
+      },
+      "common_image_distance_mm": 135.027757784148,
+      "maximum_shortfall": 0.12883017938701302,
+      "deficit_rms": 0.04059962601049319,
+      "at_or_above_reference_count": 88,
+      "total_reference_samples": 186,
+      "every_sample_at_or_above_reference": false
+    },
+    {
+      "name": "formal high-sampling agent_search/higher7_asphereonly1_best.zmx",
+      "evidence_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\validated.json",
+      "native_zmx": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx",
+      "sampling": {
+        "5.6": 1024,
+        "8": 512,
+        "22": 512
+      },
+      "MTF_direction_columns": [
+        "5T",
+        "5S",
+        "10T",
+        "10S",
+        "20T",
+        "20S"
+      ],
+      "per_aperture": {
+        "5.6": {
+          "maximum_shortfall": 0.13251645398479672,
+          "deficit_rms": 0.05091058758764875,
+          "signed_margin_rmse": 0.1210516938907292,
+          "at_or_above_reference_count": 23,
+          "total_reference_samples": 48
+        },
+        "8": {
+          "maximum_shortfall": 0.03937484589814791,
+          "deficit_rms": 0.011523944144670712,
+          "signed_margin_rmse": 0.16335181851790315,
+          "at_or_above_reference_count": 51,
+          "total_reference_samples": 60
+        },
+        "22": {
+          "maximum_shortfall": 0.07478275348173291,
+          "deficit_rms": 0.028091303156319292,
+          "signed_margin_rmse": 0.05338692935192907,
+          "at_or_above_reference_count": 30,
+          "total_reference_samples": 78
+        }
+      },
+      "common_image_distance_mm": 135.222518763499,
+      "maximum_shortfall": 0.13251645398479672,
+      "deficit_rms": 0.032289863277023594,
+      "at_or_above_reference_count": 104,
+      "total_reference_samples": 186,
+      "every_sample_at_or_above_reference": false
+    },
+    {
+      "name": "smooth_central1",
+      "evidence_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\smooth_central1_checkpoint.json",
+      "native_zmx": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\smooth_central1_best.zmx",
+      "sampling": 256,
+      "MTF_direction_columns": [
+        "5T",
+        "5S",
+        "10T",
+        "10S",
+        "20T",
+        "20S"
+      ],
+      "per_aperture": {
+        "5.6": {
+          "maximum_shortfall": 0.1331585976468037,
+          "deficit_rms": 0.052640891379114846,
+          "signed_margin_rmse": 0.20462358203514608,
+          "at_or_above_reference_count": 24,
+          "total_reference_samples": 48
+        },
+        "8": {
+          "maximum_shortfall": 0.05603424794778819,
+          "deficit_rms": 0.014042551710408774,
+          "signed_margin_rmse": 0.11390157766919519,
+          "at_or_above_reference_count": 51,
+          "total_reference_samples": 60
+        },
+        "22": {
+          "maximum_shortfall": 0.0840330173906082,
+          "deficit_rms": 0.031248308259996263,
+          "signed_margin_rmse": 0.05469944522688953,
+          "at_or_above_reference_count": 28,
+          "total_reference_samples": 78
+        }
+      },
+      "common_image_distance_mm": 135.178167729574,
+      "maximum_shortfall": 0.1331585976468037,
+      "deficit_rms": 0.0344703604075181,
+      "at_or_above_reference_count": 103,
+      "total_reference_samples": 186,
+      "every_sample_at_or_above_reference": false
+    },
+    {
+      "name": "higher7_asphereonly1",
+      "evidence_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_result.json",
+      "native_zmx": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\higher7_asphereonly1_best.zmx",
+      "sampling": 256,
+      "MTF_direction_columns": [
+        "5T",
+        "5S",
+        "10T",
+        "10S",
+        "20T",
+        "20S"
+      ],
+      "per_aperture": {
+        "5.6": {
+          "maximum_shortfall": 0.13336679773522553,
+          "deficit_rms": 0.05116498694484185,
+          "signed_margin_rmse": 0.12094078873409396,
+          "at_or_above_reference_count": 22,
+          "total_reference_samples": 48
+        },
+        "8": {
+          "maximum_shortfall": 0.0396683145452868,
+          "deficit_rms": 0.011743421716693268,
+          "signed_margin_rmse": 0.16316578933692996,
+          "at_or_above_reference_count": 51,
+          "total_reference_samples": 60
+        },
+        "22": {
+          "maximum_shortfall": 0.07565837141762743,
+          "deficit_rms": 0.028584095510791763,
+          "signed_margin_rmse": 0.053450319428882856,
+          "at_or_above_reference_count": 30,
+          "total_reference_samples": 78
+        }
+      },
+      "common_image_distance_mm": 135.222518763499,
+      "maximum_shortfall": 0.13336679773522553,
+      "deficit_rms": 0.032599022031095125,
+      "at_or_above_reference_count": 103,
+      "total_reference_samples": 186,
+      "every_sample_at_or_above_reference": false
+    },
+    {
+      "name": "bend7_1",
+      "evidence_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\bend7_1_result.json",
+      "native_zmx": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\revision3\\agent_search\\bend7_1_best.zmx",
+      "sampling": 256,
+      "MTF_direction_columns": [
+        "5T",
+        "5S",
+        "10T",
+        "10S",
+        "20T",
+        "20S"
+      ],
+      "per_aperture": {
+        "5.6": {
+          "maximum_shortfall": 0.13299206585003198,
+          "deficit_rms": 0.04914570561990052,
+          "signed_margin_rmse": 0.08672958008111772,
+          "at_or_above_reference_count": 24,
+          "total_reference_samples": 48
+        },
+        "8": {
+          "maximum_shortfall": 0.06736303276435751,
+          "deficit_rms": 0.016004350144240936,
+          "signed_margin_rmse": 0.21350658380491605,
+          "at_or_above_reference_count": 51,
+          "total_reference_samples": 60
+        },
+        "22": {
+          "maximum_shortfall": 0.0824254731722237,
+          "deficit_rms": 0.0288488152543192,
+          "signed_margin_rmse": 0.05253388026328671,
+          "at_or_above_reference_count": 30,
+          "total_reference_samples": 78
+        }
+      },
+      "common_image_distance_mm": 135.28940008427,
+      "maximum_shortfall": 0.13299206585003198,
+      "deficit_rms": 0.03247981960209811,
+      "at_or_above_reference_count": 105,
+      "total_reference_samples": 186,
+      "every_sample_at_or_above_reference": false
+    }
+  ]
+}

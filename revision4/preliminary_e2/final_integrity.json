@@ -1,0 +1,47 @@
+[
+  {
+    "file": "SuperSymmarXL_150_R4_f5p6.zmx",
+    "sha256": "8e81219d50fd7f677087b829ea6380ad02eb1480efb341011bf4ef878fba4711",
+    "asphere_A4_to_A16": [
+      3.33877116867209e-06,
+      2.56909913462649e-09,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "image_distance_mm": 135.35474590197,
+    "internal_threading_disabled": false
+  },
+  {
+    "file": "SuperSymmarXL_150_R4_f8.zmx",
+    "sha256": "6f0110c334185488ab8cd82e41899d226b9645949574da5b0c2f0cb5b80734a2",
+    "asphere_A4_to_A16": [
+      3.33877116867209e-06,
+      2.56909913462649e-09,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "image_distance_mm": 135.35474590197,
+    "internal_threading_disabled": false
+  },
+  {
+    "file": "SuperSymmarXL_150_R4_f22.zmx",
+    "sha256": "f06a073a6d73f161c103347ed930927d227c26b9b3b83456d3be17b64ff06f42",
+    "asphere_A4_to_A16": [
+      3.33877116867209e-06,
+      2.56909913462649e-09,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "image_distance_mm": 135.35474590197,
+    "internal_threading_disabled": false
+  }
+]

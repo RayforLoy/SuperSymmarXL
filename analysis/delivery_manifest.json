@@ -1,0 +1,47 @@
+[
+  {
+    "file": "models\\SuperSymmarXL_150_f5p6_reverse.zmx",
+    "bytes": 15896,
+    "sha256": "72171add639802a1d83667c50fbd8129e5125a58764d2174f1cbcc37dc6679a8"
+  },
+  {
+    "file": "models\\SuperSymmarXL_150_f8_reverse.zmx",
+    "bytes": 15904,
+    "sha256": "e114763105e8656ee0206d8a00a98e83c085ca7df30cf433941c10f7a6632190"
+  },
+  {
+    "file": "models\\SuperSymmarXL_150_f22_reverse.zmx",
+    "bytes": 15994,
+    "sha256": "b2f3c8931078f19405803464f0b094d3a4ac817851dc079dcbdc6ae1ca87cf3e"
+  },
+  {
+    "file": "reports\\\u5149\u5b66\u6027\u80fd\u62a5\u544a.pdf",
+    "bytes": 451602,
+    "sha256": "2b6f1c53baf7ec6982bdf27b3dd43e49aa7ab3a5e9cbcfd4e82361a394bd6cc9"
+  },
+  {
+    "file": "reports\\\u751f\u4ea7\u53ef\u80fd\u6027\u62a5\u544a.pdf",
+    "bytes": 7085,
+    "sha256": "112e4431d95064f82f47a71266de69403597f34077d13550bd69bbdf9d0df7b1"
+  },
+  {
+    "file": "analysis\\mtf_comparison.png",
+    "bytes": 292129,
+    "sha256": "d5ba09e29fa76d6bc9f1a8334bd165cddd6305b662ed7666f86bd42c5844464e"
+  },
+  {
+    "file": "analysis\\mtf_comparison.csv",
+    "bytes": 6422,
+    "sha256": "3d4833f3b85fea20e9efd862cd9d86444d1d96bb26eb0fb17cef4d52979e419d"
+  },
+  {
+    "file": "analysis\\validated_results.json",
+    "bytes": 13571,
+    "sha256": "3587c2788968d610a0c0dce0128ccd7e484a9a16e02b69d4e42213e44796e127"
+  },
+  {
+    "file": "README.md",
+    "bytes": 2932,
+    "sha256": "d7cfa03756ecb75a596a43db5c486f0b47ce15a6595f7986787cc81713d0fdc8"
+  }
+]

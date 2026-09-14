@@ -1,0 +1,99 @@
+{
+  "model": "D:/_Camera/LensRebuild/SuperSymmarXL/revision4/agent_search/a6_stage2_candidate_e6.zmx",
+  "pupil_sampling": 256,
+  "image_sampling": 512,
+  "image_delta_um": 1.0,
+  "target_file": "target_optimization.json",
+  "cases": [
+    {
+      "aperture": "5.6",
+      "height": 0.0,
+      "image_distance_offset_mm": 0,
+      "official_image_distance_mm": 135.408789815897,
+      "actual_image_distance_mm": 135.408789815897,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.9077050082208296,
+        0.9077050082208291,
+        0.813050090485333,
+        0.8130500904853333,
+        0.6379883342514354,
+        0.6379883342514358
+      ],
+      "raw_text": "huygens_spot_p256\\f5p6_h0p0_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.6,
+      "image_distance_offset_mm": 0,
+      "official_image_distance_mm": 135.408789815897,
+      "actual_image_distance_mm": 135.408789815897,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.571232683856762,
+        0.6316931595265648,
+        0.29533456929945534,
+        0.5136351384266762,
+        0.06740177434297294,
+        0.35375306556131353
+      ],
+      "raw_text": "huygens_spot_p256\\f5p6_h0p6_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "8",
+      "height": 0.4,
+      "image_distance_offset_mm": 0,
+      "official_image_distance_mm": 135.408789815897,
+      "actual_image_distance_mm": 135.408789815897,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.6227584373465971,
+        0.8967664165758841,
+        0.3069469897535524,
+        0.7553741052121032,
+        0.11807620104918332,
+        0.5157611637515574
+      ],
+      "raw_text": "huygens_spot_p256\\f8_h0p4_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "22",
+      "height": 0.0,
+      "image_distance_offset_mm": 0,
+      "official_image_distance_mm": 135.408789815897,
+      "actual_image_distance_mm": 135.408789815897,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.9216308874725885,
+        0.9216308874725887,
+        0.8203459192181366,
+        0.8203459192181368,
+        0.6254842275807082,
+        0.6254842275807084
+      ],
+      "raw_text": "huygens_spot_p256\\f22_h0p0_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    },
+    {
+      "aperture": "22",
+      "height": 0.8,
+      "image_distance_offset_mm": 0,
+      "official_image_distance_mm": 135.408789815897,
+      "actual_image_distance_mm": 135.408789815897,
+      "values_5T_5S_10T_10S_20T_20S": [
+        0.6995738865261343,
+        0.8932967006696415,
+        0.4152410868233523,
+        0.7482400726191742,
+        0.12383535363430831,
+        0.4948435279840134
+      ],
+      "raw_text": "huygens_spot_p256\\f22_h0p8_offset0.txt",
+      "frequency_grid_min_step": 0.0668896321070207
+    }
+  ],
+  "failures": [],
+  "completed": true,
+  "source_sha256": "bc8d56c9b2e2141f725d37f657917e2a31f0a2a6f4aebf79d86a689f6c4095be",
+  "seconds": 192.04629039764404,
+  "official_image_distance_mm": 135.408789815897
+}

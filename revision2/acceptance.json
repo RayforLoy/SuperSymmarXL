@@ -1,0 +1,38 @@
+{
+  "per_aperture": {
+    "5.6": {
+      "rmse": 0.19599724652175063,
+      "max_shortfall": 0.15985189097257724,
+      "max_absolute_error": 0.4376758384068483,
+      "within_3_percentage_point_lower_bound": 19,
+      "points": 30,
+      "worst_shortfall_height_fraction": 0.6,
+      "worst_frequency_lp_mm": 5,
+      "worst_direction": "S"
+    },
+    "8": {
+      "rmse": 0.07542111998447887,
+      "max_shortfall": 0.13692090261703066,
+      "max_absolute_error": 0.16838325235691204,
+      "within_3_percentage_point_lower_bound": 23,
+      "points": 30,
+      "worst_shortfall_height_fraction": 0.4,
+      "worst_frequency_lp_mm": 10,
+      "worst_direction": "T"
+    },
+    "22": {
+      "rmse": 0.04507343680689717,
+      "max_shortfall": 0.10924752831465284,
+      "max_absolute_error": 0.10924752831465284,
+      "within_3_percentage_point_lower_bound": 38,
+      "points": 42,
+      "worst_shortfall_height_fraction": 1.0,
+      "worst_frequency_lp_mm": 5,
+      "worst_direction": "T"
+    }
+  },
+  "full_field_deg": 105.0,
+  "min_air_gap_mm": 0.6049749946628684,
+  "all_points_at_or_above_reference": false,
+  "all_points_within_readout_tolerance": false
+}

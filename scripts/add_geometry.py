@@ -1,0 +1,10 @@
+from pathlib import Path
+p=Path('SuperSymmarXL/scripts/make_reports.py');s=p.read_text(encoding='utf-8')
+s=s.replace("(P/'analysis/geometry_screen.json').write_text(json.dumps(edge,indent=2))", """(P/'analysis/geometry_screen.json').write_text(json.dumps(edge,indent=2))
+r_asph=min(sur[9]['semi_diameter_mm'],sur[10]['semi_diameter_mm'])
+rr=np.linspace(0,r_asph,1001)
+depart=sum(a*rr**k for a,k in zip(v['asphere_A4_A6_A8_A10_A12'],[4,6,8,10,12]))
+slope=sum(k*a*rr**(k-1) for a,k in zip(v['asphere_A4_A6_A8_A10_A12'],[4,6,8,10,12]))
+(P/'analysis/asphere_geometry.json').write_text(json.dumps({'evaluated_radius_mm':r_asph,'max_abs_departure_from_vertex_sphere_mm':float(max(abs(depart))),'max_abs_departure_slope':float(max(abs(slope)))},indent=2))""")
+s=s.replace('应先落实干涉测量的补偿器', '在半径 {r_asph:.3f} mm 内，相对顶点参考球面的最大绝对偏离约 {1000*max(abs(depart)):.1f} μm，偏离项最大斜率约 {max(abs(slope)):.5f}。这不是最佳拟合球面（BFS）偏离。应先落实干涉测量的补偿器')
+p.write_text(s,encoding='utf-8')

@@ -1,0 +1,10 @@
+[
+  {
+    "ProcessId": 29844,
+    "CommandLine": "\"C:\\Users\\liuru\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" SuperSymmarXL\\scripts\\fit_round4.py"
+  },
+  {
+    "ProcessId": 54296,
+    "CommandLine": "\"C:\\Users\\liuru\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\" SuperSymmarXL\\scripts\\fit_physical.py"
+  }
+]
