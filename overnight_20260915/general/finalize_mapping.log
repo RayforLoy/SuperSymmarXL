@@ -1,0 +1,43 @@
+init True
+successfully unlocked Spatial components
+app ZemaxUI.Common.ViewModels.ZOSAPI_Application license True
+audit 5.6 0.0 image y 0.0 pupil fraction 1.0
+audit 5.6 0.1 image y 19.22142 pupil fraction 0.9936
+audit 5.6 0.2 image y 38.400954 pupil fraction 0.9166
+audit 5.6 0.3 image y 57.511007 pupil fraction 0.8292
+audit 5.6 0.4 image y 76.548827 pupil fraction 0.7431
+audit 5.6 0.5 image y 95.541561 pupil fraction 0.6388
+audit 5.6 0.6 image y 114.546577 pupil fraction 0.5304
+audit 5.6 0.68 image y 129.815926 pupil fraction 0.4408
+audit 5.6 0.7 image y 133.649242 pupil fraction 0.4201
+audit 5.6 0.78 image y 149.075432 pupil fraction 0.3381
+audit 5.6 0.8 image y 152.960539 pupil fraction 0.3196
+audit 5.6 0.9 image y 172.616379 pupil fraction 0.2374
+audit 5.6 1.0 image y 192.787991 pupil fraction 0.1635
+audit 8 0.0 image y 0.0 pupil fraction 1.0
+audit 8 0.1 image y 19.22142 pupil fraction 1.0
+audit 8 0.2 image y 38.400954 pupil fraction 1.0
+audit 8 0.3 image y 57.511007 pupil fraction 1.0
+audit 8 0.4 image y 76.548827 pupil fraction 0.9873
+audit 8 0.5 image y 95.541561 pupil fraction 0.9273
+audit 8 0.6 image y 114.546577 pupil fraction 0.8599
+audit 8 0.68 image y 129.815926 pupil fraction 0.767
+audit 8 0.7 image y 133.649242 pupil fraction 0.7399
+audit 8 0.78 image y 149.075432 pupil fraction 0.6318
+audit 8 0.8 image y 152.960539 pupil fraction 0.6053
+audit 8 0.9 image y 172.616379 pupil fraction 0.4704
+audit 8 1.0 image y 192.787991 pupil fraction 0.336
+audit 22 0.0 image y 0.0 pupil fraction 1.0
+audit 22 0.1 image y 19.22142 pupil fraction 1.0
+audit 22 0.2 image y 38.400954 pupil fraction 1.0
+audit 22 0.3 image y 57.511007 pupil fraction 1.0
+audit 22 0.4 image y 76.548827 pupil fraction 1.0
+audit 22 0.5 image y 95.541561 pupil fraction 1.0
+audit 22 0.6 image y 114.546577 pupil fraction 1.0
+audit 22 0.68 image y 129.815926 pupil fraction 1.0
+audit 22 0.7 image y 133.649242 pupil fraction 1.0
+audit 22 0.78 image y 149.075432 pupil fraction 1.0
+audit 22 0.8 image y 152.960539 pupil fraction 1.0
+audit 22 0.9 image y 172.616379 pupil fraction 1.0
+audit 22 1.0 image y 192.787991 pupil fraction 0.9966
+Audit written; official ZMX untouched.

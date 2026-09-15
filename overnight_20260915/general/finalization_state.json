@@ -1,0 +1,23 @@
+{
+  "phase": "general",
+  "source_sha256": "450d2c4bcab6b89a8c58415c494c09cb312f1f375805f2ae30fe8c76d4f6106f",
+  "completed_stages": [
+    "validate",
+    "integrity",
+    "materials",
+    "curve",
+    "manufacturing",
+    "mapping",
+    "report"
+  ],
+  "finalizer_pid": 3132,
+  "stage": "report",
+  "status": "complete",
+  "updated_at_utc": "2026-09-15T02:07:16.004471+00:00",
+  "child_pid": null,
+  "native_apps_at_once": 1,
+  "PDF_visual_QA_completed": true,
+  "PDF_marker_responsibility": "Caller must successfully run create/count2 marker exactly once before the first of the two scheme reports.",
+  "PDF_marker_caller_attested": true,
+  "PDF_visual_QA_file": "pdf_visual_qa.json"
+}

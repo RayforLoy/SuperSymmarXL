@@ -1,0 +1,7 @@
+﻿element,surface,historical_reference_glass,native_material,native_material_solve,catalogs_in_use_containing_material,member_of_available_CDGM_catalog,unambiguous_CDGM_resolution
+1,1,KF9,KF9,Fixed,['SCHOTT'],False,False
+2,3,N-LAK33B,H-LAK53A,Fixed,['CDGM'],False,True
+3,5,N-LAK33B,N-LAK33B,Fixed,['SCHOTT'],False,False
+4,8,N-SK5,N-SK5,Fixed,['SCHOTT'],False,False
+5,9,F2,F2,Fixed,"['SCHOTT', 'CDGM']",False,False
+6,11,K10,K10,Fixed,['SCHOTT'],False,False

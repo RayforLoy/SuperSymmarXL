@@ -1,0 +1,12 @@
+{
+  "phase": "general",
+  "selected_from": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\deadline_source.zmx",
+  "source_candidate": "frozen_source.zmx",
+  "source_sha256": "450d2c4bcab6b89a8c58415c494c09cb312f1f375805f2ae30fe8c76d4f6106f",
+  "frozen_at_utc": "2026-09-15T01:41:55.932326+00:00",
+  "selection_metrics_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\deadline_metrics.json",
+  "selection_metrics_sha256": "99252fe348309efde6e3024c70092a73c3eac5f86d8b8f6291d336477dbdb583",
+  "worker_budget": 2,
+  "actual_native_apps_at_once": 1,
+  "search_metrics_used_for_performance_certification": false
+}

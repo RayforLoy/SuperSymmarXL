@@ -1,0 +1,12 @@
+Finalization stage: validate
+Finalization stage: integrity
+Finalization stage: materials
+Traceback (most recent call last):
+  File "D:\_Camera\LensRebuild\SuperSymmarXL\scripts\finalize_overnight.py", line 464, in <module>
+    main()
+  File "D:\_Camera\LensRebuild\SuperSymmarXL\scripts\finalize_overnight.py", line 452, in main
+    run_stage(name, command, folder, state, selection)
+  File "D:\_Camera\LensRebuild\SuperSymmarXL\scripts\finalize_overnight.py", line 215, in run_stage
+    raise RuntimeError(f'{name} failed ({process.returncode}); see finalize_{name}.log')
+RuntimeError: materials failed (1); see finalize_materials.log
+Finished general native_validated_pending_report_authoring at D:\_Camera\LensRebuild\SuperSymmarXL\overnight_20260915\general

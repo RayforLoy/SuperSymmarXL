@@ -1,0 +1,7 @@
+{
+  "operation_kind": "create",
+  "expected_output_count": 2,
+  "output_format": "pdf",
+  "completed_utc": "2026-09-15T02:07:15.875921+00:00",
+  "marker": "PDF skill marker executed successfully exactly once before first authoring command"
+}

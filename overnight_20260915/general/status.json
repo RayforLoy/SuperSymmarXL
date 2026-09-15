@@ -1,0 +1,11 @@
+{
+  "pid": 30248,
+  "phase": "general",
+  "state": "closed",
+  "status": "Phase closing margin reached",
+  "native_apps_owned": 0,
+  "workers": 8,
+  "total_evaluations": 67,
+  "best_source": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00013.zmx",
+  "closed_utc": "2026-09-15T01:41:33.998561+00:00"
+}

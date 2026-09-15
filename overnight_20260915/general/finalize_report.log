@@ -1,0 +1,82 @@
+{
+  "source_sha256": "450d2c4bcab6b89a8c58415c494c09cb312f1f375805f2ae30fe8c76d4f6106f",
+  "surface_signature_sha256": "2c2d5c497baf21da1211a3e9788a1bfbbfd061630c721353e86ce80038ec04eb",
+  "per_aperture": {
+    "5.6": {
+      "rmse": 0.057477523837345584,
+      "max_shortfall": 0.10425248467117965,
+      "minimum_signed_margin": -0.10425248467117965,
+      "maximum_signed_margin": 0.12309199035464702,
+      "points_at_or_above_reference": 20,
+      "within_2_percentage_point_lower_bound": 32,
+      "within_4_percentage_point_lower_bound": 37,
+      "points": 48,
+      "directly_validated_reference_points": 48,
+      "interpolated_reference_points": 0,
+      "worst_shortfall_height_fraction": 0.1,
+      "worst_frequency_lp_mm": 20,
+      "worst_direction": "T"
+    },
+    "8": {
+      "rmse": 0.09116572033824544,
+      "max_shortfall": 0.09880553809356257,
+      "minimum_signed_margin": -0.09880553809356257,
+      "maximum_signed_margin": 0.1758659086568718,
+      "points_at_or_above_reference": 46,
+      "within_2_percentage_point_lower_bound": 50,
+      "within_4_percentage_point_lower_bound": 53,
+      "points": 60,
+      "directly_validated_reference_points": 60,
+      "interpolated_reference_points": 0,
+      "worst_shortfall_height_fraction": 0.4,
+      "worst_frequency_lp_mm": 10,
+      "worst_direction": "T"
+    },
+    "22": {
+      "rmse": 0.053668176585735645,
+      "max_shortfall": 0.0997515738778123,
+      "minimum_signed_margin": -0.0997515738778123,
+      "maximum_signed_margin": 0.19318194135583824,
+      "points_at_or_above_reference": 34,
+      "within_2_percentage_point_lower_bound": 54,
+      "within_4_percentage_point_lower_bound": 66,
+      "points": 78,
+      "directly_validated_reference_points": 78,
+      "interpolated_reference_points": 0,
+      "worst_shortfall_height_fraction": 0.6,
+      "worst_frequency_lp_mm": 20,
+      "worst_direction": "S"
+    }
+  },
+  "full_field_deg": 105.0,
+  "min_air_gap_mm": 0.6734216540095734,
+  "all_points_at_or_above_reference": false,
+  "all_points_within_2pp_readout_band": false,
+  "all_points_within_4pp_readout_band": false,
+  "all_comparisons_directly_validated": true,
+  "same_image_plane_verified": true,
+  "image_distances_mm": {
+    "5.6": 135.263798852228,
+    "8": 135.263798852228,
+    "22": 135.263798852228
+  },
+  "manufacturer_readout_uncertainty_mtf": [
+    0.02,
+    0.04
+  ],
+  "audit_file_available": true,
+  "manufacturing_metrics_available": true,
+  "audit_unverified_reason": null,
+  "manufacturing_unverified_reason": null,
+  "diffraction_reference_available": true,
+  "huygens_spot_check": {
+    "status": "not_present",
+    "screening_threshold_mtf": 0.01,
+    "pupil_convergence_demonstrated": false,
+    "rows": [],
+    "reasons": [
+      "\u4e24\u4efd\u672c\u8f6e A6 spot \u6587\u4ef6\u5c1a\u672a\u9f50\u5168\u3002"
+    ]
+  },
+  "scope": "Discrete audited reference points, not proof over all continuous field positions."
+}

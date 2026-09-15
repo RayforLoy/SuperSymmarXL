@@ -1,0 +1,15 @@
+init True
+successfully unlocked Spatial components
+app ZemaxUI.Common.ViewModels.ZOSAPI_Application license True
+Traceback (most recent call last):
+  File "D:\_Camera\LensRebuild\SuperSymmarXL\overnight_20260915\general\_pipeline\materials.py", line 13, in <module>
+    names={catalog:set(map(str,catalogs.GetMaterialsInCatalog(catalog))) for catalog in in_use}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\_Camera\LensRebuild\SuperSymmarXL\overnight_20260915\general\_pipeline\materials.py", line 13, in <dictcomp>
+    names={catalog:set(map(str,catalogs.GetMaterialsInCatalog(catalog))) for catalog in in_use}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+init True
+successfully unlocked Spatial components
+app ZemaxUI.Common.ViewModels.ZOSAPI_Application license True
+Verified six native material/catalog identities; all CDGM: False

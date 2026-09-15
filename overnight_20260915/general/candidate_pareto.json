@@ -1,0 +1,238 @@
+{
+  "all_feasible_combo_bests": [
+    {
+      "combo_key": "32e8f2847973bbb3",
+      "score": 0.11103403925298311,
+      "max_shortfall": 0.10497781583152455,
+      "deficit_rms": 0.030281117107292786,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00013.zmx",
+      "source_sha256": "450d2c4bcab6b89a8c58415c494c09cb312f1f375805f2ae30fe8c76d4f6106f",
+      "materials": [
+        "KF9",
+        "H-LAK53A",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "SCHOTT",
+        "CDGM",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "695100d37d9bd1d2",
+      "score": 0.18699742344817658,
+      "max_shortfall": 0.17632976322127747,
+      "deficit_rms": 0.05333830113449547,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00014.zmx",
+      "source_sha256": "223dacc043d71794d705086bd39b343bb579b016edd2dc6f1b3cccb0ac7ddaa6",
+      "materials": [
+        "KF9",
+        "H-LAK3",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "SCHOTT",
+        "CDGM",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "b97f1defd2549613",
+      "score": 0.11156284234532556,
+      "max_shortfall": 0.10550353088721842,
+      "deficit_rms": 0.030296557290535677,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00011.zmx",
+      "source_sha256": "8298e8356f4ef07f394f248af8d43b3f539088910d287f2ea8b0e601e10c5697",
+      "materials": [
+        "KF9",
+        "N-LAK33B",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "be0d24b64c44494b",
+      "score": 0.11258466336262411,
+      "max_shortfall": 0.1069375021732909,
+      "deficit_rms": 0.028235805946666036,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00009.zmx",
+      "source_sha256": "9c011a4904229666224f2514f44e69f8286c1e54f8b9e05c8aeb42bef582beed",
+      "materials": [
+        "N-KF9",
+        "N-LAK33B",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "bec7a4736694bfa0",
+      "score": 0.11782927083161601,
+      "max_shortfall": 0.11270285445515793,
+      "deficit_rms": 0.025632081882290405,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00010.zmx",
+      "source_sha256": "f378fdafac7ea348be0acdf105991ec3a0cc2123ae0daca4785adb723ca377be",
+      "materials": [
+        "H-KF6",
+        "N-LAK33B",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "CDGM",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "d578e15a17a42017",
+      "score": 0.11127414608323746,
+      "max_shortfall": 0.10519966493023203,
+      "deficit_rms": 0.03037240576502717,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00012.zmx",
+      "source_sha256": "9973960eb8a9d2fcfe124ec8833159d9b8d4a03d2e5d8c353c5caf11f16da11f",
+      "materials": [
+        "KF9",
+        "H-LAK53B",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "SCHOTT",
+        "CDGM",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "b7b9c24926df2031",
+      "score": 0.6270274457198188,
+      "max_shortfall": 0.575772207516214,
+      "deficit_rms": 0.25627619101802374,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00016.zmx",
+      "source_sha256": "e584d81e9c0082ec2cf7d4d6c532b04bd8754e897842d5c58b024b205c01048b",
+      "materials": [
+        "H-K12",
+        "N-LAK33B",
+        "N-LAK33B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "CDGM",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "7f6ee06f64e3355c",
+      "score": 0.11741529566021572,
+      "max_shortfall": 0.11171888167637845,
+      "deficit_rms": 0.02848206991918636,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00021.zmx",
+      "source_sha256": "61165c75fa2548d05f41552edb950fe215fd74b15aede7000fd266fbf4f88f84",
+      "materials": [
+        "KF9",
+        "N-LAK33B",
+        "H-LAK53B",
+        "N-SK5",
+        "F2",
+        "K10"
+      ],
+      "catalogs": [
+        "SCHOTT",
+        "SCHOTT",
+        "CDGM",
+        "SCHOTT",
+        "SCHOTT",
+        "SCHOTT"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": false,
+        "reason": "all-six-CDGM comparison only",
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    }
+  ],
+  "cdgm_pareto": [],
+  "cost_scope": "Frozen CDGM catalog internal OD ranking; no cross-manufacturer savings or delivered-price claim"
+}

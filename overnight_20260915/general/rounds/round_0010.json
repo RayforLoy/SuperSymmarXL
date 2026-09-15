@@ -1,0 +1,29 @@
+{
+  "round": 10,
+  "materials": {
+    "id": "mixed_seed_6",
+    "materials": [
+      "KF9",
+      "H-LAK53A",
+      "N-LAK33B",
+      "N-SK5",
+      "F2",
+      "K10"
+    ],
+    "catalogs": [
+      "SCHOTT",
+      "CDGM",
+      "SCHOTT",
+      "SCHOTT",
+      "SCHOTT",
+      "SCHOTT"
+    ],
+    "change_count": 1,
+    "reason": "one-element local move from phase seed; two LAK elements are independent"
+  },
+  "seed": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00013.zmx",
+  "sampling": 256,
+  "jacobians": 10,
+  "evals": 12,
+  "status": "Round wall-clock budget reached"
+}

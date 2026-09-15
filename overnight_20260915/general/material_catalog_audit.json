@@ -1,0 +1,130 @@
+{
+  "phase": "general",
+  "source_sha256": "450d2c4bcab6b89a8c58415c494c09cb312f1f375805f2ae30fe8c76d4f6106f",
+  "model_sha256": "b18a7ab6a5032b1c3b225645115c2cab8486e48277a6a46fec07b2f6babc1abd",
+  "available_catalogs": [
+    "AMTIR",
+    "ANGSTROMLINK",
+    "APEL",
+    "ARCHER",
+    "ARTON",
+    "AUER-LIGHTING",
+    "BIREFRINGENT",
+    "CORNING",
+    "DELO",
+    "DOWSIL_MS",
+    "GBJ",
+    "HERAEUS",
+    "HIKARI",
+    "HOYA",
+    "INFRARED",
+    "IRPHOTONICS",
+    "ISUZU",
+    "KOPPGLASS",
+    "LACROIX",
+    "LIGHTPATH",
+    "LUXEXCEL",
+    "LZOS",
+    "MISC",
+    "NHG",
+    "NIHON_KESSHO_KOGAKU",
+    "NIKON",
+    "NIKON-HIKARI",
+    "OHARA",
+    "OPTIMAX",
+    "OPTOTUNE",
+    "OSAKAGASCHEMICAL",
+    "PILKINGTON",
+    "Rad_Hard",
+    "REDWAVE_IR",
+    "RPO",
+    "SABIC_Thermo_Optical_Polymers",
+    "SCHOTT_IRG",
+    "Sumita",
+    "TOPAS",
+    "UMICORE",
+    "ZEON"
+  ],
+  "catalogs_in_use": [
+    "SCHOTT",
+    "CDGM",
+    ""
+  ],
+  "elements": [
+    {
+      "element": 1,
+      "surface": 1,
+      "historical_reference_glass": "KF9",
+      "native_material": "KF9",
+      "native_material_solve": "Fixed",
+      "catalogs_in_use_containing_material": [
+        "SCHOTT"
+      ],
+      "member_of_available_CDGM_catalog": false,
+      "unambiguous_CDGM_resolution": false
+    },
+    {
+      "element": 2,
+      "surface": 3,
+      "historical_reference_glass": "N-LAK33B",
+      "native_material": "H-LAK53A",
+      "native_material_solve": "Fixed",
+      "catalogs_in_use_containing_material": [
+        "CDGM"
+      ],
+      "member_of_available_CDGM_catalog": false,
+      "unambiguous_CDGM_resolution": true
+    },
+    {
+      "element": 3,
+      "surface": 5,
+      "historical_reference_glass": "N-LAK33B",
+      "native_material": "N-LAK33B",
+      "native_material_solve": "Fixed",
+      "catalogs_in_use_containing_material": [
+        "SCHOTT"
+      ],
+      "member_of_available_CDGM_catalog": false,
+      "unambiguous_CDGM_resolution": false
+    },
+    {
+      "element": 4,
+      "surface": 8,
+      "historical_reference_glass": "N-SK5",
+      "native_material": "N-SK5",
+      "native_material_solve": "Fixed",
+      "catalogs_in_use_containing_material": [
+        "SCHOTT"
+      ],
+      "member_of_available_CDGM_catalog": false,
+      "unambiguous_CDGM_resolution": false
+    },
+    {
+      "element": 5,
+      "surface": 9,
+      "historical_reference_glass": "F2",
+      "native_material": "F2",
+      "native_material_solve": "Fixed",
+      "catalogs_in_use_containing_material": [
+        "SCHOTT",
+        "CDGM"
+      ],
+      "member_of_available_CDGM_catalog": false,
+      "unambiguous_CDGM_resolution": false
+    },
+    {
+      "element": 6,
+      "surface": 11,
+      "historical_reference_glass": "K10",
+      "native_material": "K10",
+      "native_material_solve": "Fixed",
+      "catalogs_in_use_containing_material": [
+        "SCHOTT"
+      ],
+      "member_of_available_CDGM_catalog": false,
+      "unambiguous_CDGM_resolution": false
+    }
+  ],
+  "all_six_native_materials_CDGM": false,
+  "quotation_status": "No verified supplier quote, cost savings, availability, batch precision, cost or delivery commitment."
+}

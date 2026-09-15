@@ -1,0 +1,27 @@
+{
+  "round": 4,
+  "materials": {
+    "id": "source_materials",
+    "materials": [
+      "KF9",
+      "N-LAK33B",
+      "N-LAK33B",
+      "N-SK5",
+      "F2",
+      "K10"
+    ],
+    "catalogs": [
+      "SCHOTT",
+      "SCHOTT",
+      "SCHOTT",
+      "SCHOTT",
+      "SCHOTT",
+      "SCHOTT"
+    ]
+  },
+  "seed": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\best\\candidate_00011.zmx",
+  "sampling": 256,
+  "jacobians": 9,
+  "evals": 14,
+  "status": "Round wall-clock budget reached"
+}
