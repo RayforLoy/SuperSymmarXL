@@ -11,8 +11,8 @@ from ctypes import wintypes as W
 P=Path(__file__).resolve().parents[1]
 B=P/'overnight_20260915'
 UTC=dt.timezone.utc
-GENERAL_END=dt.datetime(2026,9,14,22,0,tzinfo=UTC)
-CDGM_END=dt.datetime(2026,9,15,0,30,tzinfo=UTC)
+GENERAL_END=dt.datetime.fromisoformat('2026-09-15T01:41:55.783359+00:00')
+CDGM_END=dt.datetime.fromisoformat('2026-09-15T04:11:55.783359+00:00')
 INITIAL=P/'revision4/agent_search/a6_stage2_candidate_e6.zmx'
 
 def now():return dt.datetime.now(UTC)

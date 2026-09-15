@@ -5,11 +5,11 @@
   "initial_pushed_commit": "1bf55c56488c70d65479645ac89355a17e6f6068",
   "initial_source": "revision4/agent_search/a6_stage2_candidate_e6.zmx",
   "initial_source_sha256": "bc8d56c9b2e2141f725d37f657917e2a31f0a2a6f4aebf79d86a689f6c4095be",
-  "general_deadline_beijing": "2026-09-15T06:00:00+08:00",
-  "general_deadline_utc": "2026-09-14T22:00:00+00:00",
-  "cdgm_start_beijing": "2026-09-15T06:00:00+08:00",
-  "cdgm_deadline_beijing": "2026-09-15T08:30:00+08:00",
-  "cdgm_deadline_utc": "2026-09-15T00:30:00+00:00",
+  "general_deadline_beijing": "2026-09-15T09:41:55.783359+08:00",
+  "general_deadline_utc": "2026-09-15T01:41:55.783359+00:00",
+  "cdgm_start_beijing": "2026-09-15T09:41:55.783359+08:00",
+  "cdgm_deadline_beijing": "2026-09-15T12:11:55.783359+08:00",
+  "cdgm_deadline_utc": "2026-09-15T04:11:55.783359+00:00",
   "general_search_workers": 8,
   "cdgm_search_workers": 6,
   "cdgm_search_workers_after_successful_general_validation": 8,
@@ -17,7 +17,16 @@
   "general_validation_workers_budget_during_cdgm": 2,
   "total_native_instance_limit": 8,
   "engine_closing_margin_seconds": 25,
-  "constraints": ["A4/A6 only on S10; A2 and A8 or higher zero", "All surface conics zero", "105 degree full field, 52.5 degree half field", "Fixed drawing clear apertures", "Common image plane for f/5.6, f/8, f/22; f/5.6 on-axis 20 lp/mm focus", "No intersecting glass; air gaps including S6-to-S8 at least 0.3 mm", "Rear air gap S10-to-S11 checked through conservative radial domain 15.8 mm with minimum gap at least 0.3 mm; 15.8 mm is a radius, not an axial spacing", "Actual native glass catalog and six wavelength indices, no fictitious nd/Vd replacement"],
+  "constraints": [
+    "A4/A6 only on S10; A2 and A8 or higher zero",
+    "All surface conics zero",
+    "105 degree full field, 52.5 degree half field",
+    "Fixed drawing clear apertures",
+    "Common image plane for f/5.6, f/8, f/22; f/5.6 on-axis 20 lp/mm focus",
+    "No intersecting glass; air gaps including S6-to-S8 at least 0.3 mm",
+    "Rear air gap S10-to-S11 checked through conservative radial domain 15.8 mm with minimum gap at least 0.3 mm; 15.8 mm is a radius, not an axial spacing",
+    "Actual native glass catalog and six wavelength indices, no fictitious nd/Vd replacement"
+  ],
   "operations": {
     "supervisor": "scripts/overnight_supervisor.py",
     "search": "scripts/overnight_search.py",
@@ -29,8 +38,41 @@
     "native_validation": "finalize_overnight.py --phase <general|cdgm> --best deadline_source.zmx --metrics deadline_metrics.json --prepare-only --resume",
     "report_authoring": "finalize_overnight.py --phase <general|cdgm> --author-only --pdf-marker-confirmed",
     "heartbeat_id": "supersymmarxl",
-    "heartbeat_minutes_each_hour": [0,15,30,45]
+    "heartbeat_minutes_each_hour": [
+      0,
+      15,
+      30,
+      45
+    ]
   },
-  "report_requirements": ["Optimization stops at 08:30; subsequent work is validation and reporting only", "Read PDF skill before authoring; start artifact marker with expected count 2 exactly once before first PDF", "Generate both reports only from SHA-verified frozen phase sources and corresponding native results", "Render and visually inspect every page of both PDFs before delivery", "All legends outside axes; manual MTF colored lines without circle or cross markers", "Provide independent all-CDGM catalog audit and native MTF results", "Include material-combination Pareto and within-CDGM catalog relative-cost proxy; no invented currency quotes or cross-catalog savings percentages", "Report unmet factory MTF targets honestly", "Commit and push validated results to existing main without force", "Pause heartbeat only after both reports and lens files are verified, pushed and delivered"],
-  "delivery": {"general": "overnight_20260915/general", "cdgm": "overnight_20260915/cdgm", "comparison": "overnight_20260915/两方案对比.md"}
+  "report_requirements": [
+    "Resumed optimization stops at 12:11:55 Beijing after Windows Update extension; subsequent work is validation and reporting only",
+    "Read PDF skill before authoring; start artifact marker with expected count 2 exactly once before first PDF",
+    "Generate both reports only from SHA-verified frozen phase sources and corresponding native results",
+    "Render and visually inspect every page of both PDFs before delivery",
+    "All legends outside axes; manual MTF colored lines without circle or cross markers",
+    "Provide independent all-CDGM catalog audit and native MTF results",
+    "Include material-combination Pareto and within-CDGM catalog relative-cost proxy; no invented currency quotes or cross-catalog savings percentages",
+    "Report unmet factory MTF targets honestly",
+    "Commit and push validated results to existing main without force",
+    "Pause heartbeat only after both reports and lens files are verified, pushed and delivered"
+  ],
+  "delivery": {
+    "general": "overnight_20260915/general",
+    "cdgm": "overnight_20260915/cdgm",
+    "comparison": "overnight_20260915/两方案对比.md"
+  },
+  "resume_after_windows_update": {
+    "reason": "Windows Update restart reported by user; extend prior task by lost execution time",
+    "interrupted_after_last_status_utc": "2026-09-14T21:14:07.184918+00:00",
+    "resumed_utc": "2026-09-15T00:56:02.968277+00:00",
+    "unfinished_general_duration_seconds": 2752.815082,
+    "general_deadline_utc": "2026-09-15T01:41:55.783359+00:00",
+    "general_deadline_beijing": "2026-09-15T09:41:55.783359+08:00",
+    "cdgm_start_utc": "2026-09-15T01:41:55.783359+00:00",
+    "cdgm_start_beijing": "2026-09-15T09:41:55.783359+08:00",
+    "cdgm_deadline_utc": "2026-09-15T04:11:55.783359+00:00",
+    "cdgm_deadline_beijing": "2026-09-15T12:11:55.783359+08:00",
+    "policy": "Resume only unfinished general time, then retain full 2.5-hour all-CDGM phase."
+  }
 }

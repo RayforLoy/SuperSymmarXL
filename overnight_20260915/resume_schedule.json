@@ -1,0 +1,13 @@
+{
+  "reason": "Windows Update restart reported by user; extend prior task by lost execution time",
+  "interrupted_after_last_status_utc": "2026-09-14T21:14:07.184918+00:00",
+  "resumed_utc": "2026-09-15T00:56:02.968277+00:00",
+  "unfinished_general_duration_seconds": 2752.815082,
+  "general_deadline_utc": "2026-09-15T01:41:55.783359+00:00",
+  "general_deadline_beijing": "2026-09-15T09:41:55.783359+08:00",
+  "cdgm_start_utc": "2026-09-15T01:41:55.783359+00:00",
+  "cdgm_start_beijing": "2026-09-15T09:41:55.783359+08:00",
+  "cdgm_deadline_utc": "2026-09-15T04:11:55.783359+00:00",
+  "cdgm_deadline_beijing": "2026-09-15T12:11:55.783359+08:00",
+  "policy": "Resume only unfinished general time, then retain full 2.5-hour all-CDGM phase."
+}
