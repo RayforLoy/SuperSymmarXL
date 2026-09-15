@@ -32,18 +32,21 @@
   "finalizers": {
     "general": {
       "pid": 32108,
-      "status": "prepared_pending_PDF_and_visual_QA",
+      "status": "complete_report_and_visual_QA",
       "workers_budget": 2,
-      "exit_code": 0
+      "exit_code": 0,
+      "PDF_visual_QA_completed": true
     },
     "cdgm": {
       "pid": 55736,
-      "status": "failed",
+      "status": "complete_report_and_visual_QA",
       "workers_budget": 8,
-      "exit_code": 1
+      "exit_code": 1,
+      "PDF_visual_QA_completed": true
     }
   },
   "updated_utc": "2026-09-15T04:13:22.644198+00:00",
-  "phase": "optimization_complete_reports_pending",
-  "completed_utc": "2026-09-15T04:13:22.644198+00:00"
+  "phase": "delivery_complete",
+  "completed_utc": "2026-09-15T04:13:22.644198+00:00",
+  "delivery_verified_utc": "2026-09-15T04:24:55.934503+00:00"
 }
