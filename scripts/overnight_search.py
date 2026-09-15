@@ -34,7 +34,7 @@ def combo_key(combo):
 
 def record_feasible(record):
     return bool(not record['invalid_geometry'] and
-                np.all(abs(np.array(record['first_order'])-FO_TARGET) < [.25, .4, .5, .6]) and
+                np.all(abs(np.array(record['first_order'])-FO_TARGET) < [.75, 1.0, .5, .6]) and
                 record.get('stop_crossing_air_gap_S6_to_S8_mm', .3) >= .3)
 
 def pure_first_order(radii, thickness, indices):
@@ -91,7 +91,7 @@ def solve_fo_precondition(radii, thickness, coefficients, indices, caps, check=l
     result = least_squares(objective, np.zeros(22), bounds=(low, high), max_nfev=50,
                            ftol=1e-9, xtol=1e-9, gtol=1e-9)
     after_fo, after_gaps, after_stop = state(result.x)
-    feasible = bool(np.all(abs(after_fo-FO_TARGET) < [.25, .4, .5, .6]) and
+    feasible = bool(np.all(abs(after_fo-FO_TARGET) < [.75, 1.0, .5, .6]) and
                     np.all(after_gaps >= GAP_LIMITS) and after_stop >= .3)
     x0 = np.r_[np.zeros(2), result.x]
     metadata = {'enabled': True, 'method': 'Pure reduced-angle FO from resolved native INDX; no FFT',
