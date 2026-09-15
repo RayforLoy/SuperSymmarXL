@@ -1,0 +1,57 @@
+{
+  "method": "Polychromatic weighted incoherent diffraction MTF for an unaberrated, unvignetted circular pupil in air; normalized frequency lambda_mm*f_number*lp_per_mm. This is an axis reference for this pupil shape, not a strict universal off-axis/apodized-pupil bound.",
+  "wavelengths_nm": [
+    546,
+    644,
+    588,
+    480,
+    436,
+    405
+  ],
+  "weights_percent": [
+    24.6,
+    18.6,
+    22.1,
+    12.4,
+    15.2,
+    7.1
+  ],
+  "results": {
+    "5.6": {
+      "frequencies_lp_mm": [
+        5,
+        10,
+        20
+      ],
+      "mtf": [
+        0.9807994791410637,
+        0.9616035898803608,
+        0.9232442540483851
+      ]
+    },
+    "8": {
+      "frequencies_lp_mm": [
+        5,
+        10,
+        20
+      ],
+      "mtf": [
+        0.9725718321725135,
+        0.9451571702632953,
+        0.8904225160780292
+      ]
+    },
+    "22": {
+      "frequencies_lp_mm": [
+        5,
+        10,
+        20
+      ],
+      "mtf": [
+        0.9246131731730908,
+        0.8495079584724118,
+        0.701289546772701
+      ]
+    }
+  }
+}

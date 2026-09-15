@@ -1,0 +1,32 @@
+{
+  "round": 0,
+  "materials": {
+    "id": "all_cdgm_seed_1",
+    "materials": [
+      "H-KF6",
+      "H-LAK53B",
+      "H-LAK53B",
+      "H-ZK3A",
+      "F4GTI",
+      "H-K1"
+    ],
+    "catalogs": [
+      "CDGM",
+      "CDGM",
+      "CDGM",
+      "CDGM",
+      "CDGM",
+      "CDGM"
+    ],
+    "change_count": 6,
+    "reason": "closest full-dispersion all-CDGM seed; geometry must be reoptimized"
+  },
+  "seed": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00004.zmx",
+  "sampling": 256,
+  "jacobians": 10,
+  "evals": 13,
+  "status": "Round wall-clock budget reached",
+  "material_fo_precondition": {
+    "enabled": false
+  }
+}

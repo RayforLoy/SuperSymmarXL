@@ -141,8 +141,11 @@ try:
   # empty set; actual glass surfaces still have to resolve in a real catalog.
   values=catalogs.GetMaterialsInCatalog(catalog)
   return set(map(str,values)) if values is not None else set()
- names={{catalog:catalog_materials(catalog) for catalog in in_use}}
- cdgm_catalogs=[catalog for catalog in available if catalog.upper()=='CDGM']
+ # User catalogs in the loaded file can be absent from GetAvailableCatalogs;
+ # GetCatalogsInUse is authoritative for those resolved surface materials.
+ catalog_ids=list(dict.fromkeys([c for c in available+in_use if c]))
+ names={{catalog:catalog_materials(catalog) for catalog in catalog_ids}}
+ cdgm_catalogs=[catalog for catalog in catalog_ids if catalog.upper()=='CDGM']
  cdgm_names=set()
  for catalog in cdgm_catalogs:cdgm_names.update(catalog_materials(catalog))
  historical=json.loads((ROOT/'revision2'/'validated.json').read_text(encoding='utf-8'))
@@ -152,11 +155,15 @@ try:
   material=str(sys.LDE.GetSurfaceAt(i).Material)
   solve=str(sys.LDE.GetSurfaceAt(i).MaterialCell.GetSolveData().Type)
   assert solve in ['Fixed','None'],'Material must resolve through a fixed catalog, not a model/offset/substitution solve'
-  containing=[catalog for catalog in in_use if material in names[catalog]]
+  # A glass name can also exist in unrelated installed catalogs.  Resolution
+  # ambiguity is determined only among catalogs actually loaded by this file.
+  containing=[catalog for catalog in in_use if catalog and material in names[catalog]]
   elements.append({{'element':element,'surface':i,'historical_reference_glass':previous[i],
    'native_material':material,'native_material_solve':solve,'catalogs_in_use_containing_material':containing,
    'member_of_available_CDGM_catalog':material in cdgm_names,
    'unambiguous_CDGM_resolution':bool(containing) and all(c.upper()=='CDGM' for c in containing)}})
+ print('CATALOG_DIAGNOSTIC',json.dumps({{'available':available,'in_use':in_use,'cdgm_catalogs':cdgm_catalogs,
+  'cdgm_material_count':len(cdgm_names),'elements':elements}},ensure_ascii=True),flush=True)
  assert all(row['native_material'] and row['catalogs_in_use_containing_material'] for row in elements),'Unresolved or modeled material cannot certify catalog identity'
  all_cdgm=bool(cdgm_catalogs) and all(row['member_of_available_CDGM_catalog'] and row['unambiguous_CDGM_resolution'] for row in elements)
  if {phase!r}=='cdgm':assert all_cdgm,'CDGM phase requires all six native materials to resolve unambiguously through CDGM catalogs in use'

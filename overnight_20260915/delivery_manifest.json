@@ -1,0 +1,144 @@
+{
+  "created_utc": "2026-09-15T04:23:23.299385+00:00",
+  "scope": "Final immutable, independently validated outputs after the user-authorized Windows Update time extension.",
+  "general": {
+    "source_sha256": "450d2c4bcab6b89a8c58415c494c09cb312f1f375805f2ae30fe8c76d4f6106f",
+    "materials": [
+      "KF9",
+      "H-LAK53A",
+      "N-LAK33B",
+      "N-SK5",
+      "F2",
+      "K10"
+    ],
+    "full_field_deg": 105.0,
+    "common_image_distance_mm": 135.263798852228,
+    "minimum_checked_air_gap_mm": 0.6734216540095734,
+    "no_surface_intersection_in_checked_regions": true,
+    "asphere_powers": [
+      4,
+      6
+    ],
+    "all_surface_conics_zero": true,
+    "max_shortfall_by_aperture": {
+      "5.6": 0.10425248467117965,
+      "8": 0.09880553809356257,
+      "22": 0.0997515738778123
+    },
+    "factory_points_met_by_aperture": {
+      "5.6": [
+        20,
+        48
+      ],
+      "8": [
+        46,
+        60
+      ],
+      "22": [
+        34,
+        78
+      ]
+    },
+    "all_factory_values_met": false,
+    "models": {
+      "SuperSymmarXL_150_GENERAL_f5p6.zmx": {
+        "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\SuperSymmarXL_150_GENERAL_f5p6.zmx",
+        "sha256": "b18a7ab6a5032b1c3b225645115c2cab8486e48277a6a46fec07b2f6babc1abd"
+      },
+      "SuperSymmarXL_150_GENERAL_f8.zmx": {
+        "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\SuperSymmarXL_150_GENERAL_f8.zmx",
+        "sha256": "e6dfa2c311e6d962c2c29e207313587074db88deb5881c0d678928164135b0d0"
+      },
+      "SuperSymmarXL_150_GENERAL_f22.zmx": {
+        "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\SuperSymmarXL_150_GENERAL_f22.zmx",
+        "sha256": "c0e4d32c4c6b72080260e90b56ebe8015ca81d3769fde30cf8b2b2b6b02a4571"
+      }
+    },
+    "report": {
+      "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\general\\光学性能与制造可能性报告_GENERAL.pdf",
+      "sha256": "2081f83db6525cc899a3a2ba4b347dad073dbd87709003a93dedae2e197f1353",
+      "pages": 11,
+      "visual_QA": "PASS"
+    }
+  },
+  "all_CDGM": {
+    "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+    "materials": [
+      "H-KF6",
+      "H-LAK53A",
+      "H-LAK53B",
+      "H-ZK3A",
+      "F4GTI",
+      "H-K1"
+    ],
+    "full_field_deg": 105.0,
+    "common_image_distance_mm": 135.181084729638,
+    "minimum_checked_air_gap_mm": 0.8379609894725668,
+    "no_surface_intersection_in_checked_regions": true,
+    "asphere_powers": [
+      4,
+      6
+    ],
+    "all_surface_conics_zero": true,
+    "max_shortfall_by_aperture": {
+      "5.6": 0.11524202200761358,
+      "8": 0.021804793056604876,
+      "22": 0.10212783280083759
+    },
+    "factory_points_met_by_aperture": {
+      "5.6": [
+        27,
+        48
+      ],
+      "8": [
+        57,
+        60
+      ],
+      "22": [
+        45,
+        78
+      ]
+    },
+    "all_factory_values_met": false,
+    "models": {
+      "SuperSymmarXL_150_CDGM_f5p6.zmx": {
+        "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\SuperSymmarXL_150_CDGM_f5p6.zmx",
+        "sha256": "0606a95cc8ef7c461035eca6bc612ebeb7884febbdbf06845d4401fb6ede1e2c"
+      },
+      "SuperSymmarXL_150_CDGM_f8.zmx": {
+        "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\SuperSymmarXL_150_CDGM_f8.zmx",
+        "sha256": "69c8f289b3ac01b76725d70aae2c3987d7117468c7fa590efa8e521d094001c0"
+      },
+      "SuperSymmarXL_150_CDGM_f22.zmx": {
+        "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\SuperSymmarXL_150_CDGM_f22.zmx",
+        "sha256": "10f583cef7da83ec6b0e1e14278ad36c38138cd293cf43f9b58cb73b9fc97ffa"
+      }
+    },
+    "report": {
+      "path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\光学性能与制造可能性报告_CDGM.pdf",
+      "sha256": "bde3a951f00a2290f4a54aae842710b5fc56600461a0cefe9404257dd396c3a5",
+      "pages": 12,
+      "visual_QA": "PASS"
+    }
+  },
+  "comparison_file": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\两方案对比.md",
+  "cost_conclusion": {
+    "selected_all_CDGM_OD_sum": 80.19999999999999,
+    "selected_is_optical_screening_best": true,
+    "lowest_OD_screened_sum": 18.8,
+    "lowest_OD_screened_max_shortfall": 0.6856883836787544,
+    "lower_OD_symmetric_candidate": {
+      "OD_sum": 74.1,
+      "screening_max_shortfall": 0.1210109275713831,
+      "independent_high_sampling_verified": false
+    },
+    "absolute_price_RMB": null,
+    "savings_percent": null,
+    "interpretation": "All-CDGM procurement consolidation and same-catalog OD screening are documented. The selected optical result is not the lowest-OD combination; a supplier quote and separate high-sampling validation of any lower-OD candidate are required before claiming monetary savings."
+  },
+  "limitations": [
+    "Neither scheme meets every digitized Schneider reference MTF point.",
+    "Manual curves are digitized from the handbook and are not original numerical data.",
+    "No supplier quote, melt availability, tolerance analysis, prototype measurement, or guaranteed savings percentage is available."
+  ]
+}

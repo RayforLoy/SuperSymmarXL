@@ -1,0 +1,11 @@
+{
+  "pid": 16340,
+  "phase": "cdgm",
+  "state": "closed",
+  "status": "Phase closing margin reached",
+  "native_apps_owned": 0,
+  "workers": 8,
+  "total_evaluations": 81,
+  "best_source": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00029.zmx",
+  "closed_utc": "2026-09-15T04:11:33.064267+00:00"
+}

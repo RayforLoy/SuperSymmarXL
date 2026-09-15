@@ -1,0 +1,394 @@
+{
+  "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+  "selected_cost_proxy_verified": true,
+  "selected_elements": [
+    {
+      "element": 1,
+      "surface": 1,
+      "historical_reference_glass": "KF9",
+      "native_material": "H-KF6",
+      "catalog_relative_cost": 3.6,
+      "OD_raw": "OD 3.60000 1.00000 -1.00000 -1.00000 -1.00000 -1.00000",
+      "nd_catalog": 1.51742,
+      "vd_catalog": 52.149249,
+      "availability_verified": false,
+      "price_quote_available": false
+    },
+    {
+      "element": 2,
+      "surface": 3,
+      "historical_reference_glass": "N-LAK33B",
+      "native_material": "H-LAK53A",
+      "catalog_relative_cost": 11.6,
+      "OD_raw": "OD 11.60000 -1.00000 -1.00000 -1.00000 -1.00000 -1.00000",
+      "nd_catalog": 1.755,
+      "vd_catalog": 52.320574,
+      "availability_verified": false,
+      "price_quote_available": false
+    },
+    {
+      "element": 3,
+      "surface": 5,
+      "historical_reference_glass": "N-LAK33B",
+      "native_material": "H-LAK53B",
+      "catalog_relative_cost": 5.5,
+      "OD_raw": "OD 5.50000 1.00000 -1.00000 -1.00000 -1.00000 -1.00000",
+      "nd_catalog": 1.755,
+      "vd_catalog": 52.322058,
+      "availability_verified": false,
+      "price_quote_available": false
+    },
+    {
+      "element": 4,
+      "surface": 8,
+      "historical_reference_glass": "N-SK5",
+      "native_material": "H-ZK3A",
+      "catalog_relative_cost": 1.0,
+      "OD_raw": "OD 1.00000 3.00000 -1.00000 -1.00000 -1.00000 -1.00000",
+      "nd_catalog": 1.58913,
+      "vd_catalog": 61.2531,
+      "availability_verified": false,
+      "price_quote_available": false
+    },
+    {
+      "element": 5,
+      "surface": 9,
+      "historical_reference_glass": "F2",
+      "native_material": "F4GTI",
+      "catalog_relative_cost": 45.9,
+      "OD_raw": "OD 45.90000 1.00000 -1.00000 -1.00000 -1.00000 -1.00000",
+      "nd_catalog": 1.62005,
+      "vd_catalog": 36.430813,
+      "availability_verified": false,
+      "price_quote_available": false
+    },
+    {
+      "element": 6,
+      "surface": 11,
+      "historical_reference_glass": "K10",
+      "native_material": "H-K1",
+      "catalog_relative_cost": 12.6,
+      "OD_raw": "OD 12.60000 3.00000 -1.00000 -1.00000 -1.00000 -1.00000",
+      "nd_catalog": 1.49967,
+      "vd_catalog": 62.071979,
+      "availability_verified": false,
+      "price_quote_available": false
+    }
+  ],
+  "display_candidates": [
+    {
+      "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+      "materials": [
+        "H-KF6",
+        "H-LAK53A",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 80.19999999999999,
+      "screening_score": 0.12163920129214552,
+      "screening_max_shortfall": 0.1154449439111187,
+      "screening_sampling": 256,
+      "is_selected_source": true,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00029.zmx",
+      "independent_high_sampling_verified": true,
+      "label": "正式选定 / 最低光学筛选分数 / 筛选 Pareto"
+    },
+    {
+      "source_sha256": "7fb60f25350482e2cf298159bf1ed874e234951422477be118b380aacd3299cb",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "H-F4",
+        "H-K10"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 18.8,
+      "screening_score": 0.7482791908834333,
+      "screening_max_shortfall": 0.6856883836787544,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00005.zmx",
+      "independent_high_sampling_verified": false,
+      "label": "最低目录代理筛选可行 / 筛选 Pareto"
+    },
+    {
+      "source_sha256": "ffa20fb8d06758fb3f1c6f95ccc8ceb5bbb3365b4b281551f9d5f000057bbeea",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 72.1,
+      "screening_score": 0.5956038916638384,
+      "screening_max_shortfall": 0.5491841850421352,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00007.zmx",
+      "independent_high_sampling_verified": false,
+      "label": "筛选 Pareto"
+    },
+    {
+      "source_sha256": "f66a5e1723d400ad9d3212da3e22a0f04f3ee8bea0441eb04d286f376f0deeec",
+      "materials": [
+        "H-KF6",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 74.1,
+      "screening_score": 0.1275798060818108,
+      "screening_max_shortfall": 0.1210109275713831,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00016.zmx",
+      "independent_high_sampling_verified": false,
+      "label": "筛选 Pareto"
+    }
+  ],
+  "reasons": [],
+  "cost_scope": "Within one frozen CDGM catalog only; OD[0] six-element unweighted sum, not a quote.",
+  "absolute_price_RMB": null,
+  "cross_catalog_savings_percent": null,
+  "other_candidate_high_sampling_verified": false,
+  "material_manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4",
+  "catalog_plan_sha256": "66e5ad375138e02388c6e6b26477b5fd6df50a45e960aba16a599f5ceb52c30e",
+  "CDGM_catalog_sha256": "5e5974e329d7c61180fcb4780605f189c498a553088fbe2c015137572bebeba4",
+  "CDGM_catalog_header": "CC Updated Jun 2022",
+  "candidate_pareto_sha256": "866d8ee08a64d7ae35ed2d71dbf654b45069f178d0fe37d7bf5b4e52f88923c9",
+  "combo_best_pointer_sha256": {
+    "combo_bests\\29dec912c038a124\\best.json": "269c5dcd341ba7ffafb63beec3138fb6ce1e4bce257140897a3e16cf72b12e72",
+    "combo_bests\\3a0af69f2fb36924\\best.json": "fb559adc0f2f884beea29c73c7dbdf2058fdd8e3abb899748abddf9a18686d7a",
+    "combo_bests\\52e0b2ade5f226bd\\best.json": "4d85e079ab8c8e7aedb3cae70cadd66bef37ef9aed10971b2993778112d51a13",
+    "combo_bests\\8941b0c0a9479823\\best.json": "ff1ffb61f606f7307bad283b99177b99b91a287a405aa9ebaa7d1e47385759c6",
+    "combo_bests\\b7c48704a8619b4c\\best.json": "7034af1fad3ce6dd2f6848e553e211512f4b7b354ebd3e3d7b652d9a2648c7c6",
+    "combo_bests\\bc824518c25dc337\\best.json": "d31b0b090fa34aa38eeda8d3e0fde9d2655a3e48b0c9292203a0b048a61e8eb5",
+    "combo_bests\\d40976221c475557\\best.json": "d007d78651a5cfa7b66ed7a7d430996b04658bfc4f089827bde362634cf07dd6"
+  },
+  "selected_sum_six_element_relative_cost": 80.19999999999999,
+  "authenticated_screening_candidate_count": 7,
+  "all_authenticated_candidates": [
+    {
+      "source_sha256": "7fb60f25350482e2cf298159bf1ed874e234951422477be118b380aacd3299cb",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "H-F4",
+        "H-K10"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 18.8,
+      "screening_score": 0.7482791908834333,
+      "screening_max_shortfall": 0.6856883836787544,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00005.zmx",
+      "independent_high_sampling_verified": false
+    },
+    {
+      "source_sha256": "f66a5e1723d400ad9d3212da3e22a0f04f3ee8bea0441eb04d286f376f0deeec",
+      "materials": [
+        "H-KF6",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 74.1,
+      "screening_score": 0.1275798060818108,
+      "screening_max_shortfall": 0.1210109275713831,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00016.zmx",
+      "independent_high_sampling_verified": false
+    },
+    {
+      "source_sha256": "2e910ed4dca600276cd8aad438f8b72c3dbe61b94ccc259cee8cea8c97ba302e",
+      "materials": [
+        "H-K12",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 75.19999999999999,
+      "screening_score": 0.6860148347821737,
+      "screening_max_shortfall": 0.6286452846193129,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00006.zmx",
+      "independent_high_sampling_verified": false
+    },
+    {
+      "source_sha256": "ffa20fb8d06758fb3f1c6f95ccc8ceb5bbb3365b4b281551f9d5f000057bbeea",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 72.1,
+      "screening_score": 0.5956038916638384,
+      "screening_max_shortfall": 0.5491841850421352,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00007.zmx",
+      "independent_high_sampling_verified": false
+    },
+    {
+      "source_sha256": "77e871cee146f32f50df1adaffe13fb5d66c291376de52008b19e18a6bf58cd4",
+      "materials": [
+        "H-QF6A",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 74.8,
+      "screening_score": 0.6463336138683269,
+      "screening_max_shortfall": 0.5936889512776091,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00015.zmx",
+      "independent_high_sampling_verified": false
+    },
+    {
+      "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+      "materials": [
+        "H-KF6",
+        "H-LAK53A",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 80.19999999999999,
+      "screening_score": 0.12163920129214552,
+      "screening_max_shortfall": 0.1154449439111187,
+      "screening_sampling": 256,
+      "is_selected_source": true,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00029.zmx",
+      "independent_high_sampling_verified": true
+    },
+    {
+      "source_sha256": "76e917e4dd6940000e49057c7b174b8c06e748089dc7672ab51f263348a2ce06",
+      "materials": [
+        "H-KF6",
+        "H-LAK3",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "sum_six_element_relative_cost": 78.0,
+      "screening_score": 0.1386919791502569,
+      "screening_max_shortfall": 0.13201103749635662,
+      "screening_sampling": 256,
+      "is_selected_source": false,
+      "snapshot_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00035.zmx",
+      "independent_high_sampling_verified": false
+    }
+  ],
+  "tradeoff_interpretation": "本次可核对 7 个全 CDGM 优化筛选组合；其中 6 个目录 OD 合计低于正式选定组合。最低代理为 18.8000，其筛选最大 MTF 不足为 68.569 个百分点，非本方案的独立高采样结果。 光学筛选分数为最大短缺+0.2×短缺RMS；它不是毛坯成本或量产目标。Pareto 仅针对本次已搜索、同目录代理和筛选光学分数，范围有限。正式选定方案的高采样结果由主验收表提供，不能把其它组合的筛选值混入其中。"
+}

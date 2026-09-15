@@ -1,0 +1,32 @@
+{
+  "round": 4,
+  "materials": {
+    "id": "all_cdgm_seed_6",
+    "materials": [
+      "H-KF6",
+      "H-LAK53A",
+      "H-LAK53B",
+      "H-ZK3A",
+      "F4GTI",
+      "H-K1"
+    ],
+    "catalogs": [
+      "CDGM",
+      "CDGM",
+      "CDGM",
+      "CDGM",
+      "CDGM",
+      "CDGM"
+    ],
+    "change_count": 6,
+    "reason": "one-element local move from phase seed; two LAK elements are independent"
+  },
+  "seed": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00024.zmx",
+  "sampling": 256,
+  "jacobians": 9,
+  "evals": 11,
+  "status": "Round wall-clock budget reached",
+  "material_fo_precondition": {
+    "enabled": false
+  }
+}

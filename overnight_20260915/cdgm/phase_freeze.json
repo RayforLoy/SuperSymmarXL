@@ -1,0 +1,8 @@
+{
+  "phase": "cdgm",
+  "deadline_utc": "2026-09-15T04:11:55.783359+00:00",
+  "frozen_utc": "2026-09-15T04:11:33.139690+00:00",
+  "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+  "source": "deadline_source.zmx",
+  "metrics": "deadline_metrics.json"
+}

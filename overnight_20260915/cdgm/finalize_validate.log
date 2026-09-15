@@ -1,0 +1,6 @@
+init True
+successfully unlocked Spatial components
+app ZemaxUI.Common.ViewModels.ZOSAPI_Application license True
+CDGM native audit 5.6 max shortfall 0.11524202200761358 sampling delta 0.0008956365157626323
+CDGM native audit 8 max shortfall 0.021804793056604876 sampling delta 0.0008849715707234251
+CDGM native audit 22 max shortfall 0.10212783280083759 sampling delta 0.0011099237249082572

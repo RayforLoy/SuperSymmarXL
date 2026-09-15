@@ -1,0 +1,129 @@
+{
+  "checked_utc": "2026-09-15T04:22:53.057928+00:00",
+  "pdf": "光学性能与制造可能性报告_CDGM.pdf",
+  "pdf_sha256": "bde3a951f00a2290f4a54aae842710b5fc56600461a0cefe9404257dd396c3a5",
+  "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+  "reopened_page_count": 12,
+  "render_dpi": 110,
+  "all_pages_visually_inspected": true,
+  "overall": "PASS",
+  "specific_checks": {
+    "legend_outside_axes": true,
+    "manual_curves_colored": true,
+    "manual_circle_or_cross_markers_present": false,
+    "text_clipping_present": false,
+    "overlap_present": false,
+    "unreadable_glyphs_present": false,
+    "cost_table_within_page": true
+  },
+  "pages": [
+    {
+      "page": 1,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-01.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 2,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-02.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 3,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-03.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 4,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-04.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 5,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-05.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 6,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-06.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 7,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-07.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 8,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-08.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 9,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-09.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 10,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-10.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 11,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-11.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    },
+    {
+      "page": 12,
+      "render": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\tmp\\pdfs\\cdgm\\page-12.png",
+      "pixels": [
+        910,
+        1287
+      ],
+      "visual_result": "PASS - readable, aligned, no clipping/overlap/black boxes; charts and tables remain within page"
+    }
+  ]
+}

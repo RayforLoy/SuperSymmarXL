@@ -1,0 +1,458 @@
+{
+  "all_feasible_combo_bests": [
+    {
+      "combo_key": "29dec912c038a124",
+      "score": 0.7482791908834333,
+      "max_shortfall": 0.6856883836787544,
+      "deficit_rms": 0.3129540360233947,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00005.zmx",
+      "source_sha256": "7fb60f25350482e2cf298159bf1ed874e234951422477be118b380aacd3299cb",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "H-F4",
+        "H-K10"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          1.6,
+          5.5,
+          5.5,
+          1.0,
+          1.6,
+          3.6
+        ],
+        "sum_six_element_relative_cost": 18.8,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "3a0af69f2fb36924",
+      "score": 0.1275798060818108,
+      "max_shortfall": 0.1210109275713831,
+      "deficit_rms": 0.03284439255213853,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00016.zmx",
+      "source_sha256": "f66a5e1723d400ad9d3212da3e22a0f04f3ee8bea0441eb04d286f376f0deeec",
+      "materials": [
+        "H-KF6",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          3.6,
+          5.5,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 74.1,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "8941b0c0a9479823",
+      "score": 0.6860148347821737,
+      "max_shortfall": 0.6286452846193129,
+      "deficit_rms": 0.2868477508143039,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00006.zmx",
+      "source_sha256": "2e910ed4dca600276cd8aad438f8b72c3dbe61b94ccc259cee8cea8c97ba302e",
+      "materials": [
+        "H-K12",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          4.7,
+          5.5,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 75.19999999999999,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "b7c48704a8619b4c",
+      "score": 0.5956038916638384,
+      "max_shortfall": 0.5491841850421352,
+      "deficit_rms": 0.2320985331085165,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00007.zmx",
+      "source_sha256": "ffa20fb8d06758fb3f1c6f95ccc8ceb5bbb3365b4b281551f9d5f000057bbeea",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          1.6,
+          5.5,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 72.1,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "52e0b2ade5f226bd",
+      "score": 0.6463336138683269,
+      "max_shortfall": 0.5936889512776091,
+      "deficit_rms": 0.2632233129535888,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00015.zmx",
+      "source_sha256": "77e871cee146f32f50df1adaffe13fb5d66c291376de52008b19e18a6bf58cd4",
+      "materials": [
+        "H-QF6A",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          4.3,
+          5.5,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 74.8,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "d40976221c475557",
+      "score": 0.12163920129214552,
+      "max_shortfall": 0.1154449439111187,
+      "deficit_rms": 0.03097128690513408,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00029.zmx",
+      "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+      "materials": [
+        "H-KF6",
+        "H-LAK53A",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          3.6,
+          11.6,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 80.19999999999999,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "bc824518c25dc337",
+      "score": 0.1386919791502569,
+      "max_shortfall": 0.13201103749635662,
+      "deficit_rms": 0.033404708269501454,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00035.zmx",
+      "source_sha256": "76e917e4dd6940000e49057c7b174b8c06e748089dc7672ab51f263348a2ce06",
+      "materials": [
+        "H-KF6",
+        "H-LAK3",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          3.6,
+          9.4,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 78.0,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    }
+  ],
+  "cdgm_pareto": [
+    {
+      "combo_key": "29dec912c038a124",
+      "score": 0.7482791908834333,
+      "max_shortfall": 0.6856883836787544,
+      "deficit_rms": 0.3129540360233947,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00005.zmx",
+      "source_sha256": "7fb60f25350482e2cf298159bf1ed874e234951422477be118b380aacd3299cb",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "H-F4",
+        "H-K10"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          1.6,
+          5.5,
+          5.5,
+          1.0,
+          1.6,
+          3.6
+        ],
+        "sum_six_element_relative_cost": 18.8,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "3a0af69f2fb36924",
+      "score": 0.1275798060818108,
+      "max_shortfall": 0.1210109275713831,
+      "deficit_rms": 0.03284439255213853,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00016.zmx",
+      "source_sha256": "f66a5e1723d400ad9d3212da3e22a0f04f3ee8bea0441eb04d286f376f0deeec",
+      "materials": [
+        "H-KF6",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          3.6,
+          5.5,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 74.1,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "b7c48704a8619b4c",
+      "score": 0.5956038916638384,
+      "max_shortfall": 0.5491841850421352,
+      "deficit_rms": 0.2320985331085165,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00007.zmx",
+      "source_sha256": "ffa20fb8d06758fb3f1c6f95ccc8ceb5bbb3365b4b281551f9d5f000057bbeea",
+      "materials": [
+        "H-K51",
+        "H-LAK53B",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          1.6,
+          5.5,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 72.1,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    },
+    {
+      "combo_key": "d40976221c475557",
+      "score": 0.12163920129214552,
+      "max_shortfall": 0.1154449439111187,
+      "deficit_rms": 0.03097128690513408,
+      "source_path": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00029.zmx",
+      "source_sha256": "6a60d9d60f0a425b0abf5f0a98df7cd094636d070d2b7417488fa6d9e79b9a59",
+      "materials": [
+        "H-KF6",
+        "H-LAK53A",
+        "H-LAK53B",
+        "H-ZK3A",
+        "F4GTI",
+        "H-K1"
+      ],
+      "catalogs": [
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM",
+        "CDGM"
+      ],
+      "cdgm_cost_proxy": {
+        "eligible": true,
+        "catalog": "CDGM",
+        "element_catalog_relative_cost": [
+          3.6,
+          11.6,
+          5.5,
+          1.0,
+          45.9,
+          12.6
+        ],
+        "sum_six_element_relative_cost": 80.19999999999999,
+        "method": "Unweighted sum of six frozen-CDGM AGF OD relative costs; same catalog only",
+        "delivered_price": "not_quoted",
+        "savings_percent": null,
+        "manifest_sha256": "66ff1a2914559bb9904f8f42e19c47c4eae7dfcf07298e3fbf7e36dbc87d98f4"
+      }
+    }
+  ],
+  "cost_scope": "Frozen CDGM catalog internal OD ranking; no cross-manufacturer savings or delivered-price claim"
+}

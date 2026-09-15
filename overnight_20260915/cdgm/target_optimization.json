@@ -1,0 +1,448 @@
+{
+  "note": "Dense independent raster-assisted re-read of the supplied Schneider super-symmar_xl_56_150.pdf page 2 first (infinity) row. These are approximate readings of the published black curves, not source numerical data and not an interpolation of the previous R2/R3 target table. Columns: [5T,5S,10T,10S,20T,20S]. Solid radial=S; dashed tangential=T. Heights are relative image height, not normalized field angle. Dense independently re-read reference including the published f/8 78% endpoint is used for optimization and acceptance.",
+  "source_pdf": "super-symmar_xl_56_150.pdf",
+  "source_page": 2,
+  "source_row": "infinity, 1/beta= infinity, object distance=infinity",
+  "source_raster": "reference/mtf_infinity_detail.png",
+  "digitization_uncertainty_absolute": 0.025,
+  "typical_curve_reading_uncertainty_absolute": 0.02,
+  "column_order": [
+    "5T",
+    "5S",
+    "10T",
+    "10S",
+    "20T",
+    "20S"
+  ],
+  "frequencies_lp_mm": [
+    5,
+    10,
+    20
+  ],
+  "raster_axis_registration": {
+    "f5p6_x_0_100": [
+      30,
+      424
+    ],
+    "f8_x_0_100": [
+      510,
+      904
+    ],
+    "f22_x_0_100": [
+      990,
+      1384
+    ],
+    "all_y_100_0": [
+      42,
+      436
+    ]
+  },
+  "method": [
+    "For each requested height, mapped its x position into the registered source panel and inspected dark-pixel row locations together with the source raster.",
+    "Tracked each of the three solid and three dashed traces from its axis intercept, using neighboring x columns to resolve gaps in dashed lines and crossings. Local interpolation across a printed dash gap is raster trace reconstruction, not interpolation of a previous target table.",
+    "Excluded vertical/horizontal dotted grid pixels and panel border pixels. Values are rounded to 0.005/0.01; the raster does not support manufacturing-level or exact 0.1 percentage-point accuracy.",
+    "No published curve is extrapolated beyond its endpoint. f/5.6 stops near h=.68 and f/8 near h=.78. f/22 is published to h=1.0.",
+    "This denser audit supersedes target_manual_audited.json when they differ. In particular f/22 h=.4 20T is approximately .455, and f/8 h=.78 10T approximately .205; first sparse audit was less certain about these dashed traces.",
+    "Source focusing rule: maximum on-axis 20 lp/mm MTF at f/5.6; one image plane retained for the other apertures. Final comparison must also audit actual ray-traced image heights, rather than assuming h maps exactly through atan(193*h/148.1).",
+    "Dense sampled superiority is stronger evidence than the earlier seven-height comparison, but does not mathematically certify the continuous curves between samples or eliminate scan-reading uncertainty."
+  ],
+  "trace_reconstruction_examples": [
+    {
+      "aperture": "5.6",
+      "height": 0.1,
+      "direction_frequency": "10T",
+      "neighbor_dark_pixels_x_y": [
+        [
+          67,
+          162
+        ],
+        [
+          79,
+          183
+        ]
+      ],
+      "approximate_curve_y_at_height": 166,
+      "reading": 0.685
+    },
+    {
+      "aperture": "5.6",
+      "height": 0.3,
+      "direction_frequency": "5T",
+      "neighbor_dark_pixels_x_y": [
+        [
+          141,
+          206
+        ],
+        [
+          157,
+          223
+        ]
+      ],
+      "approximate_curve_y_at_height": 213,
+      "reading": 0.565
+    },
+    {
+      "aperture": "8",
+      "height": 0.3,
+      "direction_frequency": "20T",
+      "neighbor_dark_pixels_x_y": [
+        [
+          619,
+          332
+        ],
+        [
+          635,
+          353
+        ]
+      ],
+      "approximate_curve_y_at_height": 344,
+      "reading": 0.235
+    },
+    {
+      "aperture": "22",
+      "height": 0.4,
+      "direction_frequency": "20T",
+      "neighbor_dark_pixels_x_y": [
+        [
+          1138,
+          250
+        ],
+        [
+          1158,
+          262
+        ]
+      ],
+      "approximate_curve_y_at_height": 256,
+      "reading": 0.455
+    },
+    {
+      "aperture": "22",
+      "height": 0.6,
+      "direction_frequency": "10T",
+      "neighbor_dark_pixels_x_y": [
+        [
+          1219,
+          186
+        ],
+        [
+          1237,
+          201
+        ]
+      ],
+      "approximate_curve_y_at_height": 192,
+      "reading": 0.62
+    },
+    {
+      "aperture": "22",
+      "height": 0.8,
+      "direction_frequency": "10T",
+      "dark_pixels_x_y": [
+        [
+          1305,
+          253
+        ],
+        [
+          1310,
+          258
+        ]
+      ],
+      "reading": 0.46
+    }
+  ],
+  "heights_by_aperture": {
+    "5.6": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.68
+    ],
+    "8": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.68,
+      0.7,
+      0.78
+    ],
+    "22": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.68,
+      0.7,
+      0.78,
+      0.8,
+      0.9,
+      1
+    ]
+  },
+  "data": {
+    "5.6": [
+      [
+        0.9,
+        0.9,
+        0.8,
+        0.8,
+        0.64,
+        0.64
+      ],
+      [
+        0.825,
+        0.87,
+        0.685,
+        0.74,
+        0.515,
+        0.565
+      ],
+      [
+        0.69,
+        0.8,
+        0.475,
+        0.615,
+        0.29,
+        0.435
+      ],
+      [
+        0.565,
+        0.73,
+        0.325,
+        0.5,
+        0.11,
+        0.3
+      ],
+      [
+        0.49,
+        0.68,
+        0.22,
+        0.42,
+        0.045,
+        0.28
+      ],
+      [
+        0.46,
+        0.63,
+        0.21,
+        0.37,
+        0.06,
+        0.27
+      ],
+      [
+        0.425,
+        0.575,
+        0.215,
+        0.32,
+        0.085,
+        0.24
+      ],
+      [
+        0.39,
+        0.525,
+        0.2,
+        0.285,
+        0.09,
+        0.2
+      ]
+    ],
+    "8": [
+      [
+        0.94,
+        0.94,
+        0.87,
+        0.87,
+        0.69,
+        0.69
+      ],
+      [
+        0.87,
+        0.94,
+        0.78,
+        0.855,
+        0.595,
+        0.64
+      ],
+      [
+        0.765,
+        0.915,
+        0.61,
+        0.795,
+        0.39,
+        0.55
+      ],
+      [
+        0.68,
+        0.86,
+        0.48,
+        0.715,
+        0.235,
+        0.465
+      ],
+      [
+        0.67,
+        0.765,
+        0.4,
+        0.6,
+        0.15,
+        0.4
+      ],
+      [
+        0.66,
+        0.66,
+        0.385,
+        0.49,
+        0.14,
+        0.35
+      ],
+      [
+        0.55,
+        0.56,
+        0.33,
+        0.395,
+        0.145,
+        0.275
+      ],
+      [
+        0.46,
+        0.49,
+        0.275,
+        0.33,
+        0.13,
+        0.215
+      ],
+      [
+        0.44,
+        0.47,
+        0.26,
+        0.305,
+        0.12,
+        0.2
+      ],
+      [
+        0.36,
+        0.4,
+        0.205,
+        0.255,
+        0.075,
+        0.155
+      ]
+    ],
+    "22": [
+      [
+        0.91,
+        0.91,
+        0.83,
+        0.83,
+        0.67,
+        0.67
+      ],
+      [
+        0.91,
+        0.91,
+        0.815,
+        0.83,
+        0.645,
+        0.665
+      ],
+      [
+        0.9,
+        0.91,
+        0.79,
+        0.825,
+        0.585,
+        0.665
+      ],
+      [
+        0.89,
+        0.91,
+        0.76,
+        0.82,
+        0.525,
+        0.65
+      ],
+      [
+        0.875,
+        0.905,
+        0.73,
+        0.815,
+        0.455,
+        0.635
+      ],
+      [
+        0.85,
+        0.9,
+        0.69,
+        0.81,
+        0.39,
+        0.62
+      ],
+      [
+        0.81,
+        0.89,
+        0.62,
+        0.8,
+        0.305,
+        0.6
+      ],
+      [
+        0.77,
+        0.885,
+        0.545,
+        0.775,
+        0.225,
+        0.56
+      ],
+      [
+        0.755,
+        0.88,
+        0.52,
+        0.77,
+        0.2,
+        0.55
+      ],
+      [
+        0.73,
+        0.865,
+        0.485,
+        0.7,
+        0.11,
+        0.43
+      ],
+      [
+        0.715,
+        0.86,
+        0.46,
+        0.685,
+        0.09,
+        0.4
+      ],
+      [
+        0.61,
+        0.81,
+        0.345,
+        0.57,
+        0.03,
+        0.28
+      ],
+      [
+        0.44,
+        0.74,
+        0.2,
+        0.485,
+        0.03,
+        0.225
+      ]
+    ]
+  },
+  "plot_only_additional_points": {}
+}

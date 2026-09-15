@@ -1,0 +1,7 @@
+﻿element,surface,historical_reference_glass,native_material,native_material_solve,catalogs_in_use_containing_material,member_of_available_CDGM_catalog,unambiguous_CDGM_resolution
+1,1,KF9,H-KF6,Fixed,['CDGM'],True,True
+2,3,N-LAK33B,H-LAK53A,Fixed,['CDGM'],True,True
+3,5,N-LAK33B,H-LAK53B,Fixed,['CDGM'],True,True
+4,8,N-SK5,H-ZK3A,Fixed,['CDGM'],True,True
+5,9,F2,F4GTI,Fixed,['CDGM'],True,True
+6,11,K10,H-K1,Fixed,['CDGM'],True,True

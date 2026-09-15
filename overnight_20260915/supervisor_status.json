@@ -1,0 +1,49 @@
+{
+  "supervisor_pid": 21660,
+  "started_utc": "2026-09-15T01:51:40.049781+00:00",
+  "phases": {
+    "general": {
+      "deadline_utc": "2026-09-15T01:41:55.783359+00:00",
+      "status": "frozen"
+    },
+    "cdgm": {
+      "search_pid": 16340,
+      "deadline_utc": "2026-09-15T04:11:55.783359+00:00",
+      "workers": 8,
+      "restart": 2,
+      "seed": "D:\\_Camera\\LensRebuild\\SuperSymmarXL\\overnight_20260915\\cdgm\\best\\candidate_00004.zmx",
+      "status": "frozen",
+      "resize_events": [
+        {
+          "utc": "2026-09-15T01:51:45.081018+00:00",
+          "from_workers": 6,
+          "to_workers": 8,
+          "reason": "General validation succeeded and its owned job closed; release two reserved native slots.",
+          "general_exit_code": 0
+        }
+      ],
+      "native_worker_budget": {
+        "search": 8,
+        "reserved_for_general": 0
+      },
+      "exit_code": 0
+    }
+  },
+  "finalizers": {
+    "general": {
+      "pid": 32108,
+      "status": "prepared_pending_PDF_and_visual_QA",
+      "workers_budget": 2,
+      "exit_code": 0
+    },
+    "cdgm": {
+      "pid": 55736,
+      "status": "failed",
+      "workers_budget": 8,
+      "exit_code": 1
+    }
+  },
+  "updated_utc": "2026-09-15T04:13:22.644198+00:00",
+  "phase": "optimization_complete_reports_pending",
+  "completed_utc": "2026-09-15T04:13:22.644198+00:00"
+}
