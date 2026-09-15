@@ -153,7 +153,7 @@ def start_finalizer(phase,workers):
     folder=B/phase
     if not (folder/'deadline_source.zmx').exists():return None
     command=[sys.executable,str(P/'scripts/finalize_overnight.py'),'--phase',phase,'--workers',str(workers),
-             '--best','deadline_source.zmx','--metrics','deadline_metrics.json','--prepare-only']
+             '--best','deadline_source.zmx','--metrics','deadline_metrics.json','--prepare-only','--resume']
     process,job,stream=spawn_owned(command,folder/'finalize.log')
     STATE['finalizers'][phase]={'pid':process.pid,'status':'native_validation_running','workers_budget':workers}
     status()

@@ -135,10 +135,16 @@ try:
  catalogs=sys.SystemData.MaterialCatalogs
  available=list(map(str,catalogs.GetAvailableCatalogs()))
  in_use=list(map(str,catalogs.GetCatalogsInUse()))
- names={{catalog:set(map(str,catalogs.GetMaterialsInCatalog(catalog))) for catalog in in_use}}
+ def catalog_materials(catalog):
+  # ZOS-API can return null for a catalog token that is present in the
+  # in-use list but has no enumerable glass rows.  Treat that token as an
+  # empty set; actual glass surfaces still have to resolve in a real catalog.
+  values=catalogs.GetMaterialsInCatalog(catalog)
+  return set(map(str,values)) if values is not None else set()
+ names={{catalog:catalog_materials(catalog) for catalog in in_use}}
  cdgm_catalogs=[catalog for catalog in available if catalog.upper()=='CDGM']
  cdgm_names=set()
- for catalog in cdgm_catalogs:cdgm_names.update(map(str,catalogs.GetMaterialsInCatalog(catalog)))
+ for catalog in cdgm_catalogs:cdgm_names.update(catalog_materials(catalog))
  historical=json.loads((ROOT/'revision2'/'validated.json').read_text(encoding='utf-8'))
  previous={{int(s['surface']):s['glass'] for s in historical['surfaces']}}
  elements=[]
@@ -450,6 +456,7 @@ def main():
         if args.resume and name in state['completed_stages']:
             continue
         run_stage(name, command, folder, state, selection)
+    state.pop('failed_stage', None)
     state['status'] = 'authored_pending_visual_QA' if args.author_only else 'native_validated_pending_report_authoring'
     state['native_apps_at_once'] = 1
     state['PDF_visual_QA_completed'] = False
